@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Black Temple Food",
+    "emoji": "🧆",
+    "url": "https://blacktemplefood.fr/menu/",
+    "lat":  48.1143392,
+    "lng": -1.6816653
+  },
+  {
+    "name": "Les Brocanteurs",
+    "emoji": "🍔",
+    "url": "https://lesbrocanteursrennes.com/lacarte/",
+    "lat": 48.1110520, 
+    "lng": -1.6809059
+  },
+  {
+    "name": "La Gavotte",
+    "emoji": "🥞",
+    "url": "https://www.creperie-rennes.fr/",
+    "lat": 48.1119433, 
+    "lng": -1.6754210
+  },
+  {
+    "name": "Le Fuji",
+    "emoji": "🍜",
+    "url": "",
+    "lat": 48.1113398, 
+    "lng": -1.6765000
+  },
+  {
+    "name": "Ouzh-Taol",
+    "emoji": "🥞",
+    "url": "",
+    "lat": 48.1149012,
+    "lng": -1.6763218
+  },
+  {
+    "name": "L'Épi de Blé",
+    "emoji": "🥞",
+    "url": "https://www.creperie-lepideble.fr/",
+    "lat": 48.1092346,
+    "lng": -1.6794212
+  },
+  {
+    "name": "Avec",
+    "emoji": "🍔",
+    "url": "http://avec-rennes.com/",
+    "lat": 48.0964392,
+    "lng": -1.6346714
+  },
+  {
+    "name": "Les Trois Brasseurs",
+    "emoji": "🍻",
+    "url": "https://restaurants.3brasseurs.com/fr/3-brasseurs-rennes",
+    "lat": 48.13184,
+    "lng": -1.68879
+  },
+  {
+    "name": "Le Haricot Rouge",
+    "emoji": "🍫",
+    "url": "https://le-haricot-rouge-rennes.business.site/",
+    "lat": 48.1105183,
+    "lng": -1.6785702
+  },
+  {
+    "name": "Poutinebros",
+    "emoji": "🍟",
+    "url": "https://www.poutinebros.com/",
+    "lat": 48.1138143,
+    "lng": -1.6809343
+  },
+  {
+    "name": "Ker Soazig",
+    "emoji": "🥞",
+    "url": "https://www.kersoazig.fr",
+    "lat": 48.1057219,
+    "lng": -1.6752561
+  },
+  {
+    "name": "Le Fournil Vasselot",
+    "emoji": "🍪",
+    "url": "",
+    "lat": 48.1087099,
+    "lng": -1.6784183
+  },
+  {
+    "name": "Cooking Pot",
+    "emoji": "🍲",
+    "url": "https://www.cookingpot.fr",
+    "lat": 48.1303270,
+    "lng": -1.6338838
+  },
+  {
+    "name": "Peska",
+    "emoji": "🐟",
+    "url": "https://www.peska.fr",
+    "lat": 48.1166999,
+    "lng": -1.6809122
+  },
+  {
+    "name": "La Fabrique",
+    "emoji": "🥞",
+    "url": "https://www.lafabriquederennes.com/",
+    "lat": 48.1116809,
+    "lng": -1.6770976
+  },
+  {
+    "name": "Satio",
+    "emoji": "🥗",
+    "url": "http://satio-restaurant.fr/",
+    "lat": 48.1116809,
+    "lng": -1.6770976
+  },
+  {
+    "name": "Banh Mi Viet",
+    "emoji": "🥪",
+    "url": "https://banhmiviet-rennes.fr/",
+    "lat": 48.1140014,
+    "lng": -1.6807286
+  }
+]

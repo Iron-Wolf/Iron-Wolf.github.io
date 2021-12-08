@@ -1,0 +1,49 @@
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <!-- our custom CSS -->
+  <link rel="stylesheet" href="pageStyle.css">
+  <link rel="stylesheet" href="markerStyle.css">
+</head>
+
+<body>
+  <div class="inline-div">
+    <h1>Ping <span class="sub-header rainbow">for Rennes</span></h1>
+    <div class="content">
+      <div><b>P</b>ing <b>i</b>s <b>n</b>ot <b>g</b>oogle, but you can still find some valuable content here.</div>
+      <div style="display: flex;">
+        <a href="http://vanilla-js.com/" target="_blank" style="margin-right: 10px;">
+          <img src="https://img.shields.io/badge/Languages-Vanilla%20JS-blueviolet">
+        </a>
+        <a href="https://github.com/Iron-Wolf/Iron-Wolf.github.io" target="_blank">
+          <img src="https://img.shields.io/badge/Source%20Code-GitHub-blue">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style="float: right;">
+    <div>
+      <input type="checkbox" id="restId" name="restaurant" onchange="toggleRestaurantCheckbox(this)" />
+      <label for="restId">Restaurant</label>
+    </div>
+    <div>
+      <input type="checkbox" id="parkingId" name="parking" onchange="toggleParkingCheckbox(this)" />
+      <label for="parkingId">Parking</label>
+    </div>
+  </div>
+
+  <div id="map" style="height: 90%;"></div>
+  <script type='text/javascript' src='js/main.js'></script>
+  <script type='text/javascript' src='js/functions.js'></script>
+  <script type='text/javascript' src='ressources/leaflet-color-markers/js/leaflet-color-markers.js'></script>
+</body>
+
+</html>

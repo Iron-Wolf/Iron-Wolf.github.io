@@ -1,0 +1,61 @@
+/* style for popup */
+.leaflet-popup-content .custom-header {
+  font-size: 24px;
+}
+.leaflet-popup-content .custom-content {
+  font-size: 18px;
+}
+
+/* my shitty marker style */
+.emoji-marker {
+  font-size: 1.5rem;
+  width: 1em;
+  border-radius: 50% 50% 0 0;
+  background: firebrick ;
+}
+
+/* totaly-not-made-by-me marker style*/
+.marker-pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: #c30b82;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin: -15px 0 0 -15px;
+}
+/* to draw white circle */
+.marker-pin::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin: 3px 0 0 3px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+}
+/* to align icon */
+.custom-div-icon span {
+  position: absolute;
+  width: 22px;
+  font-size: 18px;
+  left: 0;
+  right: 0;
+  margin: 7px auto;
+  text-align: center;
+}
+
+/* override leaflet style */
+.leaflet-div-icon {
+  /* 
+  Remove the white square placed by leaflet (otherwise,
+  it would be visible with our custom emoji-marker).
+  We cannot hide the element because it's the parent of
+  our custom markers.
+  */
+  border: none;
+  background: none;
+}
+
