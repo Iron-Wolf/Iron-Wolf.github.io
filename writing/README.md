@@ -7,7 +7,7 @@ Je cherche simplement à vous exposer ce que je pense de ce jeu, de la façon la
 <img src="https://memegenerator.net/img/instances/35625056/spoilers-spoilers-everywhere.jpg" width="50%">
 
 
-## CHAPITRE 1 : Prise en main difficile
+## Chapitre 1 : Prise en main difficile
 Je n'ai pas gardé un bon souvenir de ma première expérience avec Metroid. La première fois que je touchais du doigt cette saga a commencé avec l'opus sur GameCube, le bien nommé Metroid Prime. Le jeu est sorti en 2003. D'aussi loin que je me souvienne, j'ai dû y jouer au alentour du CM2 (donc vers 2003 ou 2004). Je me souvient que je n'avais pas l'age requis pour y jouer, car la boite indiquait un PEGI 12 (interdit au moins de 12 ans).  
 Ce jeu est tombé entre mes mains grâce à un copain d'école. Le genre de mec qui avait toujours le dernier gadget à la mode, mais il ne frimait jamais de cette condition. Il n'y avait aucune compétition, juste l'envie de partager.  
 Il m'a donc prêté son jeu et je le lançais dans la foulée, après la fin des cours et avant que les parents reviennent du boulot. Comme je le disais, tout ne c'est pas bien passé. Je suis rapidement arrivé au premier Boss, qui est juste un Boss tutoriel pour apprendre à contrôler Samus. Je n'ai jamais pu passer ce Boss. C'est une espèce de gros insecte accroché au plafond avec ses griffes et protégé par un champ de force tournant autour de lui. Le principe est simple et consiste à lui tirer dessus à travers les trous du champ de force (représenté par les panneaux bleu sur le screenshot ci-dessous).
@@ -53,7 +53,7 @@ Au final, si on compte Metroid Oher M (sortie en 2010) comme un vrai Metroid (ma
 
 
 
-## CHAPITRE 2 : Des signes annonciateurs
+## Chapitre 2 : Des signes annonciateurs
 Du coup, je me suis laissé croire que la série était morte et ne méritait plus l'attention de Nintendo. La révélation de Metroid Dread aurait pu me faire changer d'avis, mais ce n'était même pas le cas.
 
 Premièrement, il y a l'utilisation du terme DREAD, qui est une arlésienne dans le monde de Metroid. C'était à l'origine un jeu annoncé plusieurs fois par Nintendo mais qui a connu des problèmes de développement et qui n'est jamais sorti. Les fans on dut se faire une raison et abandonné tout espoir de voir ce jeu sortir un jour. Du coup, sortir en 2021 un jeu avec le terme DREAD, ça veut dire énormément de choses, mais ça veut aussi dire que ce jeu ne représentera jamais le vrai Metroid Dread développé à l'époque. Nintendo ne pouvait tout simplement pas repartir d'une copie qui n'a jamais rien donné. Il fallait repartir de zéro. Ce point à lui seul ma fait craindre beaucoup de chose avec le Metroid Dread à la sauce 2021.
@@ -76,7 +76,7 @@ Arrive donc le moment fatidique où je me procure une cartouche du fameux Metroi
 
 
 
-### CHAPITRE 3.1 : l'ADN
+### Chapitre 3.1 : l'ADN
 Tout d'abord, commençons par le point le plus important, sans qui rien ne serait possible : le gameplay. Rappelons que le gameplay d'un jeu Metroid se décompose en plusieurs points :
 - l'exploration : le joueur est lâché dans un environnement labyrinthique dans lequel il peut se déplacer librement. Il aura besoin de s'approprier la carte du monde pour naviguer efficacement dans un environnement hostile. De plus, il lui faudra régulièrement revenir sur ses pas (backtracking) pour accéder à de nouvelles zones, au fur et à mesure qu'il récupère son équipement.
 - l'équipement : tout au long de son aventure, le joueur sera amené à débloquer des compétences lui permettant de faire plus de dégâts (missiles), de se protéger (combinaisons Varia) ou bien de se déplacer plus facilement (rayon grappin). Ce sont également ces compétences qui ouvrent progressivement la carte vers de nouveaux environnements.
@@ -112,7 +112,7 @@ Ce problème est particulièrement présent lors des combats de Boss, ce qui me 
 
 
 
-### CHAPITRE 3.2 : La difficulté
+### Chapitre 3.2 : La difficulté
 Metroid Dread est un jeu difficile, en particulier les combats de Boss. En règle général, les Boss dans la saga Metroid se résument à découvrir leur pattern d'attaque, leur envoyer ce qu'il faut de missile et hop on passe à la suite. Il y a des variations en fonction de certains opus, mais on peut grossir un peu le trait et dire que les Boss dans Metroid ce n'est peut-être pas la partie la plus réussie. Sur ce point, Dread arrive à bousculer un peu la formule. Sans les rendre mémorables, il les rend suffisamment difficiles pour forcer le joueur à toujours être attentif à l'action. On peut sans nul doute dire que les Boss de cet opus sont les plus difficiles de la saga. Pour ma part, la dernière fois que j'ai galéré sur un Boss, c'était dans Metroid Prime 2 (les premiers Boss dans la partie sombre de la planète sont une horreur à gérer, puisque l'atmosphère nous fait mal et qu'on n'a pas beaucoup de vie).  
 Cependant, la difficulté est beaucoup trop grande dans Dread. En général, vous ne pourrez jamais encaisser plus de 10 coup par Boss. Et ce, même si vous avez beaucoup de réserve d'énergie. Par exemple à la fin du jeu, le soldat Chozo peut facilement vous réduire 2 réserver d'énergie complète, en un seul coup. Vous n'êtes jamais tranquille lorsque vous affrontez un Boss dans ce jeu. On pourrait comprendre ce choix du fait qu'un Boss est nécessairement plus difficile que le reste des ennemis. Sauf que là, le niveau de difficulté est absurde. On se croirait dans Hollow Knight. Sauf que dans Hollow Knight, tous les game design est pensé autour de cette difficulté (points de vie clairement définis, l'écran qui se fige très légèrement quand on se fait toucher, possibilité de se soigner quand on veut, possibilité de remettre le combat à plus tard). Dans Metroid Dread, rien n'est cohérent :
 - pourquoi compter les points de vie avec des réserves d'énergie (qui comprennent chacune 100 PV) si c'est pour les perdre quasiment dans leur intégralitée au moindre dégât ? Cela donne une fausse indication au joueur et ne nous permet pas de se représenter clairement le montant restant de notre vie. Il faut toujours avoir un œil sur ça barre de vie sinon on se retrouvera avec l'écran de game over sans avoir eu le temps de dire *ouf*.
@@ -135,7 +135,7 @@ Sauf que ce choix n'est pas présent dans Dread, mais cela peut s'expliquer asse
 
 
 
-### CHAPITRE 3.3 : Un jeu baclé
+### Chapitre 3.3 : Un jeu baclé
 Pour moi, c'est clair, ce jeu manque de finition. Il manque du temps de développement pour vraiment avoir une œuvre aboutie. Ce sentiment est renforcé par les déclarations de certains développeurs du studio, qui parle de planning hasardeux et de pression sur l'équipe de développement. Et ça se ressent dans tout le jeu :
 - il n'y a pas d'option pour reconfigurer les contrôles, ni aucune option d'accessibilité
 - les environnements sont hyper génériques et sont juste là pour être là. Certains background sont sympas mais trop loin pour être appréciés
@@ -147,7 +147,7 @@ Pour moi, c'est clair, ce jeu manque de finition. Il manque du temps de dévelop
 
 
 
-## CHAPITRE 4 : On fait mieux ailleurs
+## Chapitre 4 : On fait mieux ailleurs
 Si l'on s'attarde un peu sur les autres opus de la série, on a l'impression que Metroid Dread en fait table rase et repart d'une feuille blanche. Comme s'il fallait absolument renouveler une série en perte de souffle. Ce genre de travail est nécessaire pour une série hyper prolifique qui sort des jeux régulièrement (comme Mario ou Zelda), mais pas pour Metroid. Cette série a toujours souffert d'un manque de reconnaissance par Nintendo et on le voit encore aujourd'hui avec Dread. Le tout premier Metroid a été conçu par deux personnes et a dû être remanié en plein milieu de son développement pour sortir quelque chose de potable (parce que les développeurs étaient seuls sur le projet et n'étaient pas supervisés). C'est carrément un miracle que Nintendo ai bien voulu faire une suite (cette fois sur GameBoy, avec Metroid 2). Ensuite, Super Metroid a su profiter de toute la puissance de la SNES pour nous sortir l'un des meilleur (si ce n'est **LE** meilleur) jeu de la console. Malgré cela, les jeux suivants ont mis 8 ans à arriver. Et même après 8 longues années, Metroid Prime est une réussite totale et se paye le luxe d'un passage à la 3D réussit là où beaucoup d'autres jeux ont raté l'exercice. Malheuresement, cela s'est payé au prix d'heure de travail interminable suite aux caprices de Nintendo (le jeu étant en plus développé par un studio étrangé, ce qui ne facilitait pas les relations). La Nintendo64 a carrément été zappée pour profiter de la puissance de la GameCube et du temps de développement supplémentaire nécessaire.
 
 | ![](sorties_metroid.png) | ![](sorties_zelda.png) |
@@ -166,7 +166,7 @@ Voici, en vrac, pourquoi certains jeux font mieux que Metroid Dread :
 
 
 
-## CHAPITRE 5 : Conclusion
+## Chapitre 5 : Conclusion
 Au final, à quoi ça sert tout ça ? Pourquoi s'acharner si durement sur ce jeu ? Pourquoi ne pas simplement le prendre pour ce qu'il est et laisser passer le temps ? Dans l'absolu, ça reste un objet de divertissement et il remplit plutôt bien son rôle. Ce jeu ne mérite pas un avis aussi dur, qui est complètement centré autour des points négatifs. Car il possède quand même des qualités, qui ont été mainte fois remontée à travers plusieurs articles et critiques par des personnes dont c'est le métier. Moi, ce n'est pas mon cas. Je peux juste parler de ce jeu en fonction de mon vécu et de mon expérience avec ce médium.
 
 Je délivre simplement ma vision de ce jeu, qui est fortement inspiré par mes expériences et mes attentes de joueurs. Ayant été profondément marqué par cette série, je continue de m'égarer au sein des environnements hostiles qui me sont offerts par cette saga mythique. Si je suis aussi dithyrambique face à Metroid Dread, c'est parce que j'ai un profond attachement à cette série. C'est parce qu'elle mérite d'être excellente à chaque nouvelle sortie (aussi rare soient-elles). Car cette série est vraiment excellente, elle nous la démontrer à plusieurs reprises, et je la recommanderai sans hésiter au joueur profane. La série elle-même n'a jamais eu un développement sans problèmes. Mais c'est ce qui la rend encore plus attachante, car malgré tout ça, on a hérité de jeux inoubliable.
