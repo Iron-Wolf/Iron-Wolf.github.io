@@ -49,7 +49,7 @@ J'ai donc abandonné les jeux suivants :
 - Metroid Prime Fédération Force (3DS) : heu, c'est une blague Nintendo ...? Laisser Next Level Games faire des vrais jeux, sans déconner...
 - Metroid Samus Return (3DS) : sortie en même temps que AM2R (qui est une perle, mais je reviendrai dessus) et avec des critiques très moyennes, je n'ai jamais voulu m'y mettre. Pourquoi avoir opté pour de la 2.5D moche sur une 3DS qui crache ses tripes, alors qu'on pouvait avoir de la très belle 2D ?
 
-Au final, si on compte Metroid Oher M (sortie en 2010) comme un vrai jeu Metroid (malgré ses défauts), ça faisait 11 ans qu'on n'avait pas eu de VRAI jeu Metroid à se mettre sous la dent (Metroid Dread met fin à cette attente, avec sa sortie en 2021). Sur ces 11 années, il a eu 2 autres jeux qui sont sortis, mais qui n'ont rien donnée de mémorable (à savoir Federation Force et Samus Return).
+Au final, si on compte Metroid Oher M (sortie en 2010) comme un vrai jeu Metroid (malgré ses défauts), ça faisait 11 ans qu'on n'avait pas eu de **VRAI** jeu Metroid à se mettre sous la dent (Metroid Dread met fin à cette attente, avec sa sortie en 2021). Sur ces 11 années, il a eu 2 autres jeux qui sont sortis, mais qui n'ont rien donnée de mémorable (à savoir Federation Force et Samus Return).
 
 
 
