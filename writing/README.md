@@ -178,7 +178,7 @@ Cependant, je ne vais pas me triturer le cerveau plus que nécessaire. Ce jeu so
 
 ---
 # Sources
-https://noclip.website : screenshot de Metroid Prime  
+[noclip.website](https://noclip.website) : screenshot de Metroid Prime  
 [L'histoire de Metroid](https://www.editionspixnlove.com/les-series-cultes-du-jeu-video/783-l-histoire-de-metroid.html?search_query=metroid&results=5) : pour tout connaître des coulisses  
 [Wikipédia](https://fr.wikipedia.org/wiki/Metroid) : pas mal d'info complémentaire, sur la série en général  
 [Les soucis interne du studio (en)](https://www.nintendolife.com/news/2021/10/metroid-dread-studio-hit-with-allegations-of-poor-organisation-and-management) : article détaillant les problèmes de développement de Metroid Dread
