@@ -2,7 +2,7 @@
 
 Ce texte que vous avez sous les yeux est une tentative personnelle (et peut-être naïve) de vous exposer mon point de vue sur Metroid Dread. Cet avis n'est pas celui d'un professionnel et n'est pas à prendre pour une critique vidéo ludique au sens professionnel du terme.
 
-Je cherche simplement à vous exposer ce que je pense de ce jeu, de la façon la plus clair possible et avec le moins de mauvaise foi possible. Je pense que je ne suis pas si loin du résultat que j'espérais. Cet exercice est aussi un moyen pour moi de trouver les mots juste pour caractériser la série Metroid, qui est un point de passage important dans mon expérience avec le médium vidéo ludique et qui aujourd'hui est un peu comme une madeleine de Proust.
+Je cherche simplement à vous exposer ce que je pense de ce jeu, de la façon la plus clair possible et avec le moins de mauvaise foi possible. Je pense que je ne suis pas si loin du résultat que j'espérais. Cet exercice est aussi un moyen pour moi de trouver les mots juste pour caractériser la série Metroid, qui est un point de passage important dans mon expérience avec le médium vidéo ludique et qui aujourd'hui est un peu comme une madeleine de Proust pour moi.
 
 <img src="https://memegenerator.net/img/instances/35625056/spoilers-spoilers-everywhere.jpg" width="50%">
 
