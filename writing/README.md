@@ -22,14 +22,14 @@ Toujours est-il que, malgré ses qualités, refaire les premières minutes en bo
 Le temps passe et on se retrouve en période de vacances scolaire. De mémoire, il me semble que c'était les vacances d'été, chez ma Grand Mère, à Vannes. Au détour d'un magasin de jeux vidéo, je tombe nez à nez avec une boite de ce fameux jeu. Le jeu où je n'ai jamais passé la zone tuto. Le jeu où je n'ai même pas battu le premier Boss. J'avais une revanche à prendre avec ce jeu. J'ai donc décidé de dépenser le peu d'argent que j'avais pour en faire l'acquisition.
 Cette fois, je ramène le jeu avec moi et je suis bien décidé à en découdre. Je charge la GameCube et lance une nouvelle partie.
 Il ne me faut pas longtemps pour retrouver ce Boss si familier. Je ne pensais qu'à le vaincre pour enfin passer à la suite du jeu. Et cette fois, la victoire arriva bel et bien et me permis de mettre enfin le pied sur Tallon IV, cette fameuse planète inconnue.
-Sauf qu'une fois encore, je me retrouve bloqué. Cette fois, pas d'ennemi insurmontable, mais une perte sèche de mes repères. Après avoir parcouru les première zones du jeu, aucune issue ne s'ouvre à moi. Je suis coincé dans les premières salles des Ruines Chozo sans savoir où aller. Je retourne le jeu dans tous les sens, je cherche des informations sur Internet mais je ne sais pas trop m'en servir et ne trouve rien sur le jeu. Je sens qu'il me manque un élément. Que je suis proche d'une solution sans pouvoir mettre la main dessus. Cette fois, pas moyen d'abandonner. J'ai acheté le jeu, j'irais jusqu'au bout.
+Sauf qu'une fois encore, je me retrouve bloqué. Cette fois, pas d'ennemi insurmontable, mais une perte sèche de mes repères. Après avoir parcouru les première zones, aucune issue ne s'ouvre à moi. Je suis coincé dans les premières salles des Ruines Chozo sans savoir où aller. Je retourne le jeu dans tous les sens, je cherche des informations sur Internet mais je ne sais pas trop m'en servir et ne trouve rien d'exploitable pour me débloquer. Je sens qu'il me manque un élément. Que je suis proche d'une solution sans pouvoir mettre la main dessus. Cette fois, pas moyen d'abandonner. J'ai acheté ce jeu et j'irais jusqu'au bout.
 Parmi toutes les salles qui sont à ma disposition en ce début de partie, il y en a une qui revient souvent sur mon chemin.
 
 | ![](metroid_prime_1_ruins.png) |
 |:--:|
 | *Un level design simple, mais que je n'avais pas compris* |
 
-C'est une salle qui donne accès à plusieurs autres salles et on est naturellement amené à passer par ici plusieurs fois dans le jeu. Cette salle est la clé de mon problème et j'avais raison. C'est bien ici que mon périple continu, mais pour ça, il fallait que j'apprenne le level design du jeu. En analysant la salle, on aperçoit 2 éléments extrêmement importants :
+C'est une salle qui donne accès à plusieurs autres salles et on est naturellement amené à passer par ici plusieurs fois lors de notre exploration de l'environnement. Cette salle est la clé de mon problème et j'avais raison. C'est bien ici que mon périple continu, mais pour ça, il fallait que j'apprenne le level design du jeu. En analysant la salle, on aperçoit deux éléments extrêmements importants :
 - un escalier en bas à gauche, c'est de là qu'on arrive pour la première fois
 - un autre escalier pile en face, mais cette fois, il est fait avec des éléments de décors
 
