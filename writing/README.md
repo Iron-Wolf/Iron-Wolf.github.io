@@ -71,7 +71,7 @@ Tous ces éléments m'ont amené à me méfier du jeu. D'autant plus que le prem
 ## Chapitre 3 : Le désastre
 Arrive donc le moment fatidique où je me procure une cartouche du fameux Metroid Dread. Celui qui bat des records de vente. Celui qui est acclamé par la critique. Celui qu'on me conseille entre deux pauses-café avec les collègues de travail. Bref, celui qui fait parler tout le monde et qui est partout.
 
-À présent, on avance au jeudi 20 janvier 2022, date à laquelle je termine le jeu. Sauf que je ne termine pas vraiment ce jeu. À vrai dire, je me suis arrêté au Boss de fin et j'ai regardé les 10 dernière minutes de jeu via une vidéo YouTube. Chose qui paraissait impensable lors de mes premières parties de jeux vidéo, encore moins sur un jeu de cette saga. Mais voilà, je grandis et je relativise. Est-ce que j'ai envie de perdre du temps sur un jeu qui ne me plaît pas ? Non, clairement pas. Je voulais quand même faire l'effort d'aller jusqu'au Boss, pour avoir la vision la plus complète du jeu, manette en main.
+À présent, on avance au jeudi 20 janvier 2022, date à laquelle je termine le jeu. Sauf que je ne termine pas vraiment. À vrai dire, je me suis arrêté au Boss de fin et j'ai regardé les 10 dernière minutes via une vidéo YouTube. Chose qui paraissait impensable lors de mes premières parties de jeux vidéo, encore moins sur un jeu de cette saga. Mais voilà, je grandis et je relativise. Est-ce que j'ai envie de perdre du temps avec quelque chose qui ne me plaît pas ? Non, clairement pas. Je voulais quand même faire l'effort d'aller au moins jusqu'au Boss de fin, pour avoir la vision la plus complète possible, manette en main.
 À présent, vous devez comprendre que je n'ai pas aimé ce jeu. Il est temps pour moi de vous dire pourquoi.
 
 
