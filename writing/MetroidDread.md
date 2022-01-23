@@ -165,3 +165,12 @@ C'est pour ça que je suis si dure avec Dread. Mais, au final, chacun se fera so
 
 Maintenant, j'espère que les leçons seront retenues et toutes mes attentes se portent sur Metroid Prime 4. La encore, il y a de quoi être septique (la saga Prime s'étant terminée il y a un moment, quel est l'intérêt de la faire revenir sur le devant de la scène ?).
 Cependant, je ne vais pas me triturer le cerveau plus que nécessaire. Ce jeu sortira comme il devra sortir, et il faudra le prendre tel qu'il est. Est-ce que ce sera une réussite ou un échec ? Rendez-vous à sa sortie pour le savoir.
+
+
+---
+# Sources
+https://noclip.website : screenshot de Metroid Prime  
+[L'histoire de Metroid](https://www.editionspixnlove.com/les-series-cultes-du-jeu-video/783-l-histoire-de-metroid.html?search_query=metroid&results=5) : pour tout connaître des coulisses  
+[Les soucis interne du studio (en)](https://www.nintendolife.com/news/2021/10/metroid-dread-studio-hit-with-allegations-of-poor-organisation-and-management) : article détaillant les problèmes de développement de Metroid Dread
+
+
