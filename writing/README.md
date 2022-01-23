@@ -1,13 +1,10 @@
 # Metroid Dread - Plutôt Metroid DEAD ouai !
 
-
-Spoiler, Spoiler everywhere
-
-
 Ce texte que vous avez sous les yeux est une tentative personnelle (et peut-être naïve) de vous exposer mon point de vue sur Metroid Dread. Cet avis n'est pas celui d'un professionnel et n'est pas à prendre pour une critique vidéo ludique au sens professionnelle du terme.
 
 Je cherche simplement à vous exposer ce que je pense de ce jeu, de la façon la plus clair possible et avec le moins de mauvaise foi possible. Je pense que je ne suis pas si loin du résultat que j'espérais. Cet exercice est aussi un moyen pour moi de trouver les mots juste pour caractériser la série Metroid, qui est un point de passage important dans mon expérience avec le médium vidéo ludique et qui aujourd'hui est un peu comme une madeleine de Proust.
 
+<img src="https://memegenerator.net/img/instances/35625056/spoilers-spoilers-everywhere.jpg" width="50%">
 
 
 ## CHAPITRE 1 : Prise en main difficile
@@ -15,7 +12,7 @@ Je n'ai pas gardé un bon souvenir de ma première expérience avec Metroid. La 
 C'est un jeu qui est tombé entre mes mains grâce à un copain d'école. Le genre de mec qui avait toujours le dernier gadget à la mode, mais il ne frimait jamais de cette condition. Il n'y avait aucune compétition, juste l'envie de partager.
 Il m'a donc prêté son jeu et je le lançais dans la foulée, après la fin des cours et avant que les parents reviennent du boulot. Comme je le disais, tout ne c'est pas bien passé. Je suis rapidement arrivé au premier Boss, qui est juste un Boss tutoriel pour apprendre à contrôler Samus. Je n'ai jamais pu passer ce Boss. C'est une espèce de gros insecte accroché au plafond avec ses griffes et protégé par un champ de force qui tourne autour de lui. Le principe est simple et consiste à lui tirer dessus à travers les trous du champ de force (représenté par les panneaux bleu sur le screenshot ci-dessous).
 
-[SCREENSHOT]
+<img src="https://raw.githubusercontent.com/Iron-Wolf/Iron-Wolf.github.io/master/writing/metroid_prime_1_boss.png" width="80%">
 
 Mais quelque chose m'empêchait d'y arriver. Je bloquais sur ce Boss et n'arrivais jamais à bien me concentrer pour le tuer. Peut-être mon jeune âge ? Je n'en sais rien. Cependant, je n'ai pas perdu mon temps dessus. J'étais convaincu que le jeu était bien. J'étais absorbé par cette première zone. Ce vaisseau spatiale perdu en orbite autour d'une planète inconnue m'a toujours fasciné. Le gameplay était fluide. J'étais complètement happé par l'univers, quand bien même il ne s'agissait que des 10 premières minutes, j'adorais parcourir les couloirs sombres de ce vaisseau. Je l'ai parcouru un nombre incalculable de fois. Chaque détail était là pour une raison. Chaque élément de décors stimulait mon imagination. J'ai eu le coup de cœur pour ce jeu, mais je ne m'en rendais pas encore compte.
 Toujours est-il que, malgré ses qualités, refaire les premières minutes en boucle montre vite une limite et je me suis lacé du jeu. Il fut rendu à son propriétaire et je décidais de passer à autre chose.
@@ -26,7 +23,7 @@ Il ne me faut pas longtemps pour retrouver ce Boss si familier. Je ne pensais qu
 Sauf qu'une fois encore, je me retrouve bloqué. Cette fois, pas d'ennemi insurmontable, mais une perte sèche de mes repères. Après avoir parcouru les première zones du jeu, aucune issue ne s'ouvre à moi. Je suis coincé dans les premières salles des Ruines Chozo sans savoir où aller. Je retourne le jeu dans tous les sens, je cherche des informations sur Internet mais je ne sais pas trop m'en servir et ne trouve rien sur le jeu. Je sens qu'il me manque un élément. Que je suis proche d'une solution sans pouvoir mettre la main dessus. Cette fois, pas moyen d'abandonner. J'ai acheté le jeu, j'irais jusqu'au bout.
 Parmi toutes les salles qui sont à ma disposition en ce début de partie, il y en a une qui revient souvent sur mon chemin.
 
-[SCREENSHOT]
+![](metroid_prime_1_ruins.png)
 
 C'est une salle qui donne accès à plusieurs autres salles et on est naturellement amené à passer par ici plusieurs fois dans le jeu. Cette salle est la clé de mon problème et j'avais raison. C'est bien ici que mon périple continu, mais pour ça, il fallait que j'apprenne le level design du jeu. En analysant la salle, on aperçoit 2 éléments extrêmement importants :
 - un escalier en bas à gauche, c'est de là qu'on arrive pour la première fois
@@ -88,13 +85,13 @@ Je comprends bien que c'est un mal nécessaire, car plus le joueur obtient des a
 
 Le paroxime de ce non-sens intervient à peu avant la dernière section du jeu. Les profondeurs de la planète sont en train de geler et vous êtes contraint de remettre en marche le chauffage (c'est littéralement ça, il y a des gros tuyaux qui acheminent la chaleur de la zone magmatique vers les autres zones de la carte). Lors de ce passage, certaines portes sont gelées (mais pas toutes) et vous empêche de progresser normalement. La capture d'écran ci-dessous montre une partie du chemin à emprunter. Le trait plein en rouge montre par où doit passer le joueur. Le chemin en pointillé représente les branches possibles à emprunter (et qui contiennent des items à récolter). Et les croix bleues représentent les portes condamnées par la glace.
 
-[SCREENSHOT]
+![](metroid_dread_map.png)
 
 Cette capture d'écran est un peu caricaturale, mais représente toute ma frustration que j'ai envers la conception de ce jeu. On s'aperçoit très vite que le joueur n'a littéralement aucun choix. Il est sur des railles du début à la fin. Et le pire, c'est qu'à la fin de cette séquence (lorsque le chauffage est rétabli) le jeu ne vous laisse pas le plaisir de revenir sur vos pas pour récupérer l'attaque en vrille, puisqu'il y a un téléporter tout frais et dispo juste à côté. Du coup, on est jamais incité à parcourir la carte pour récupérer des améliorations de missiles ou de vie. Et même si on voulait le faire, on serait constamment en train d'ouvrir la carte pour voir notre chemin, puisqu'on ne la connaît pas. Ce sentiment est encore plus renforcé par l'abondance de téléporteurs (il y en a partout), qui passent leur temps à nous balader là où on a besoin de nous et qui ne rendent pas la carte plus facile à apprendre).
 
 Un autre exemple me vient à l'esprit puisque l'on parle d'exploration. À un moment donné, on est amené à revenir dans une zone (donc à faire du backtracking) pour emprunter le téléporter vert. Cependant, le choix de game design est tellement absurde pour arriver à cette salle que je me suis retrouvé bloqué dans le jeu. En effet, pour atteindre cette salle, on est obligé de tomber du plafond en passant à travers des blocs destructibles. Le passage n'est évidemment pas marqué sur la carte, puisque les blocs destructibles que l'on n'a pas découverts apparaissent juste comme des blocs normaux. Du coup, on n'est pas incité à venir à cet endroit, puisque la zone est complètement inaccessible quand on regarde la carte. Le seul élément qui peut nous faire venir à cet endroit (et donc continuer le jeu) est matérialisé par une réserve de missile placé juste au bout du tunnel.
 
-[SCREENSHOT] [SCREENSHOT]
+<img src="https://raw.githubusercontent.com/Iron-Wolf/Iron-Wolf.github.io/master/writing/metroid_dread_tp1.jpg" width="49%"> <img src="https://raw.githubusercontent.com/Iron-Wolf/Iron-Wolf.github.io/master/writing/metroid_dread_tp2.jpg" width="49%">
 
 Et c'est tout le problème de cette séquence. Je me suis retrouvé bloqué parce que je n'avais aucun intérêt à venir récupérer cette réserve de missile, puisque le jeu n'incite jamais au backtracking. J'étais tellement habitué à rester sur la route que le jeu voulait me faire prendre que je n'ai pas pensé à venir jeter un œil dans la zone pour récupérer cette réserve. Surtout que le jeu n'est pas avare en missile et qu'on se retrouve jamais vraiment en manque. Résultat, je ne vais pas dans la zone, je ne tombe pas du plafond, et je n'avance pas dans le jeu. Et on pourrait penser que ce moment du jeu est un moyen de montrer au joueur qu'il faut faire demi-tour de temps en temps, pour lui montrer que les chemins ne sont pas forcément tous devant nous, mais ce n'est même pas le cas. Le jeu continue de rester sur des railles, même après cette séquence.
 
