@@ -98,6 +98,13 @@
     "lng": -1.6809122
   },
   {
+    "name": "Chez Brume",
+    "emoji": "🐟",
+    "url": "",
+    "lat": 48.1088613,
+    "lng": -1.6804788
+  },
+  {
     "name": "Satio",
     "emoji": "🥗",
     "url": "http://satio-restaurant.fr/",
@@ -110,5 +117,12 @@
     "url": "https://banhmiviet-rennes.fr/",
     "lat": 48.1140014,
     "lng": -1.6807286
+  },
+  {
+    "name": "Le Hangar ",
+    "emoji": "🍻",
+    "url": "",
+    "lat": 48.1133875,
+    "lng": -1.6854770
   }
 ]
