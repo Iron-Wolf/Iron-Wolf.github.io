@@ -1,14 +1,18 @@
 # OSM project
+Goal : simple Map I use as a memo
 URL : https://iron-wolf.github.io/osm/index.html
 
 ## Todo
-Add [bicycle pump](https://data.rennesmetropole.fr/explore/dataset/stations-reparation-velo/information/?location=12,48.10663,-1.66082&basemap=0a029a) locations. 
+- [x] Add restaurants
+- [x] Add [parking occupation](https://data.rennesmetropole.fr/explore/dataset/export-api-parking-citedia/information/)
+- [ ] Add [bicycle pump](https://data.rennesmetropole.fr/explore/dataset/stations-reparation-velo/information/?location=12,48.10663,-1.66082&basemap=0a029a) locations. 
 
 ## Ressources :
 - Leaflet icons from [leaflet-color-markers](https://github.com/pointhi/leaflet-color-markers) repo
 
 
 # Writing
+Goal : need to get stuff out of my head
 URL : https://iron-wolf.github.io/writing/
 
 
