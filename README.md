@@ -1,5 +1,5 @@
 # OSM project
-Goal : simple Map I use as a memo
+Goal : simple Map I use as a memo  
 URL : https://iron-wolf.github.io/osm/index.html
 
 ## Todo
@@ -12,7 +12,7 @@ URL : https://iron-wolf.github.io/osm/index.html
 
 
 # Writing
-Goal : need to get stuff out of my head
+Goal : need to get stuff out of my head  
 URL : https://iron-wolf.github.io/writing/
 
 
