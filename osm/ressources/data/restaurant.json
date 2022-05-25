@@ -119,10 +119,17 @@
     "lng": -1.6807286
   },
   {
-    "name": "Le Hangar ",
+    "name": "Le Hangar",
     "emoji": "🍻",
     "url": "",
     "lat": 48.1133875,
     "lng": -1.6854770
+  },
+  {
+    "name": "Ciel de Rennes",
+    "emoji": "🍷",
+    "url": "https://www.lecielderennes.fr/",
+    "lat": 48.1151718,
+    "lng": -1.7141108
   }
 ]
