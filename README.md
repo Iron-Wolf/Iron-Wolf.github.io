@@ -1,6 +1,6 @@
 # OSM project
 Goal : simple Map I use as a memo  
-URL : https://iron-wolf.github.io/osm/index.html
+URL : [https://iron-wolf.github.io/osm/index.html](https://iron-wolf.github.io/osm/index.html)
 
 ## Todo
 - [x] Add restaurants
@@ -12,7 +12,7 @@ URL : https://iron-wolf.github.io/osm/index.html
 
 
 # Writing
-Goal : need to get stuff out of my head  
-URL : https://iron-wolf.github.io/writing/
+Goal : need to get stuff out of my head (in french)  
+URL : [https://iron-wolf.github.io/writing](https://iron-wolf.github.io/writing)
 
 
