@@ -131,5 +131,21 @@
     "url": "https://www.lecielderennes.fr/",
     "lat": 48.1151718,
     "lng": -1.7141108
+  },
+  
+  
+  {
+    "name": "Aux Marchés des Halles",
+    "emoji": "🛒",
+    "url": "https://www.ollca.com/rennes/boutiques/aux-marches-des-halles",
+    "lat": 48,1084132,
+    "lng": -1,6108194
+  },
+  {
+    "name": "Le Bœuf Tricolore",
+    "emoji": "🛒",
+    "url": "",
+    "lat": 48,1087303,
+    "lng": -1,6121189
   }
 ]
