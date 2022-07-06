@@ -1,6 +1,6 @@
 [
   {
-    "name": "Black Temple Food",
+    "name": "Black Temple Food ?",
     "emoji": "🧆",
     "url": "https://blacktemplefood.fr/menu/",
     "lat":  48.1143392,
@@ -49,14 +49,14 @@
     "lng": -1.6346714
   },
   {
-    "name": "Les Trois Brasseurs",
+    "name": "Les Trois Brasseurs ?",
     "emoji": "🍻",
     "url": "https://restaurants.3brasseurs.com/fr/3-brasseurs-rennes",
     "lat": 48.13184,
     "lng": -1.68879
   },
   {
-    "name": "Le Haricot Rouge",
+    "name": "Le Haricot Rouge ?",
     "emoji": "🍫",
     "url": "https://le-haricot-rouge-rennes.business.site/",
     "lat": 48.1105183,
@@ -85,20 +85,20 @@
   },
   {
     "name": "Cooking Pot",
-    "emoji": "🍲",
+    "emoji": "💀",
     "url": "https://www.cookingpot.fr",
     "lat": 48.1303270,
     "lng": -1.6338838
   },
   {
-    "name": "Peska",
+    "name": "Peska ?",
     "emoji": "🐟",
     "url": "https://www.peska.fr",
     "lat": 48.1166999,
     "lng": -1.6809122
   },
   {
-    "name": "Chez Brume",
+    "name": "Chez Brume ?",
     "emoji": "🐟",
     "url": "",
     "lat": 48.1088613,
@@ -126,11 +126,46 @@
     "lng": -1.6854770
   },
   {
-    "name": "Ciel de Rennes",
+    "name": "Ciel de Rennes ?",
     "emoji": "🍷",
     "url": "https://www.lecielderennes.fr/",
     "lat": 48.1151718,
     "lng": -1.7141108
+  },
+  {
+    "name": "O’Liban ?",
+    "emoji": "🧆",
+    "url": "https://restaurant-oliban.business.site/",
+    "lat": 48,1137679,
+    "lng": -1,6809151
+  },
+  {
+    "name": "La Rozell",
+    "emoji": "🥞",
+    "url": "https://www.larozell.fr/",
+    "lat": 48,1137087,
+    "lng": -1,6807587
+  },
+  {
+    "name": "Angello dei Lices ?",
+    "emoji": "🍕",
+    "url": "https://angello.toctok.fr",
+    "lat": 48,1135978,
+    "lng": -1,6825627
+  },
+  {
+    "name": "La Tomate ?",
+    "emoji": "🍕",
+    "url": "https://angello.toctok.fr",
+    "lat": 48,1117830,
+    "lng": -1,6765239
+  },
+  {
+    "name": "Le Royal  ?",
+    "emoji": "🍔",
+    "url": "https://www.bar-leroyal.fr/",
+    "lat": 48,1107584,
+    "lng": -1,6810624
   },
   
   
