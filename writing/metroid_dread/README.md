@@ -21,7 +21,7 @@ Ce jeu est tombé entre mes mains grâce à un copain d'école. Le genre de mec 
 Il m'a donc prêté son jeu, que je le lançais dans la foulée, après la fin des cours et avant le retour des parents.  
 Sauf que, comme je le disais, ça ne c'est pas passé comme prévu. Je suis rapidement arrivé au premier Boss, qui est juste un Boss tutoriel pour apprendre à contrôler Samus. **Je n'ai jamais pu passer ce Boss**. C'est une espèce de gros insecte accroché au plafond avec ses griffes et protégé par un champ de force tournant autour de lui. Le principe est simple et consiste à lui tirer dessus à travers les ouvertures du champ de force (représenté par les panneaux bleu sur le screenshot ci-dessous).
 
-| <img src="https://raw.githubusercontent.com/Iron-Wolf/Iron-Wolf.github.io/master/writing/metroid_prime_1_boss.png" width="80%"> |
+| <img src="https://raw.githubusercontent.com/Iron-Wolf/Iron-Wolf.github.io/master/writing/metroid_dread/metroid_prime_1_boss.png" width="80%"> |
 |:--:| 
 | *Ce Boss m'aura marqué* |
 
