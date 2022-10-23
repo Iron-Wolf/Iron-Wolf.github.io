@@ -28,6 +28,13 @@
     "lng": -1.6765000
   },
   {
+    "name": "Ramen Ya ?",
+    "emoji": "🍜",
+    "url": "https://www.ramenya.fr/",
+    "lat": 48.1143659, 
+    "lng": -1.6791215 
+  },
+  {
     "name": "Ouzh-Taol",
     "emoji": "🥞",
     "url": "",
@@ -43,13 +50,13 @@
   },
   {
     "name": "Avec",
-    "emoji": "🍔",
+    "emoji": "🍻",
     "url": "http://avec-rennes.com/",
     "lat": 48.0964392,
     "lng": -1.6346714
   },
   {
-    "name": "Les Trois Brasseurs ?",
+    "name": "Les Trois Brasseurs",
     "emoji": "🍻",
     "url": "https://restaurants.3brasseurs.com/fr/3-brasseurs-rennes",
     "lat": 48.13184,
@@ -61,6 +68,20 @@
     "url": "https://le-haricot-rouge-rennes.business.site/",
     "lat": 48.1105183,
     "lng": -1.6785702
+  },
+  {
+    "name": "Les Darons",
+    "emoji": "🍲",
+    "url": "https://fr-fr.facebook.com/bistrolesdarons/",
+    "lat": 48.1107141, 
+    "lng": -1.6781730
+  },
+  {
+    "name": "Mirlitantouille",
+    "emoji": "🍲",
+    "url": "",
+    "lat": 48.1115250, 
+    "lng": -1.6855042
   },
   {
     "name": "Poutinebros",
@@ -162,7 +183,7 @@
   },
   {
     "name": "Le Royal  ?",
-    "emoji": "🍔",
+    "emoji": "🍷",
     "url": "https://www.bar-leroyal.fr/",
     "lat": 48.1107584,
     "lng": -1.6810624
