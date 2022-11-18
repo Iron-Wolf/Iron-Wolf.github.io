@@ -20,7 +20,9 @@ var map = L.map('map', {
 // add a simple tile layer
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  subdomains: ['a', 'b', 'c']
+  subdomains: ['a', 'b', 'c'],
+  maxNativeZoom: 19, // max value authorized by the leaflet API, to retrieve the map tiles
+  maxZoom: 20 // allow to zoom beyond the maxNativeZoom (but image will be blurred)
 }).addTo(map);
 
 // =======================

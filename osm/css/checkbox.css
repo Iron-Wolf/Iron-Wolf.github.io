@@ -1,0 +1,59 @@
+:root {
+  --boxAndTextSize: 20px;
+}
+
+.box {
+    width: calc(var(--boxAndTextSize) * 8);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.box label {
+    font-size: var(--boxAndTextSize);
+    color: #4d4d4d;
+    position: absolute;
+    z-index: 10;
+    padding-left: calc(var(--boxAndTextSize) * 2);
+    cursor: pointer;
+}
+.box input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+.box input:checked ~ .check {
+    border-color: #00ea90;
+    box-shadow: 0px 0px 0px 15px #00ea90 inset;
+}
+.box input:checked ~ .check::after {
+    opacity: 1;
+    transform: scale(1);
+}
+.box .check {
+    width: var(--boxAndTextSize);
+    height: var(--boxAndTextSize);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 2px solid #00ea90;
+    box-shadow: 0px 0px 0px 0px #00ea90 inset;
+    transition: all 0.15s cubic-bezier(.57,0,.25,1)
+}
+.box .check::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    transform: scale(0);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-delay: 0.2s !important;
+    transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+}

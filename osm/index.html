@@ -9,15 +9,16 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
   <!-- our custom CSS -->
-  <link rel="stylesheet" href="pageStyle.css">
-  <link rel="stylesheet" href="markerStyle.css">
+  <link rel="stylesheet" href="css/pageStyle.css"/>
+  <link rel="stylesheet" href="css/markerStyle.css"/>
+  <link rel="stylesheet" href="css/checkbox.css"/>
 </head>
 
 <body>
   <div class="inline-div">
     <h1>Ping <span class="sub-header rainbow">for Rennes</span></h1>
     <div class="content">
-      <div><b>P</b>ing <b>i</b>s <b>n</b>ot <b>g</b>oogle, but you can still find some valuable content here.</div>
+      <div><b>P</b>ing <b>i</b>s <b>n</b>ot <b>g</b>oogle but it's still usefull, I gess.</div>
       <div style="display: flex;">
         <a href="http://vanilla-js.com/" target="_blank" style="margin-right: 10px;">
           <img src="https://img.shields.io/badge/Languages-Vanilla%20JS-blueviolet">
@@ -29,18 +30,27 @@
     </div>
   </div>
 
-  <div style="float: right;">
-    <div>
-      <input type="checkbox" id="restId" name="restaurant" onchange="toggleRestaurantCheckbox(this)" />
-      <label for="restId">Restaurant</label>
+  <div class="mainContainer">
+    <div id="checkMenuId">
+      <div class="box">
+        <input type="checkbox" id="restId" name="restaurant" onchange="toggleRestaurantCheckbox(this)" />
+        <span class="check"></span>
+        <label for="restId">Restaurant</label>
+      </div>
+      <div class="box">
+        <input type="checkbox" id="parkingId" name="parking" onchange="toggleParkingCheckbox(this)" />
+        <span class="check"></span>
+        <label for="parkingId">Parking</label>
+      </div>
+      <!-- <div class="box">
+        <input id="activityId" type="checkbox">
+        <span class="check"></span>
+        <label for="activityId">Sorties</label>
+      </div> -->
     </div>
-    <div>
-      <input type="checkbox" id="parkingId" name="parking" onchange="toggleParkingCheckbox(this)" />
-      <label for="parkingId">Parking</label>
-    </div>
+    <div id="map"></div>
   </div>
 
-  <div id="map" style="height: 90%;"></div>
   <script type='text/javascript' src='js/main.js'></script>
   <script type='text/javascript' src='js/functions.js'></script>
   <script type='text/javascript' src='ressources/leaflet-color-markers/js/leaflet-color-markers.js'></script>
