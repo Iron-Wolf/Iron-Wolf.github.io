@@ -1,3 +1,14 @@
+:root {
+  --borderRadius: 20px;
+}
+
+body {
+  height: 100%; /* need this to have the gradient all the way down, on the page */
+  /*background-color: lightblue;*/
+  background-image: linear-gradient(lightblue 0%, orchid 100%);
+}
+
+
 /* -------------------- */
 /*  class : inline-div  */
 /* -------------------- */
@@ -10,7 +21,7 @@
   font-size: 50%;
   /* rotation */
   display: inline-block; 
-  transform: rotate(-25deg);
+  transform: rotate(-20deg);
   /* left offset */
   position: relative;
   left: -30px;
@@ -36,28 +47,30 @@
 .mainContainer #map{
   width: 100%;
   height: 100%;
+  border-radius: var(--borderRadius);
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .mainContainer #checkMenuId {
+  border-radius: 0 var(--borderRadius) 0 var(--borderRadius);
   position: absolute;
   z-index: 401;
   background-color: whitesmoke;
   top: 0;
   right: 0;
-  margin-top: 10;
+  /*margin-top: 10;*/
 }
 
 /* ----------------- */
 /*  class : rainbow  */
 /* ----------------- */
 .rainbow {
-  animation: colorRotate 2s linear 0s infinite;
+  animation: colorRotateKf 2s linear 0s infinite;
 }
 
-@keyframes colorRotate {
+@keyframes colorRotateKf {
   from {
     color: #6666ff;
   }
@@ -73,4 +86,34 @@
   100% {
     color: #6666ff;
   }
+}
+
+/* --------------------- */
+/*  class : zoom-in-out  */
+/* --------------------- */
+.zoom-in-out {
+  animation: zoomInOutKf 1s ease-in-out infinite;
+}
+
+@keyframes zoomInOutKf {
+  50% {
+    transform: scale(1.5, 1.5);
+    rotate: -20deg; /* same value as in the .sub-header class */
+  }
+}
+
+/* --------------------- */
+/*  class : rotating  */
+/* --------------------- */
+.rotating {
+  animation-name: rotateKf;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+@keyframes rotateKf {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

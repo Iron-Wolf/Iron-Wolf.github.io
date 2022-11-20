@@ -1,5 +1,5 @@
 :root {
-  --boxAndTextSize: 20px;
+  --boxAndTextSize: 3rem;
 }
 
 .box {
@@ -24,7 +24,9 @@
 }
 .box input:checked ~ .check {
     border-color: #00ea90;
-    box-shadow: 0px 0px 0px 15px #00ea90 inset;
+    /* with the REM unit, we divide the value of the variable by 2, 
+    to have a smooth transition */
+    box-shadow: 0px 0px 0px calc(var(--boxAndTextSize) / 2) #00ea90 inset;
 }
 .box input:checked ~ .check::after {
     opacity: 1;

@@ -9,6 +9,22 @@ This new behavior is enabled by default using the 'privacy.file_unique_origin' p
 */
 
 // =======================
+//    INIT RAINBOW TEXT
+// =======================
+var greetings = [
+  "Light mode 4 ever",
+  "Dark mode is ****",
+  "OMG !",
+  "Made with ❤️",
+  "Adopt a 🐧",
+  "Tested on Linux",
+  "Need help ?",
+  "CSS4 isn't a thing"
+];
+var greetingId = Math.floor(Math.random() * greetings.length);
+document.getElementById('rainbowTextId').innerHTML = greetings[greetingId];
+
+// =======================
 //        INIT MAP
 // =======================
 // create a new map, assigns it to the ‘map’ div and sets some options
@@ -34,10 +50,53 @@ var lgParking = L.layerGroup();
 // =======================
 //        METHODS
 // =======================
+
+// Set the speed outside of the function, because it's
+// not possible to change speed on mid-animation in CSS.
+// We need to use a JS lib or create our own custom animation.
+var randomSpeed = getRandomFloat(0.1, 2, 2);
+function getRandomFloat(min, max, decimals) {
+  const str = (Math.random() * (max - min) + min).toFixed(decimals);
+  return parseFloat(str);
+}
+
+var audio;
+/**
+ * Add the rotation to the child element (otherwise, 
+ * the mouse will be outside the element, as it rotates, because
+ * of the rectangle shape).
+ * The rotation is applied with a random speed, and use 
+ * the existing "rotateKf" KeyFrame in the CSS file.
+ * @param {*} element Element where mouse is positionned
+ */
+function spibidiStart(element) {
+  // start animation
+  element.children[0].style.animationDuration = randomSpeed + "s";
+  element.children[0].style.animationPlayState = "running";
+
+  // start audio
+  var audioList = [
+    "https://www.myinstants.com/media/sounds/r2d2_scream_converted.mp3",
+    "https://www.myinstants.com/media/sounds/r2d2.swf.mp3",
+    "https://www.myinstants.com/media/sounds/r2d2-doesnt-feel-that-good.mp3",
+    "https://www.myinstants.com/media/sounds/processing-r2d2.mp3",
+    "https://www.myinstants.com/media/sounds/r2d2-excited.mp3",
+    "https://www.myinstants.com/media/sounds/r2d2-laugh.mp3"
+  ];
+  var audioId = Math.floor(Math.random() * audioList.length);
+  audio = new Audio(audioList[audioId]);
+  audio.play(); 
+}
+
+function spibidiStop(element) {
+  element.children[0].style.animationPlayState = "paused";
+  audio.pause();
+}
+
 /**
  * Add markers to the layerGroup if it's empty,
  * then toggle it's visibility
- * @param {*} element
+ * @param {*} element The input checkbox
  */
 function toggleRestaurantCheckbox(element) {
   if (element.type != "checkbox") {
@@ -63,7 +122,7 @@ function toggleRestaurantCheckbox(element) {
 
 /**
  * Add or remove elements in the layerGroup
- * @param {*} element
+ * @param {*} element The input checkbox
  */
 function toggleParkingCheckbox(element) {
   if (element.type != "checkbox") {

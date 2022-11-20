@@ -16,7 +16,13 @@
 
 <body>
   <div class="inline-div">
-    <h1>Ping <span class="sub-header rainbow">for Rennes</span></h1>
+    <span onmouseenter="spibidiStart(this)" onmouseleave="spibidiStop(this)">
+      <h1 class="rotating">Ping 
+        <span class="sub-header zoom-in-out rainbow">
+          <span id="rainbowTextId" class=" rainbow">For Rennes</span>
+        </span>
+      </h1>
+    </span>
     <div class="content">
       <div><b>P</b>ing <b>i</b>s <b>n</b>ot <b>g</b>oogle but it's still usefull, I gess.</div>
       <div style="display: flex;">
@@ -33,9 +39,9 @@
   <div class="mainContainer">
     <div id="checkMenuId">
       <div class="box">
-        <input type="checkbox" id="restId" name="restaurant" onchange="toggleRestaurantCheckbox(this)" />
+        <input type="checkbox" id="restaurantId" name="restaurant" onchange="toggleRestaurantCheckbox(this)" />
         <span class="check"></span>
-        <label for="restId">Restaurant</label>
+        <label for="restaurantId">Restaurant</label>
       </div>
       <div class="box">
         <input type="checkbox" id="parkingId" name="parking" onchange="toggleParkingCheckbox(this)" />
