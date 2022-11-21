@@ -17,9 +17,13 @@ var greetings = [
   "OMG !",
   "Made with ❤️",
   "Adopt a 🐧",
+  "Fork me 🍴",
   "Tested on Linux",
+  "Tested on Firefox",
   "Need help ?",
-  "CSS4 isn't a thing"
+  "CSS4 isn't a thing",
+  "Lezgongue",
+  "La légendre"
 ];
 var greetingId = Math.floor(Math.random() * greetings.length);
 document.getElementById('rainbowTextId').innerHTML = greetings[greetingId];
@@ -54,7 +58,7 @@ var lgParking = L.layerGroup();
 // Set the speed outside of the function, because it's
 // not possible to change speed on mid-animation in CSS.
 // We need to use a JS lib or create our own custom animation.
-var randomSpeed = getRandomFloat(0.1, 2, 2);
+var randomSpeed = getRandomFloat(0.1, 1, 2);
 function getRandomFloat(min, max, decimals) {
   const str = (Math.random() * (max - min) + min).toFixed(decimals);
   return parseFloat(str);
@@ -85,7 +89,16 @@ function spibidiStart(element) {
   ];
   var audioId = Math.floor(Math.random() * audioList.length);
   audio = new Audio(audioList[audioId]);
-  audio.play(); 
+
+  var promise = audio.play();
+  if (promise) {
+    //Older browsers may not return a promise, according to the MDN website
+    promise.catch(function(error) { 
+      alert("😲 Experience d'utilisation non optimale 😲\n" +
+        "Il semblerais que la lecture automatique des média soit désactivée.\n" +
+        "Pensez à les réactiver, pour profiter de la meilleur experience possible !");
+    });
+  }
 }
 
 function spibidiStop(element) {

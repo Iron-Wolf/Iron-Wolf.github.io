@@ -1,10 +1,17 @@
 :root {
-  --borderRadius: 20px;
+  --borderMapRadius: 20px;
 }
 
-body {
-  height: 100%; /* need this to have the gradient all the way down, on the page */
-  /*background-color: lightblue;*/
+/* 
+DOCTYPE switches rendering from quirks to standards mode.
+In this mode, the html and body elements do not default 
+to 100% of the size of the viewport (browser window).
+So we have to specify height to 100%.
+More info here : 
+https://stackoverflow.com/questions/1966300/height-100-is-not-working-in-html-when-using-doctype/1966377#1966377
+ */
+html, body { 
+  height: 100%;
   background-image: linear-gradient(lightblue 0%, orchid 100%);
 }
 
@@ -47,14 +54,14 @@ body {
 .mainContainer #map{
   width: 100%;
   height: 100%;
-  border-radius: var(--borderRadius);
+  border-radius: var(--borderMapRadius);
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .mainContainer #checkMenuId {
-  border-radius: 0 var(--borderRadius) 0 var(--borderRadius);
+  border-radius: 0 var(--borderMapRadius) 0 var(--borderMapRadius);
   position: absolute;
   z-index: 401;
   background-color: whitesmoke;

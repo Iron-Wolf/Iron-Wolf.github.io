@@ -62,15 +62,16 @@ function addParkingMarkers(jsonArray, layerGroup) {
 function addMarker(lat, lng, customIcon, popupContent, layerGroup) {
   var usableIcon = customIcon;
 
-  if (typeof customIcon === typeof "") {
-    // customIcon is a string, we convert it to a usable object
+  /* Replaced by "getEmojiIcon" method (keep here for reference) */
+  /*if (typeof customIcon === typeof "") {
+    // CustomIcon is a string, we need to convert it to a usable object
     usableIcon = L.divIcon({
       html: `<div class="emoji-marker">${customIcon}</div>`,
       iconSize: [30, 42],
       iconAnchor: [15, 42], // half of width + height
       popupAnchor: [0, -30] // popup on top
     });
-  }
+  }*/
 
   var markerOptions = {
     icon: usableIcon
