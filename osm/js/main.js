@@ -120,7 +120,7 @@ function toggleRestaurantCheckbox(element) {
   if (element.checked) {
     if (lgRestaurant.getLayers().length === 0) {
       // our layerGroup is empty, we load data from the file
-      fetch("./ressources/data/restaurant.json")
+      fetch("./resources/data/restaurant.json")
         .then(response => { return response.json(); })
         .then(data => addRestaurantMarkers(data, lgRestaurant));
     }

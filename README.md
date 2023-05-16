@@ -11,7 +11,7 @@ URL : [https://iron-wolf.github.io/osm/index.html](https://iron-wolf.github.io/o
 ## Local test
 To test localy and avoid CORS errors, use a simple HTTP server : `python3 -m http.server`
 
-## Ressources :
+## Resources :
 - Leaflet icons from [leaflet-color-markers](https://github.com/pointhi/leaflet-color-markers) repo
 
 
