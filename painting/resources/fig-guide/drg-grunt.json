@@ -1,0 +1,17 @@
+[
+  {
+    "section":"shell",
+    "paint":[
+      "b-sld",
+      "s-ae"
+    ]
+  },
+  {
+    "section":"flesh",
+    "paint":[
+      "b-mb",
+      "s-ae",
+      "b-mb"
+    ]
+  }
+]

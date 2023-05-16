@@ -9,7 +9,7 @@ URL : [https://iron-wolf.github.io/osm/index.html](https://iron-wolf.github.io/o
 - [ ] Add [bicycle pump](https://data.rennesmetropole.fr/explore/dataset/stations-reparation-velo/information/?location=12,48.10663,-1.66082&basemap=0a029a) locations. 
 
 ## Local test
-To test localy and avoid CORS errors, use a simple HTTP server : `python3 -m http.server`
+To test localy and avoid CORS errors, use a simple HTTP server (in the root folder) : `python3 -m http.server`
 
 ## Resources :
 - Leaflet icons from [leaflet-color-markers](https://github.com/pointhi/leaflet-color-markers) repo
