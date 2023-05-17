@@ -10,7 +10,7 @@ fetch(`${pathImg}/all-ref.json`)
     // loop on each string
     data.forEach(paintName => {
       var fullPathImg = `${pathImg}/${paintName}.png`
-      divColorGuide.innerHTML += `<img src=${fullPathImg} title=${paintName} width=${imgSize} height=${imgSize}/>`
+      divColorRef.innerHTML += `<img src=${fullPathImg} title=${paintName} width=${imgSize} height=${imgSize}/>`
     });
   });
 

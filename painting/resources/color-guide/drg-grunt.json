@@ -2,16 +2,16 @@
   {
     "section":"shell",
     "paints":[
-      "b-sld",
-      "s-ae"
+      "b_steel-legion-drab",
+      "s_agrax-earthshade"
     ]
   },
   {
     "section":"flesh",
     "paints":[
-      "b-mb",
-      "s-ae",
-      "b-mb"
+      "b_morghast-bone",
+      "s_agrax-earthshade",
+      "b_morghast-bone"
     ]
   }
 ]
