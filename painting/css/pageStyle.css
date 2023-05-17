@@ -1,0 +1,10 @@
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
+}

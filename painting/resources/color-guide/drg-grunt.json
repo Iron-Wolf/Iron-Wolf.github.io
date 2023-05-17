@@ -10,8 +10,14 @@
     "section":"flesh",
     "paints":[
       "b_morghast-bone",
-      "s_agrax-earthshade",
-      "b_morghast-bone"
+      "s_agrax-earthshade"
+    ]
+  },
+  {
+    "section":"claw",
+    "paints":[
+      "b_corax-white",
+      "s_agrax-earthshade"
     ]
   }
 ]
