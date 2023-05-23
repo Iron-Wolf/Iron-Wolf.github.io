@@ -1,3 +1,7 @@
+// +------------+
+// | Color Algo |
+// +------------+
+
 /**
  * Use browser to determine the dominant color.
  * Source : https://stackoverflow.com/a/65986420
@@ -95,10 +99,4 @@ function getColorsFreq(imgEl) {
   });
   //const maxKey = _.max(Object.keys(obj), o => obj[o]); // alternate ES6 notation (with Underscore)
   return maxKey;
-}
-
-function rgbToHex(r, g, b) {
-  if (r > 255 || g > 255 || b > 255)
-    throw "Invalid color component";
-  return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
 }
