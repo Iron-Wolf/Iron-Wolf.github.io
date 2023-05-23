@@ -23,6 +23,11 @@ URL : [https://iron-wolf.github.io/osm/index.html](https://iron-wolf.github.io/o
 Goal : personal color referential for miniatures  
 URL : https://iron-wolf.github.io/painting
 
+## Todo
+- [x] Add colors system and color detection
+- [ ] filter color by name, hex name, ...
+- [ ] found official color code (if possible)
+
 
 # Writing
 Goal : need to get stuff out of my head (in french)  
