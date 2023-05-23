@@ -2,7 +2,7 @@ var divColorRef = document.getElementById("colorRef");
 var divColorGuide = document.getElementById("colorGuide");
 var pathImg = "./resources/color-ref"
 var pathGuide = "./resources/color-guide"
-var imgSize = "100px"
+var imgSize = 100
 
 // +-----------------+
 // | Color Reference |
@@ -12,12 +12,28 @@ fetch(`${pathImg}/all-ref.json`)
   .then(data => {
     // loop on each string
     data.forEach(paintName => {
-      var fullPathImg = `${pathImg}/${paintName}.svg`
-      divColorRef.innerHTML += 
-        `<figure>
-          <img src=${fullPathImg} width=${imgSize} height=${imgSize}/>
-          <figcaption>${paintName}</figcaption>
-        </figure>`
+      const fullPathImg = `${pathImg}/${paintName}.png`;
+
+      // construct each color block
+      const fig = document.createElement("figure");
+      const img = new Image();
+      img.src = fullPathImg;
+      img.height = imgSize;
+      const figCapt = document.createElement("figcaption");
+      figCapt.append(paintName);
+
+      fig.appendChild(img);
+      fig.appendChild(figCapt);
+      divColorRef.appendChild(fig);
+
+      // wait the loading of the image, to use it inside a canvas
+      img.onload = function () {
+        const colors = document.createElement("div");
+        colors.append(getColorByBrowser(img));
+        colors.append(`\n` + getAverageRGB(img));
+        colors.append(`\n` + getColorsFreq(img));
+        fig.appendChild(colors);
+      };
     });
   });
 
@@ -33,7 +49,7 @@ fetch(`${pathGuide}/drg-grunt.json`)
       // loop on paint IDs (to retrieve the images)
       element.paints.forEach(paintName => {
         var fullPathImg = `${pathImg}/${paintName}.svg`
-        divColorGuide.innerHTML += `<img src=${fullPathImg} title=${paintName} width=${imgSize} height=${imgSize}/>`
+        divColorGuide.innerHTML += `<img src=${fullPathImg} title=${paintName} height=${imgSize}/>`
       })
       divColorGuide.innerHTML += "<br/>"
     });
