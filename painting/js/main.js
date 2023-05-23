@@ -1,12 +1,54 @@
-var divColorRef = document.getElementById("colorRef");
-var divColorGuide = document.getElementById("colorGuide");
-var pathImg = "./resources/color-ref"
-var pathGuide = "./resources/color-guide"
-var imgSize = 100
+const divColorRef = document.getElementById("colorRef");
+const divColorGuide = document.getElementById("colorGuide");
+const pathImg = "./resources/color-ref";
+const pathGuide = "./resources/color-guide";
+const imgSize = 100;
 
 // +-----------------+
 // | Color Reference |
 // +-----------------+
+function orderByName() {
+  orderColorRef("figcaption");
+}
+
+function orderByHexBrowser() {
+  orderColorRef("div[id='1']");
+}
+
+function orderByHexAverage() {
+  orderColorRef("div[id='2']");
+}
+
+function orderByHexFreq() {
+  orderColorRef("div[id='3']");
+}
+
+function orderColorRef(selectorStr) {
+  // get all <figure> tag elements
+  const colors = divColorRef.querySelectorAll("figure");
+
+  // convert to an array (to use the sort method)
+  const colorsArray = Array.prototype.slice.call(colors, 0);
+
+  const colorsOrdered = colorsArray.sort(function (a, b) {
+    const nameA = a.querySelector(selectorStr).innerHTML;
+    const nameB = b.querySelector(selectorStr).innerHTML;
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
+
+  // clean and add the ordered list
+  divColorRef.innerHTML = null;
+  colorsOrdered.forEach(function (item, index) {
+    divColorRef.append(item.cloneNode(true));
+  });
+}
+
 fetch(`${pathImg}/all-ref.json`)
   .then(response => { return response.json(); })
   .then(data => {
@@ -28,11 +70,18 @@ fetch(`${pathImg}/all-ref.json`)
 
       // wait the loading of the image, to use it inside a canvas
       img.onload = function () {
-        const colors = document.createElement("div");
-        colors.append(getColorByBrowser(img));
-        colors.append(`\n` + getAverageRGB(img));
-        colors.append(`\n` + getColorsFreq(img));
-        fig.appendChild(colors);
+        const color1 = document.createElement("div");
+        color1.setAttribute("id", "1");
+        color1.append(getColorByBrowser(img));
+        fig.appendChild(color1);
+        const color2 = document.createElement("div");
+        color2.setAttribute("id", "2");
+        color2.append(getAverageRGB(img));
+        fig.appendChild(color2);
+        const color3 = document.createElement("div");
+        color3.setAttribute("id", "3");
+        color3.append(getColorsFreq(img));
+        fig.appendChild(color3);
       };
     });
   });
@@ -48,7 +97,7 @@ fetch(`${pathGuide}/drg-grunt.json`)
       divColorGuide.innerHTML += element.section
       // loop on paint IDs (to retrieve the images)
       element.paints.forEach(paintName => {
-        var fullPathImg = `${pathImg}/${paintName}.svg`
+        var fullPathImg = `${pathImg}/${paintName}.png`
         divColorGuide.innerHTML += `<img src=${fullPathImg} title=${paintName} height=${imgSize}/>`
       })
       divColorGuide.innerHTML += "<br/>"

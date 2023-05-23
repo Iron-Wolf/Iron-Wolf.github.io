@@ -12,8 +12,6 @@ function getColorByBrowser(imgEl) {
   //get pixel color
   const i = ctx.getImageData(0, 0, 1, 1).data;
 
-  //console.log(`rgba(${i[0]},${i[1]},${i[2]},${i[3]})`);
-  //console.log("#" + ((1 << 24) + (i[0] << 16) + (i[1] << 8) + i[2]).toString(16).slice(1));
   return rgbToHex(i[0], i[1], i[2]);
 }
 
@@ -102,5 +100,5 @@ function getColorsFreq(imgEl) {
 function rgbToHex(r, g, b) {
   if (r > 255 || g > 255 || b > 255)
     throw "Invalid color component";
-  return ((r << 16) | (g << 8) | b).toString(16);
+  return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
 }
