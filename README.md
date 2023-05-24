@@ -25,7 +25,7 @@ URL : https://iron-wolf.github.io/painting
 
 ## Todo
 - [x] Add colors system and color detection
-- [ ] filter color by name, hex name, ...
+- [x] filter color by name, hex name, ...
 - [ ] found official color code (if possible)
 
 

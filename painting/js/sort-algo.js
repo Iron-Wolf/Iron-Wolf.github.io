@@ -1,5 +1,5 @@
-function alphaNumSort(colorsArray, selectorStr) {
-  return colorsArray.sort(function (a, b) {
+function alphaNumSort(figsArray, selectorStr) {
+  return figsArray.sort(function (a, b) {
     const nameA = a.querySelector(selectorStr).innerHTML;
     const nameB = b.querySelector(selectorStr).innerHTML;
     if (nameA < nameB) {
@@ -14,7 +14,7 @@ function alphaNumSort(colorsArray, selectorStr) {
 
 
 // Color sorting algo from : https://tomekdev.com/posts/sorting-colors-in-js
-function sortWithClusters(colorsArray, selectorStr) {
+function sortWithClusters(figsArray, selectorStr) {
   // reset cluster for each call
   const clusters = [
     { name: 'red', leadColor: [255, 0, 0], colors: [] },
@@ -32,7 +32,7 @@ function sortWithClusters(colorsArray, selectorStr) {
     { name: 'grey', leadColor: [235, 235, 235], colors: [] }
   ];
 
-  colorsArray.forEach((color) => {
+  figsArray.forEach((color) => {
     let minDistance;
     let minDistanceClusterIndex;
     const rgb = hexToRgb(color.querySelector(selectorStr).innerHTML);

@@ -8,7 +8,7 @@ const imgSize = 100;
 // | Color Reference |
 // +-----------------+
 function orderByName() {
-  renderAlphaNumOrder("figcaption");
+  renderAlphaNumOrder("figcaption > div[id='paintName']");
 }
 
 function orderByHexBrowser() {
@@ -25,35 +25,54 @@ function orderByHexFreq() {
 
 function renderAlphaNumOrder(selectorStr) {
   // get all <figure> tag elements
-  const colors = divColorRef.querySelectorAll("figure");
+  const figsNodeList = divColorRef.querySelectorAll("figure");
 
   // convert to an array (to use the sort method)
-  const colorsArray = Array.prototype.slice.call(colors, 0);
+  const figsArray = Array.prototype.slice.call(figsNodeList, 0);
 
-  const colorsOrdered = alphaNumSort(colorsArray, selectorStr);
+  const figsOrdered = alphaNumSort(figsArray, selectorStr);
 
   // clean and add the ordered list
   divColorRef.innerHTML = null;
-  colorsOrdered.forEach(function (item, index) {
-    divColorRef.append(item.cloneNode(true));
+  figsOrdered.forEach(function (figItem, index) {
+    cleanBackground(figItem);
+    divColorRef.append(figItem.cloneNode(true));
   });
 }
 
 function renderClustersOrder(selectorStr) {
   // get all <figure> tag elements
-  const colors = divColorRef.querySelectorAll("figure");
+  const figsNodeList = divColorRef.querySelectorAll("figure");
 
   // convert to an array (to use the sort method)
-  const colorsArray = Array.prototype.slice.call(colors, 0);
+  const figsArray = Array.prototype.slice.call(figsNodeList, 0);
 
-  const clusters = sortWithClusters(colorsArray, selectorStr);
+  const clusters = sortWithClusters(figsArray, selectorStr);
 
   // clean and add the ordered list
   divColorRef.innerHTML = null;
   clusters.forEach(function (item, index) {
-    item.colors.forEach(function (item, index) {
-      divColorRef.append(item.cloneNode(true));
+    item.colors.forEach(function (figItem, index) {
+      cleanBackground(figItem);
+
+      // get color from div (of the selected algo)
+      const hexColor = figItem.querySelector(selectorStr).innerHTML;
+      // set background color
+      figItem.querySelector(selectorStr).style.background = hexColor;
+      // add to main div wrapper
+      divColorRef.append(figItem.cloneNode(true));
     });
+  });
+}
+
+/** 
+ * clean background color from all div
+ */
+function cleanBackground(figItem) {
+  // clean background from all div
+  const divsColor = figItem.querySelectorAll("figcaption > div[id]");
+  divsColor.forEach((divItem) => {
+    divItem.style.background = null;
   });
 }
 
@@ -65,32 +84,36 @@ fetch(`${pathImg}/all-ref.json`)
     data.forEach(paintName => {
       const fullPathImg = `${pathImg}/${paintName}.png`;
 
-      // construct each color block
+      // construct each <figure> block
       const fig = document.createElement("figure");
+      divColorRef.appendChild(fig);
+
       const img = new Image();
       img.src = fullPathImg;
       img.height = imgSize;
-      const figCapt = document.createElement("figcaption");
-      figCapt.append(paintName);
-
       fig.appendChild(img);
+
+      const figCapt = document.createElement("figcaption");
+      const divName = document.createElement("div");
+      divName.setAttribute("id", "paintName");
+      divName.append(paintName);
+      figCapt.append(divName);
       fig.appendChild(figCapt);
-      divColorRef.appendChild(fig);
 
       // wait the loading of the image, to use it inside a canvas
       img.onload = function () {
         const color1 = document.createElement("div");
         color1.setAttribute("id", "1");
         color1.append(getColorByBrowser(img));
-        fig.appendChild(color1);
+        figCapt.appendChild(color1);
         const color2 = document.createElement("div");
         color2.setAttribute("id", "2");
         color2.append(getAverageRGB(img));
-        fig.appendChild(color2);
+        figCapt.appendChild(color2);
         const color3 = document.createElement("div");
         color3.setAttribute("id", "3");
         color3.append(getColorsFreq(img));
-        fig.appendChild(color3);
+        figCapt.appendChild(color3);
       };
     });
   });
