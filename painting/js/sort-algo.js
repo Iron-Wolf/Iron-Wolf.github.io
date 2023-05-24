@@ -32,10 +32,15 @@ function sortWithClusters(figsArray, selectorStr) {
     { name: 'grey', leadColor: [235, 235, 235], colors: [] }
   ];
 
-  figsArray.forEach((color) => {
+  for (const fig of figsArray) {
     let minDistance;
     let minDistanceClusterIndex;
-    const rgb = hexToRgb(color.querySelector(selectorStr).innerHTML);
+    const divItem = fig.querySelector(selectorStr);
+    // case when no image found (hex color cannot be calculated)
+    if (divItem == null)
+      continue;
+
+    const rgb = hexToRgb(fig.querySelector(selectorStr).innerHTML);
 
     clusters.forEach((cluster, clusterIndex) => {
       const colorRgbArr = [rgb.r, rgb.g, rgb.b];
@@ -46,8 +51,8 @@ function sortWithClusters(figsArray, selectorStr) {
         minDistanceClusterIndex = clusterIndex;
       }
     });
-    clusters[minDistanceClusterIndex].colors.push(color);
-  });
+    clusters[minDistanceClusterIndex].colors.push(fig);
+  };
 
   clusters.forEach((cluster) => {
     const dim = ['white', 'grey', 'black'].includes(cluster.name) ? 'l' : 's';
