@@ -125,13 +125,17 @@ fetch(`${pathGuide}/drg-grunt.json`)
   .then(response => { return response.json(); })
   .then(data => {
     // loop on each JSON objects
-    data.forEach(element => {
-      divColorGuide.innerHTML += element.section
-      // loop on paint IDs (to retrieve the images)
-      element.paints.forEach(paintName => {
-        var fullPathImg = `${pathImg}/${paintName}.png`
-        divColorGuide.innerHTML += `<img src=${fullPathImg} title=${paintName} height=${imgSize}/>`
-      })
+    // TODO : rework this with JS objects
+    data.forEach(fig => {
+      divColorGuide.innerHTML += fig.model;
+      fig.parts.forEach(part => {
+        divColorGuide.innerHTML += `<div>${part.section}</div>`;
+        // loop on paint IDs (to retrieve the images)
+        part.paints.forEach(paintName => {
+          var fullPathImg = `${pathImg}/${paintName}.png`
+          divColorGuide.innerHTML += `<img src=${fullPathImg} title=${paintName} height=${imgSize}/>`
+        });
+      });
       divColorGuide.innerHTML += "<br/>"
     });
   });

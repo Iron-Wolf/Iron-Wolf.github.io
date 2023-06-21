@@ -1,23 +1,95 @@
 [
   {
-    "section":"shell",
-    "paints":[
-      "b_steel-legion-drab",
-      "s_agrax-earthshade"
+    "model":"Grunt",
+    "parts":[
+      {
+        "section":"shell",
+        "paints":[
+          "b_steel-legion-drab",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"flesh",
+        "paints":[
+          "b_morghast-bone",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"claw",
+        "paints":[
+          "b_corax-white",
+          "s_agrax-earthshade"
+        ]
+      }
     ]
   },
   {
-    "section":"flesh",
-    "paints":[
-      "b_morghast-bone",
-      "s_agrax-earthshade"
+    "model":"Slasher",
+    "parts":[
+      {
+        "section":"shell",
+        "paints":[
+          "b_steel-legion-drab",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"flesh",
+        "paints":[
+          "b_morghast-bone",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"claw, shell growth",
+        "paints":[
+          "b_corax-white",
+          "s_agrax-earthshade"
+        ]
+      }
     ]
   },
   {
-    "section":"claw",
-    "paints":[
-      "b_corax-white",
-      "s_agrax-earthshade"
+    "model":"Rocks",
+    "parts":[
+      {
+        "section":"rock (0, dry, dry)",
+        "paints":[
+          "b_abaddon-black",
+          "l_dawnstone",
+          "b_corax-white"
+        ]
+      }
+    ]
+  },
+  {
+    "model":"Web Spitter ??",
+    "parts":[
+      {
+        "section":"shell",
+        "paints":[
+          "vallejo_b_warlord-purple",
+          "c_luxion-purple",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"flesh (mix)",
+        "paints":[
+          "vallejo_b_warlord-purple",
+          "b_rakarth-flesh",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"claw",
+        "paints":[
+          "b_corax-white",
+          "s_agrax-earthshade"
+        ]
+      }
     ]
   }
 ]
