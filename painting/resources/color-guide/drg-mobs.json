@@ -59,7 +59,7 @@
     "model":"Stone",
     "parts":[
       {
-        "section":"rock (0, dry, dry)",
+        "section":"rocks (0, dry, dry)",
         "paints":[
           "b_abaddon-black",
           "l_dawnstone",
@@ -82,7 +82,7 @@
     ]
   },
   {
-    "model":"Web Spitter ??",
+    "model":"Web Spitter",
     "parts":[
       {
         "section": "stone base",
@@ -121,7 +121,7 @@
         "paints": []
       },
       {
-        "section":"shell (mix brown+red)",
+        "section":"shell (mix brown+red / orange)",
         "paints":[
           "b_steel-legion-drab",
           "b_mephiston-red",

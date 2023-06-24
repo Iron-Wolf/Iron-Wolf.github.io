@@ -11,4 +11,5 @@ figure figcaption {
 
 #colorGuide {
     display: flex;
+    flex-wrap: wrap;
 }
