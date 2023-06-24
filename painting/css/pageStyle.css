@@ -8,3 +8,7 @@ figure img {
 figure figcaption {
     text-align: center;
 }
+
+#colorGuide {
+    display: flex;
+}

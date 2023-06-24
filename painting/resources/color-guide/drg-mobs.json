@@ -29,6 +29,10 @@
     "model":"Slasher",
     "parts":[
       {
+        "section": "stone base",
+        "paints": []
+      },
+      {
         "section":"shell",
         "paints":[
           "b_steel-legion-drab",
@@ -52,7 +56,7 @@
     ]
   },
   {
-    "model":"Rocks",
+    "model":"Stone",
     "parts":[
       {
         "section":"rock (0, dry, dry)",
@@ -61,12 +65,29 @@
           "l_dawnstone",
           "b_corax-white"
         ]
+      },
+      {
+        "section":"nitra",
+        "paints":[
+          "b_retributor-armour",
+          "t_spiritstone-red"
+        ]
+      },
+      {
+        "section":"gold",
+        "paints":[
+          "b_retributor-armour"
+        ]
       }
     ]
   },
   {
     "model":"Web Spitter ??",
     "parts":[
+      {
+        "section": "stone base",
+        "paints": []
+      },
       {
         "section":"shell",
         "paints":[
@@ -76,7 +97,7 @@
         ]
       },
       {
-        "section":"flesh (mix)",
+        "section":"flesh (mix bases)",
         "paints":[
           "vallejo_b_warlord-purple",
           "b_rakarth-flesh",
@@ -89,6 +110,64 @@
           "b_corax-white",
           "s_agrax-earthshade"
         ]
+      }
+    ]
+  },
+  {
+    "model":"Exploder",
+    "parts":[
+      {
+        "section": "stone base",
+        "paints": []
+      },
+      {
+        "section":"shell (mix brown+red)",
+        "paints":[
+          "b_steel-legion-drab",
+          "b_mephiston-red",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"flesh",
+        "paints":[
+          "b_abaddon-black"
+        ]
+      },
+      {
+        "section":"claw",
+        "paints":[
+          "b_corax-white",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"tumors",
+        "paints":[
+          "b_averland-sunset",
+          "s_agrax-earthshade"
+        ]
+      }
+    ]
+  },
+  {
+    "model":"Spawn",
+    "parts":[
+      {
+        "section": "stone base",
+        "paints": []
+      },
+      {
+        "section":"shell",
+        "paints":[]
+      },
+      {
+        "section":"belly (glow)",
+        "paints":[]
+      },
+      {
+        "section":"wings",
+        "paints":[]
       }
     ]
   }

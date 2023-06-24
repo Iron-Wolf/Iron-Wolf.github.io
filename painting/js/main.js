@@ -35,7 +35,7 @@ function renderAlphaNumOrder(selectorStr) {
   // clean and add the ordered list
   divColorRef.innerHTML = null;
   figsOrdered.forEach(function (figItem, index) {
-    cleanBackground(figItem);
+    clearBackground(figItem);
     divColorRef.append(figItem.cloneNode(true));
   });
 }
@@ -53,7 +53,7 @@ function renderClustersOrder(selectorStr) {
   divColorRef.innerHTML = null;
   clusters.forEach(function (item, index) {
     item.colors.forEach(function (figItem, index) {
-      cleanBackground(figItem);
+      clearBackground(figItem);
 
       // get color from div (of the selected algo)
       const hexColor = figItem.querySelector(selectorStr).innerHTML;
@@ -66,10 +66,9 @@ function renderClustersOrder(selectorStr) {
 }
 
 /** 
- * clean background color from all div
+ * clear background color from all div
  */
-function cleanBackground(figItem) {
-  // clean background from all div
+function clearBackground(figItem) {
   const divsColor = figItem.querySelectorAll("figcaption > div[id]");
   divsColor.forEach((divItem) => {
     divItem.style.background = null;
@@ -121,21 +120,39 @@ fetch(`${pathImg}/all-ref.json`)
 // +-------------+
 // | Color Guide |
 // +-------------+
-fetch(`${pathGuide}/drg-grunt.json`)
+function addGridColors(data) {
+  // loop on each JSON objects
+  data.forEach(item => {
+    const divItem = document.createElement("div");
+    const divItemName = document.createElement("div");
+    divItemName.append(item.model);
+    divItemName.style.fontWeight = "bold";
+    divItem.appendChild(divItemName);
+    divItem.style.border = "1px solid lightgray";
+    // loop on parts
+    item.parts.forEach(part => {
+      const divPart = document.createElement("div");
+      const divPartName = document.createElement("div");
+      divPartName.append(part.section);
+      divPartName.style.borderTop = "1px solid lightgray";
+      divPart.append(divPartName);
+      // loop on paint IDs (to retrieve the images)
+      part.paints.forEach(paintName => {
+        var fullPathImg = `${pathImg}/${paintName}.png`
+        const img = new Image();
+        img.src = fullPathImg;
+        img.height = imgSize;
+        img.title = paintName;
+        divPart.appendChild(img);
+      });
+      divItem.appendChild(divPart);
+    });
+    divColorGuide.appendChild(divItem);
+  });
+}
+
+fetch(`${pathGuide}/drg-mobs.json`)
   .then(response => { return response.json(); })
   .then(data => {
-    // loop on each JSON objects
-    // TODO : rework this with JS objects
-    data.forEach(fig => {
-      divColorGuide.innerHTML += fig.model;
-      fig.parts.forEach(part => {
-        divColorGuide.innerHTML += `<div>${part.section}</div>`;
-        // loop on paint IDs (to retrieve the images)
-        part.paints.forEach(paintName => {
-          var fullPathImg = `${pathImg}/${paintName}.png`
-          divColorGuide.innerHTML += `<img src=${fullPathImg} title=${paintName} height=${imgSize}/>`
-        });
-      });
-      divColorGuide.innerHTML += "<br/>"
-    });
+    addGridColors(data);
   });
