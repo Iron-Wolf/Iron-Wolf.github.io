@@ -3,16 +3,16 @@
     "model":"Grunt",
     "parts":[
       {
-        "section":"shell",
+        "section":"flesh",
         "paints":[
-          "b_steel-legion-drab",
+          "b_morghast-bone",
           "s_agrax-earthshade"
         ]
       },
       {
-        "section":"flesh",
+        "section":"shell",
         "paints":[
-          "b_morghast-bone",
+          "b_steel-legion-drab",
           "s_agrax-earthshade"
         ]
       },
@@ -33,16 +33,16 @@
         "paints": []
       },
       {
-        "section":"shell",
+        "section":"flesh",
         "paints":[
-          "b_steel-legion-drab",
+          "b_morghast-bone",
           "s_agrax-earthshade"
         ]
       },
       {
-        "section":"flesh",
+        "section":"shell",
         "paints":[
-          "b_morghast-bone",
+          "b_steel-legion-drab",
           "s_agrax-earthshade"
         ]
       },
@@ -89,13 +89,6 @@
         "paints": []
       },
       {
-        "section":"shell",
-        "paints":[
-          "vallejo_b_warlord-purple",
-          "c_luxion-purple"
-        ]
-      },
-      {
         "section":"flesh (mix the bases)",
         "paints":[
           "vallejo_b_warlord-purple",
@@ -104,7 +97,52 @@
         ]
       },
       {
+        "section":"shell",
+        "paints":[
+          "vallejo_b_warlord-purple",
+          "c_luxion-purple"
+        ]
+      },
+      {
         "section":"claw",
+        "paints":[
+          "b_corax-white",
+          "s_agrax-earthshade"
+        ]
+      }
+    ]
+  },
+  {
+    "model":"Warden",
+    "parts":[
+      {
+        "section": "stone base",
+        "paints": []
+      },
+      {
+        "section":"flesh ",
+        "paints":[
+          "vallejo_b_warlord-purple",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"shell",
+        "paints":[
+          "b_rakarth-flesh",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"spherical spore emitter (mix the bases)",
+        "paints":[
+          "vallejo_b_warlord-purple",
+          "b_rakarth-flesh",
+          "s_agrax-earthshade"
+        ]
+      },
+      {
+        "section":"tooth",
         "paints":[
           "b_corax-white",
           "s_agrax-earthshade"
