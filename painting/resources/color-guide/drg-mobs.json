@@ -92,12 +92,11 @@
         "section":"shell",
         "paints":[
           "vallejo_b_warlord-purple",
-          "c_luxion-purple",
-          "s_agrax-earthshade"
+          "c_luxion-purple"
         ]
       },
       {
-        "section":"flesh (mix bases)",
+        "section":"flesh (mix the bases)",
         "paints":[
           "vallejo_b_warlord-purple",
           "b_rakarth-flesh",
