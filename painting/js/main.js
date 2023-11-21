@@ -156,3 +156,9 @@ fetch(`${pathGuide}/drg-mobs.json`)
   .then(data => {
     addGridColors(data);
   });
+
+/*fetch(`${pathGuide}/w40-ultra.json`)
+  .then(response => { return response.json(); })
+  .then(data => {
+    addGridColors(data);
+  });*/

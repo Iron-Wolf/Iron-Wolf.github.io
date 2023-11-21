@@ -1,0 +1,76 @@
+[
+  {
+    "model":"Base",
+    "parts":[
+      {
+        "section":"armor (1, 1, 000)",
+        "paints":[
+          "b_macragge-blue",
+          "s_drakenhof-nightshade",
+          "l_calgar-blue"
+        ]
+      },
+      {
+        "section":"gold part",
+        "paints":[
+          "b_retributor-armour",
+          "s_agrax-earthshade",
+          "l_stormhost-silver"
+        ]
+      },
+      {
+        "section":"metal",
+        "paints":[
+          "b_leadbelcher",
+          "s_nuln-oil"
+        ]
+      },
+      {
+        "section":"optical/lens",
+        "paints":[
+          "b_retributor-armour",
+          "t_spiritstone-red"
+        ]
+      }
+    ]
+  },
+  {
+    "model":"Misc",
+    "parts":[
+      {
+        "section":"stand",
+        "paints":[
+          "t_armageddon-dust",
+          "s_agrax-earthshade",
+          "d_tyrant_skull"
+        ]
+      },
+      {
+        "section":"purity seal",
+        "paints":[
+          "b_rakarth-flesh",
+          "s_agrax-earthshade",
+          "b_rakarth-flesh"
+        ]
+      },
+      {
+        "section":"bolter (?)",
+        "paints":[
+          "b_mephiston-red",
+          "s_nuln-oil"
+        ]
+      },
+      {
+        "section":"plasma coil",
+        "paints":[
+          "b_corax-white",
+          "c_warp-lightning"
+        ]
+      },
+      {
+        "section":"face (?)",
+        "paints":[]
+      }
+    ]
+  }
+]

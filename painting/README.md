@@ -10,3 +10,6 @@ Paint files (in paint-img folder) are named with this convention :
 - owned : tell that I have the paint (nothing) or not ("_n" is set)
   - allow me to list what i own
   - used as an image database for the website
+
+## Online ressources
+- [Painting guide for DRG](https://imgur.com/gallery/UulTULs)
