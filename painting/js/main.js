@@ -23,6 +23,28 @@ function orderByHexFreq() {
   renderClustersOrder("div[id='3']");
 }
 
+var cleanUpAllSwitch = true;
+function cleanUpUI() {
+  resetFigcaptionStyle(divColorRef);
+
+  // alternate visibility, each time button is pressed
+  var selectorString = "";
+  if (cleanUpAllSwitch) {
+    // select all to disappear
+    selectorString = "figcaption > div[id]";
+  }
+  else {
+    // select only the Hex codes
+    selectorString = "figcaption > div[id]:not(:first-child)"
+  }
+  cleanUpAllSwitch = !cleanUpAllSwitch;
+
+  const divsColor = divColorRef.querySelectorAll(selectorString);
+  divsColor.forEach((divItem) => {
+    divItem.style.display = "none";
+  });
+}
+
 function renderAlphaNumOrder(selectorStr) {
   // get all <figure> tag elements
   const figsNodeList = divColorRef.querySelectorAll("figure");
@@ -35,7 +57,7 @@ function renderAlphaNumOrder(selectorStr) {
   // clean and add the ordered list
   divColorRef.innerHTML = null;
   figsOrdered.forEach(function (figItem, index) {
-    clearBackground(figItem);
+    resetFigcaptionStyle(figItem);
     divColorRef.append(figItem.cloneNode(true));
   });
 }
@@ -53,7 +75,7 @@ function renderClustersOrder(selectorStr) {
   divColorRef.innerHTML = null;
   clusters.forEach(function (item, index) {
     item.colors.forEach(function (figItem, index) {
-      clearBackground(figItem);
+      resetFigcaptionStyle(figItem);
 
       // get color from div (of the selected algo)
       const hexColor = figItem.querySelector(selectorStr).innerHTML;
@@ -66,12 +88,13 @@ function renderClustersOrder(selectorStr) {
 }
 
 /** 
- * clear background color from all div
+ * reset style of all div
  */
-function clearBackground(figItem) {
+function resetFigcaptionStyle(figItem) {
   const divsColor = figItem.querySelectorAll("figcaption > div[id]");
   divsColor.forEach((divItem) => {
     divItem.style.background = null;
+    divItem.style.display = null;
   });
 }
 
@@ -157,8 +180,13 @@ fetch(`${pathGuide}/drg-mobs.json`)
     addGridColors(data);
   });
 
-/*fetch(`${pathGuide}/w40-ultra.json`)
+fetch(`${pathGuide}/w40-ultra.json`)
   .then(response => { return response.json(); })
   .then(data => {
+    // ultra low effort setup to create a "space" between each group
+    const divSeparator = document.createElement("div");
+    divSeparator.style.width = "100%";
+    divSeparator.style.height = "2em";
+    divColorGuide.appendChild(divSeparator);
     addGridColors(data);
-  });*/
+  });

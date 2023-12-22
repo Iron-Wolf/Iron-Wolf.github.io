@@ -68,8 +68,12 @@
         ]
       },
       {
-        "section":"face (?)",
-        "paints":[]
+        "section":"face (for black undercoat)",
+        "paints":[
+          "b_bugmans-glow",
+          "s_reikland_fleshshade",
+          "l_cadian_fleshtone"
+        ]
       }
     ]
   }
