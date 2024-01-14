@@ -177,16 +177,35 @@ function addGridColors(data) {
 fetch(`${pathGuide}/drg-mobs.json`)
   .then(response => { return response.json(); })
   .then(data => {
+    // Header of the section
+    const divSeparator = document.createElement("div");
+    divSeparator.style.width = "100%";
+    divSeparator.style.height = "2em";
+    divSeparator.innerHTML = "DRG - Mob";
+    divColorGuide.appendChild(divSeparator);
+    addGridColors(data);
+  });
+
+fetch(`${pathGuide}/drg-player.json`)
+  .then(response => { return response.json(); })
+  .then(data => {
+    // Header of the section
+    const divSeparator = document.createElement("div");
+    divSeparator.style.width = "100%";
+    divSeparator.style.height = "2em";
+    divSeparator.innerHTML = "DRG Player";
+    divColorGuide.appendChild(divSeparator);
     addGridColors(data);
   });
 
 fetch(`${pathGuide}/w40-ultra.json`)
   .then(response => { return response.json(); })
   .then(data => {
-    // ultra low effort setup to create a "space" between each group
+    // Header of the section
     const divSeparator = document.createElement("div");
     divSeparator.style.width = "100%";
     divSeparator.style.height = "2em";
+    divSeparator.innerHTML = "W40k Ultramarine";
     divColorGuide.appendChild(divSeparator);
     addGridColors(data);
   });
