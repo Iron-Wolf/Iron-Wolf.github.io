@@ -1,5 +1,4 @@
 const divColorRef = document.getElementById("colorRef");
-const divColorGuide = document.getElementById("colorGuide");
 const pathImg = "./resources/color-ref";
 const pathGuide = "./resources/color-guide";
 const imgSize = 100;
@@ -143,7 +142,9 @@ fetch(`${pathImg}/all-ref.json`)
 // +-------------+
 // | Color Guide |
 // +-------------+
-function addGridColors(data) {
+function constructAndGetGridColors(data) {
+  let allItems = new Array();
+  
   // loop on each JSON objects
   data.forEach(item => {
     const divItem = document.createElement("div");
@@ -170,42 +171,32 @@ function addGridColors(data) {
       });
       divItem.appendChild(divPart);
     });
-    divColorGuide.appendChild(divItem);
+    allItems.push(divItem);
   });
+
+  return allItems;
 }
 
 fetch(`${pathGuide}/drg-mobs.json`)
   .then(response => { return response.json(); })
   .then(data => {
-    // Header of the section
-    const divSeparator = document.createElement("div");
-    divSeparator.style.width = "100%";
-    divSeparator.style.height = "2em";
-    divSeparator.innerHTML = "DRG - Mob";
-    divColorGuide.appendChild(divSeparator);
-    addGridColors(data);
+    const divToAppend = document.getElementById("drg-mob");
+    constructAndGetGridColors(data)
+      .forEach((item) => divToAppend.appendChild(item));
   });
 
 fetch(`${pathGuide}/drg-player.json`)
   .then(response => { return response.json(); })
   .then(data => {
-    // Header of the section
-    const divSeparator = document.createElement("div");
-    divSeparator.style.width = "100%";
-    divSeparator.style.height = "2em";
-    divSeparator.innerHTML = "DRG Player";
-    divColorGuide.appendChild(divSeparator);
-    addGridColors(data);
+    const divToAppend = document.getElementById("drg-player");
+    constructAndGetGridColors(data)
+      .forEach((item) => divToAppend.appendChild(item));
   });
 
 fetch(`${pathGuide}/w40-ultra.json`)
   .then(response => { return response.json(); })
   .then(data => {
-    // Header of the section
-    const divSeparator = document.createElement("div");
-    divSeparator.style.width = "100%";
-    divSeparator.style.height = "2em";
-    divSeparator.innerHTML = "W40k Ultramarine";
-    divColorGuide.appendChild(divSeparator);
-    addGridColors(data);
+    const divToAppend = document.getElementById("w40k-ultra");
+    constructAndGetGridColors(data)
+      .forEach((item) => divToAppend.appendChild(item));
   });

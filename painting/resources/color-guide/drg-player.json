@@ -41,14 +41,84 @@
   },
   {
       "model":"Engineer",
-      "parts":[]
+      "parts":[
+        {
+          "section":"combi",
+          "paints":[
+            "b_mephiston-red"
+          ]
+        },
+        {
+          "section":"armor",
+          "paints":[
+            "b_mournfang-brown"
+          ]
+        },
+        {
+          "section":"metal",
+          "paints":[
+          ]
+        },
+        {
+          "section":"beard",
+          "paints":[
+            "b_averland-sunset"
+          ]
+        },
+        {
+          "section":"glases",
+          "paints":[
+            "b_corax-white",
+            "c_warp-lightning"
+          ]
+        },
+        {
+          "section":"face",
+          "paints":[
+          ]
+        }
+      ]
   },
   {
       "model":"Driler",
-      "parts":[]
+      "parts":[
+        {
+          "section":"armor",
+          "paints":[
+            "b_averland-sunset"
+          ]
+        }
+      ]
   },
   {
       "model":"Gunner",
-      "parts":[]
+      "parts":[
+        {
+          "section":"armor ?",
+          "paints":[
+            "l_straken-green"
+          ]
+        }
+      ]
+  },
+  {
+      "model":"Molly",
+      "parts":[
+        {
+          "section":"hull",
+          "paints":[
+          ]
+        }
+      ]
+  },
+  {
+      "model":"Resupply Pod",
+      "parts":[
+        {
+          "section":"hull",
+          "paints":[
+          ]
+        }
+      ]
   }
 ]
