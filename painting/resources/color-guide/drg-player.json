@@ -98,6 +98,24 @@
           "paints":[
             "l_straken-green"
           ]
+        },
+        {
+          "section":"leather straps (underneath)",
+          "paints":[
+            "b_steel-legion-drab"
+          ]
+        },
+        {
+          "section":"leather straps",
+          "paints":[
+            "b_mournfang-brown"
+          ]
+        },
+        {
+          "section":"clothes",
+          "paints":[
+            "b_morghast-bone"
+          ]
         }
       ]
   },
