@@ -9,7 +9,7 @@ Paint files (in paint-img folder) are named with this convention :
 - name : initials of the painting's name 
 - owned : tell that I have the paint (nothing) or not ("_n" is set)
   - allow me to list what i own
-  - used as an image database for the website
+  - simply remove the "_n" when I own the color
 
 ## Online ressources
 - [Painting guide for DRG](https://imgur.com/gallery/UulTULs)
