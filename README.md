@@ -12,6 +12,7 @@ URL : [https://iron-wolf.github.io/osm/index.html](https://iron-wolf.github.io/o
 ## Todo
 - [x] Add restaurants
 - [x] Add [parking occupation](https://data.rennesmetropole.fr/explore/dataset/export-api-parking-citedia/information/)
+- [ ] Add [HelloTrucks](https://hellotrucks.app/35-rennes) but there is not API...
 - [ ] Add [parking opening hours](https://data.rennesmetropole.fr/explore/dataset/export-api-parking-citedia/information/) ("statut" column)
 - [ ] Add [bicycle pump](https://data.rennesmetropole.fr/explore/dataset/stations-reparation-velo/information/?location=12,48.10663,-1.66082&basemap=0a029a) locations. 
 
