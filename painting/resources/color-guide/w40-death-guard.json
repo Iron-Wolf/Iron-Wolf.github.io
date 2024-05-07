@@ -16,7 +16,35 @@
         "paints":[
           "b_leadbelcher",
           "s_agrax-earthshade",
-          "s_seraphim-sepia"
+          "s_seraphim-sepia",
+          "b_leadbelcher"
+        ]
+      },
+      {
+        "section":"tentacles",
+        "paints":[
+          "b_bugmans-glow",
+          "s_agrax-earthshade",
+          "s_seraphim-sepia",
+          "b_bugmans-glow"
+        ]
+      },
+      {
+        "section":"bones",
+        "paints":[
+          "b_rakarth-flesh",
+          "s_agrax-earthshade",
+          "s_seraphim-sepia",
+          "b_rakarth-flesh"
+        ]
+      },
+      {
+        "section":"soulder pad",
+        "paints":[
+          "b_balthasar-gold",
+          "s_agrax-earthshade",
+          "s_seraphim-sepia",
+          "l_brass-scorpion"
         ]
       }
     ]

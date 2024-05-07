@@ -200,3 +200,11 @@ fetch(`${pathGuide}/w40-ultra.json`)
     constructAndGetGridColors(data)
       .forEach((item) => divToAppend.appendChild(item));
   });
+
+fetch(`${pathGuide}/w40-death-guard.json`)
+  .then(response => { return response.json(); })
+  .then(data => {
+    const divToAppend = document.getElementById("w40k-death-guard");
+    constructAndGetGridColors(data)
+      .forEach((item) => divToAppend.appendChild(item));
+  });
