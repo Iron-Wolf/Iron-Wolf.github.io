@@ -22,6 +22,10 @@ function orderByHexFreq() {
   renderClustersOrder("div[id='3']");
 }
 
+function orderByHexCustom() {
+  renderClustersOrder("div[id='4']");
+}
+
 var cleanUpAllSwitch = true;
 function cleanUpUI() {
   resetFigcaptionStyle(divColorRef);
@@ -102,7 +106,8 @@ fetch(`${pathImg}/all-ref.json`)
   .then(response => { return response.json(); })
   .then(data => {
     // loop on each string
-    data.forEach(paintName => {
+    data.forEach(paintItem => {
+      const paintName = paintItem.name;
       const fullPathImg = `${pathImg}/${paintName}.png`;
 
       // construct each <figure> block
@@ -135,6 +140,10 @@ fetch(`${pathImg}/all-ref.json`)
         color3.setAttribute("id", "3");
         color3.append(getColorsFreq(img));
         figCapt.appendChild(color3);
+        const color4 = document.createElement("div");
+        color4.setAttribute("id", "4");
+        color4.append(paintItem.hex);
+        figCapt.appendChild(color4);
       };
     });
   });

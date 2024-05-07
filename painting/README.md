@@ -12,4 +12,5 @@ Paint files (in paint-img folder) are named with this convention :
   - simply remove the "_n" when I own the color
 
 ## Online ressources
+- [citadel paint](https://spraygunner.com/collections/citadel-paint?page=2&sort_by=title-ascending)
 - [Painting guide for DRG](https://imgur.com/gallery/UulTULs)
