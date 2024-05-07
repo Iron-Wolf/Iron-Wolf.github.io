@@ -12,9 +12,7 @@
 <body>
   <a class="github-fork-ribbon" 
      href="https://github.com/Iron-Wolf/Iron-Wolf.github.io/tree/master/painting" 
-     data-ribbon="Fork me on GitHub"> 
-      View on GitHub
-  </a>
+     data-ribbon="View on GitHub"> </a>
 
   <h1>Pro Tips</h1>
   <ul>
@@ -22,6 +20,9 @@
     <li>Paint Remover : Glanzer</li>
   </ul>
 
+  <!-------------------
+  |  COLOR REFERENCE  |
+  -------------------->
   <h1>Color Reference</h1>
   <p>This section contains paintings I own (if image is present) or need (if image is absent).</p>
   <p>SVG are from : <a href="https://www.warhammer.com/fr-FR/build-and-paint-lp">Games Workshop</a></p>
@@ -46,24 +47,41 @@
   <!-- div tag from which content is added -->
   <div id="colorRef"></div>
 
+  <!-------------------
+  |    COLOR GUIDE    |
+  -------------------->
   <h1>Color Guide</h1>
-  <details>
+  <details style="background: lightgray;">
     <summary>DRG - Mob</summary>
     <!-- div tag from which content is added -->
     <div id="drg-mob" class="color-guide">
       <div style="width: 100%; height: 2em;">DRG - Mob</div>
     </div>
   </details>
+
+  <details style="background: lightblue">
+    <summary>DRG - Player</summary>
+    <!-- div tag from which content is added -->
+    <div id="drg-player" class="color-guide">
+      <div style="width: 100%; height: 2em;">DRG - Player</div>
+    </div>
+  </details>
+
+  <details style="background: lightgray;">
+    <summary>W40k Ultramarine</summary>
+    <!-- div tag from which content is added -->
+    <div id="w40k-ultra" class="color-guide">
+      <div style="width: 100%; height: 2em;">W40k Ultramarine</div>
+    </div>
+  </details>
   
-  <div id="drg-player" class="color-guide">
-    <div style="width: 100%; height: 2em;">DRG - Player</div>
-  </div>
-  <div id="w40k-ultra" class="color-guide">
-    <div style="width: 100%; height: 2em;">W40k Ultramarine</div>
-  </div>
-  <div id="w40k-death-guard" class="color-guide">
-    <div style="width: 100%; height: 2em;">W40k Death Guard</div>
-  </div>
+  <details style="background: lightblue;">
+    <summary>W40k Death Guard</summary>
+    <!-- div tag from which content is added -->
+    <div id="w40k-death-guard" class="color-guide">
+      <div style="width: 100%; height: 2em;">W40k Death Guard</div>
+    </div>
+  </details>
 
   <script type='text/javascript' src='js/color-utils.js'></script>
   <script type='text/javascript' src='js/sort-algo.js'></script>
