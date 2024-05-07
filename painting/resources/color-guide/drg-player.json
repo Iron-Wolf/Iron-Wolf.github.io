@@ -5,13 +5,15 @@
       {
         "section":"combi",
         "paints":[
-          "l_teclis-blue"
+          "l_teclis-blue",
+          "s_drakenhof-nightshade"
         ]
       },
       {
         "section":"armor",
         "paints":[
-          "b_mournfang-brown"
+          "b_mournfang-brown",
+          "s_agrax-earthshade"
         ]
       },
       {
@@ -20,16 +22,18 @@
         ]
       },
       {
-        "section":"beard (mix the bases)",
+        "section":"beard (🔁 mix the bases)",
         "paints":[
           "b_mephiston-red",
-          "b_averland-sunset"
+          "b_averland-sunset",
+          "s_seraphim-sepia"
         ]
       },
       {
         "section":"weapon",
         "paints":[
-          "l_straken-green"
+          "l_straken-green",
+          "s_nuln-oil"
         ]
       },
       {
@@ -45,13 +49,15 @@
         {
           "section":"combi",
           "paints":[
-            "b_mephiston-red"
+            "b_mephiston-red",
+            "s_agrax-earthshade"
           ]
         },
         {
           "section":"armor",
           "paints":[
-            "b_mournfang-brown"
+            "b_mournfang-brown",
+            "s_agrax-earthshade"
           ]
         },
         {
@@ -62,7 +68,8 @@
         {
           "section":"beard",
           "paints":[
-            "b_averland-sunset"
+            "b_averland-sunset",
+            "s_seraphim-sepia"
           ]
         },
         {
@@ -85,7 +92,13 @@
         {
           "section":"armor",
           "paints":[
-            "b_averland-sunset"
+            "b_averland-sunset",
+            "s_seraphim-sepia"
+          ]
+        },
+        {
+          "section":"metal",
+          "paints":[
           ]
         }
       ]
@@ -94,27 +107,31 @@
       "model":"Gunner",
       "parts":[
         {
-          "section":"armor ?",
+          "section":"armor",
           "paints":[
-            "l_straken-green"
+            "l_straken-green",
+            "s_agrax-earthshade"
           ]
         },
         {
-          "section":"leather straps (underneath)",
+          "section":"leather straps (wide format)",
           "paints":[
-            "b_steel-legion-drab"
+            "b_steel-legion-drab",
+            "s_agrax-earthshade"
           ]
         },
         {
           "section":"leather straps",
           "paints":[
-            "b_mournfang-brown"
+            "b_mournfang-brown",
+            "s_agrax-earthshade"
           ]
         },
         {
           "section":"clothes",
           "paints":[
-            "b_morghast-bone"
+            "b_morghast-bone",
+            "s_agrax-earthshade"
           ]
         }
       ]

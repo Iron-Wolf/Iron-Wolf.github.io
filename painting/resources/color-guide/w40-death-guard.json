@@ -1,0 +1,24 @@
+[
+  {
+    "model":"Plague Marine (basic)",
+    "parts":[
+      {
+        "section":"armor (🖌️1, 🖌️1, 🖌️000)",
+        "paints":[
+          "b_death-guard-green",
+          "s_agrax-earthshade",
+          "s_seraphim-sepia",
+          "l_straken-green"
+        ]
+      },
+      {
+        "section":"metal",
+        "paints":[
+          "b_leadbelcher",
+          "s_agrax-earthshade",
+          "s_seraphim-sepia"
+        ]
+      }
+    ]
+  }
+]

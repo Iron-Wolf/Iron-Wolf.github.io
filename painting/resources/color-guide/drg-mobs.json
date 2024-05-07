@@ -59,7 +59,7 @@
     "model":"Stone",
     "parts":[
       {
-        "section":"rocks (0, dry, dry)",
+        "section":"rocks (🖌️0, 🧹dry, 🧹dry)",
         "paints":[
           "b_abaddon-black",
           "l_dawnstone",
@@ -69,8 +69,7 @@
       {
         "section":"nitra",
         "paints":[
-          "b_retributor-armour",
-          "t_spiritstone-red"
+          "b_mephiston-red"
         ]
       },
       {
@@ -89,7 +88,7 @@
         "paints": []
       },
       {
-        "section":"flesh (mix the bases)",
+        "section":"flesh (🔁 mix the bases)",
         "paints":[
           "vallejo_b_warlord-purple",
           "b_rakarth-flesh",
@@ -134,7 +133,7 @@
         ]
       },
       {
-        "section":"spherical spore emitter (mix the bases)",
+        "section":"spherical spore emitter (🔁 mix the bases)",
         "paints":[
           "vallejo_b_warlord-purple",
           "b_rakarth-flesh",
