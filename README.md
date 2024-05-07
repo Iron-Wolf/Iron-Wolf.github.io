@@ -29,6 +29,9 @@ URL : https://iron-wolf.github.io/painting
 - [x] filter color by name, hex name, ...
 - [ ] found official color code (if possible)
 
+## Resources :
+- "Fork me" banner : [fork ribbon css](https://github.com/simonwhitaker/github-fork-ribbon-css)
+
 
 # Writing
 Goal : need to get stuff out of my head (in french)  
