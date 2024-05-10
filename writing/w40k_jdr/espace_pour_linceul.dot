@@ -1,0 +1,167 @@
+# http://www.jdrp.fr/article/l-espace-pour-linceul-14294,jdr-rogue-trader-223,categorie-scenarios-23.html
+# http://www.jdrp.fr/article/l-etreinte-du-soleil-noir-14302,jdr-rogue-trader-223,categorie-scenarios-23.html
+
+digraph g {
+  label="L'Espace pour Linceul"
+
+  010 [label="010: signal détresse \nEmperor's Bounty",
+          xlabel="info ignorée et vendu par \nun officier (avec fréquence vox)",
+          shape = rect
+          color=violet]
+  020 [label="020: demarches \nAdministratum ?", shape=diamond]
+  021 [label="021: acte de \nrevendication"]
+  022 [label="022: autre équipe \nsur le coup?"]
+  030 [label="030: recrutement \ndu groupe"]
+  040 [label="040: voyage \nwarp", shape=diamond]
+  041 [label="041: dommages \nvaisseau"]
+  042 [label="042: perte de contrôle \ndans le warp", shape=box, color=violet]
+  050 [label="050: détéction signal \n(nuage débris)"]
+  051 [label="051: détéction signal \n(piège)"]
+  052 [label="052: dégager le chemin \navec les canons"]
+  060 [label="060: naviguer avec \ncotre de combat", shape=diamond]
+  061 [label="061: dommages \nvaisseau"]
+  062 [label="062: Salvage \nles débris", shape=diamond]
+  070 [label="070: Emperor's Bounty"]
+  080 [label="080: sas d'accès \n(air disponible)"]
+  090 [label="090: investiguer \nle vaisseau", shape=diamond]
+  091 [label="091: passerelle fonctionne \nà plein régime"]
+  092 [label="092: cadavres mort \nd'asphyxie"]
+  100 [label="100: débloquer portes via \npasserelle commandement"]
+  110 [label="110: passerelle de \ncommandement", xlabel="traces de lutte"]
+  111 [label="111: parler au navigator", xlabel="sert à rien"]
+  120 [label="120: attaquer \nle navigator", shape=diamond]
+  122 [label="122: atmosphère se vide"]
+  124 [label="124: respawn pantins \nwarp à l'infini"]
+  121 [label="121: pas de dégat \net fuit"]
+  123 [label="123: bouclier \npsychique"]
+  130 [label="130: investiguer \nle trône", shape=diamond]
+  131 [label="131: brèche dans \nla verrière"]
+  132 [label="132: cables éléctriques \ndénudés"]
+  133 [label="133: briser vérrière \n+ déprésurisation"]
+  134 [label="134: surcharge \ndu trône", shape=diamond]
+  135 [label="135: navigator bléssé"]
+  140 [label="140: fuite du \nnavigator"]
+  150 [label="150: fuire la \npasserelle"]
+  151 [label="151: défoncer une porte \n(3 tours)"]
+  152 [label="152: panneau \nde contrôle", shape=diamond]
+  153 [label="153: conduit \n(1 tour)"]
+  160 [label="160: dédale dans \nle vaisseau", xlabel="pentins, portes scellée, ..."]
+  170 [label="170: rencontre avec PNJ"]
+  171 [label="171: mort/abandon du PNJ"]
+  180 [label="180: entrailles du vaisseau"]
+  190 [label="190: couper le lien warp \nactiver le champ Geller"]
+  191 [label="191: attendre les secours", xlabel="com vox rétabli"]
+  200 [label="200: atteindre le \ncogitateur central"]
+  201 [label="201: enmener le PNJ"]
+  210 [label="210: éveiller l'esprit \nde la machine", shape=diamond]
+  220 [label="220: 'qui \nêtes-vous ?'", shape=diamond]
+  221 [label="221: PJ se présente comme \nle capitain (déjà mort)"]
+  230 [label="230: 'pourquoi temps décalage \ndans le cogitateur ?'", shape=diamond]
+  231 [label="231: translation warp \nou un truc"]
+  240 [label="240: réactiver le \nchamp de Geller", shape=diamond]
+  241 [label="241: tester le champ \nentitée warp \n..."]
+  250 [label="250: retour sur \nla passerelle", shape=diamond]
+  251 [label="251: plan des PJ"]
+  252 [label="252: problèmes \ndiverts..."]
+  260 [label="260: attaquer le navigator \n(sans bouclier) \n(sans regen)"
+       xlabel="12 pantins warp"]
+  270 [label="270: navigator mort \nver innerte"]
+  271 [label="271: détruire \nle ver ne marche pas", shape=note]
+  272 [label="272: sort des survivants \n(vente, sauvetage, équipage)", shape=note]
+  274 [label="274: sortir le vaisseau \ndes débrits"]
+  273 [label="273: fouiller \nle vaisseau", shape=diamond]
+  280 [label="280: translation warp \n(cf : Etreinte du Soleil Noir)", shape=box, color=violet]
+  
+
+  010 -> 020
+  020:s -> 021:n [label="oui"]
+  020 -> 022 [label="echec"] {rank=same;020;022}
+  021 -> 030 [label="bonus"]
+  010 -> 030
+
+  030 -> 040
+  040 -> 041 [label="echec", color=grey] 
+  040 -> 042 {rank=same;040;041;042}
+  040 -> 050
+  040 -> 051
+  022 -> 051 [style=dashed]
+  051 -> 050
+  050 -> 060
+  050 -> 052
+  052 -> 060 [label="bonus"]
+  060 -> 070
+  060 -> 061 [label="echec", color=grey]
+  060 -> 062
+  052 -> 062 [label="malus", style=dashed]
+
+  # Aborder L’Emperor’s Bounty
+  070 -> 080
+  080 -> 090
+  090 -> 091 [label="reussite"]
+  090 -> 092 [label="reussite"] {rank=same;090;091;092}
+  090 -> 100
+  100 -> 110
+  110 -> 111 -> 120
+  110 -> 120
+
+  # Combattre le navigator
+  120 -> 121 [label="blessure"]
+  120 -> 122 {rank=same;120;122}
+  120 -> 123 [label="logique"]
+  120 -> 124
+  121 -> 130
+  123 -> 130
+  120 -> 130
+  130 -> 131
+  130 -> 132
+  131 -> 133
+  132 -> 134
+  134 -> 135 [label="réussite"]
+  133 -> 140
+  135 -> 140
+
+  # Fuir La PassereLLe
+  122 -> 150 [label="logique"]
+  130 -> 150 [label="logique"]
+  140 -> 150
+  150 -> 151
+  150 -> 152
+  150 -> 153
+  151 -> 160
+  152 -> 160
+  153 -> 160
+  160 -> 170
+  170 -> 171
+  170 -> 180
+  171 -> 180 [label="difficile"]
+
+  # Les fantômes de l’Emperor’s Bounty
+  180 -> 190
+  190 -> 191
+  190 -> 200
+  200 -> 210
+  200 -> 201
+  201 -> 210 [label="bonus"]
+  210 -> 220
+  220 -> 221
+  221 -> 230 [label="répond sans soucis"]
+  230 -> 231
+  230 -> 230 [label="ne comprend pas \nd'être éteint"]
+  231 -> 240
+  240 -> 241 [label="logique"]
+  240 -> 240 [label="autre argument"]
+
+  # Affronter Le ver
+  241 -> 250
+  250 -> 251 [label="logique"]
+  250 -> 252
+  251 -> 260
+  252 -> 260
+  260 -> 270
+  270 -> 271
+  270 -> 272
+  270 -> 274
+  274 -> 273 [label="bonus"]
+  270 -> 273
+  273 -> 280
+}
