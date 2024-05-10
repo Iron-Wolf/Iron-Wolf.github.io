@@ -9,7 +9,15 @@
   <div id="graph" style="text-align: center;"></div>
 
   <script type='text/javascript'>
-  d3.select("#graph").graphviz()
-    .renderDot('digraph  {a -> b}');
+
+    fetch('https://raw.githubusercontent.com/Iron-Wolf/Iron-Wolf.github.io/master/writing/w40k_jdr/espace_pour_linceul.dot')
+    .then(response => { return response.text(); })
+    .then(dotSrc => {
+      // doc : https://github.com/magjac/d3-graphviz/tree/master?#examples
+      d3.select("#graph")
+        .graphviz()
+        .renderDot(dotSrc);
+    });
+
   </script>
 </body>
