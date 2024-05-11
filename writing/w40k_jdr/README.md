@@ -54,5 +54,5 @@ graph TD;
     R-->VC[Vaisseau en Cavale]
     R-->PP[Patrouille Perdue]
 
-click EL "https://github.com/Iron-Wolf/Iron-Wolf.github.io/new/master/writing/w40k_jdr#lespace-pour-linceul" "tooltip"
+click EL "https://github.com/Iron-Wolf/Iron-Wolf.github.io/tree/master/writing/w40k_jdr#lespace-pour-linceul" "tooltip"
 ```
