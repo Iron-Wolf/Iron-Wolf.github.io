@@ -1,3 +1,5 @@
+⚠️ Ressources pour le JDR Warth & Glory (2nd édition) ⚠️
+
 # ToC
 - [🎲 Tableaux](#tableaux-des-rencontres)
 - [📚 Scénarios](#scénarios)
@@ -7,17 +9,18 @@
 ## Source
 [tableaux de rencontres](https://www.dakkadakka.com/dakkaforum/posts/list/493584.page)  
 [Excel ultra riche](https://docs.google.com/spreadsheets/u/0/d/1q0BGLDtKjNVaiZ7ikuCWqzY7rPeOP4tEt3p0Lon9dmM/htmlview#)  
-[autre tables pratiques](https://chartopia.d12dev.com/collection/3291/)
-[création de planète](http://darktrader.wikidot.com/random-tables)
+[autre tables pratiques](https://chartopia.d12dev.com/collection/3291/)  
+[création de planète](http://darktrader.wikidot.com/random-tables)  
+[planète en pixel](https://deep-fold.itch.io/pixel-planet-generator)
 
 
 ## Résumé
 | d20 | [espace profond](#espace-profond) | [station spaciale](#station-spaciale) | [space hulk](#space-hulk) | [hive world](#hive-world)     | [death world](#death-world)            |
 |-----|-----------------------------------|---------------------------------------|---------------------------|--------------------------------|----------------------------------------|
-| 1   | Pluie de météores                 |                                       | Atmosphère résiduelle     | Nuage de gaz                   | fruit violet !                         |
+| 1   | Astéroides                        |                                       | Atmosphère résiduelle     | Nuage de gaz                   | fruit violet !                         |
 | 2   | Traînée de comète                 | Fournisseur                           | Zone de radiation         | Fournisseur                    | fosse piégée                           |
-| 3   | Étrangetés Warp                   | Noble perdu                           | Étrangetés Warp           | Gang Echer                     | Ancien Robot de Terraformation         |
-| 4   | Démon errant                      | Gang                                  |                           |                                |                                        |
+| 3   | objet perdu                       | Noble perdu                           | Étrangetés Warp           | Gang Echer                     | Ancien Robot de Terraformation         |
+| 4   | vagues gravitationelles           | Gang                                  |                           |                                |                                        |
 | 5   | Bataille spatiale                 |                                       |                           |                                | Arbre de fruits lumineux               |
 | 6   |                                   |                                       | Équipement récupérable    | Entrée d'une tombe             | Perdu dans les champignons             |
 | 7   | Trou de ver                       |                                       |                           | Marchand riche                 | Homme de tribu mutant                  |
@@ -37,16 +40,32 @@
 
 
 ### Espace Profond
-1. **Pluie de météores :**
-2. **Traînée de comète :** Le Pilote/Navigator doit réussir un jet de Sauvegarde d'Initiative sinon chaque membre de l'équipage subit une attaque de Force 3 de dommages par radiation (les armures ne protègent pas, les champs le font).
-3. **Étrangetés Warp :** 1D4 Entités warp de bas niveau ou daemons mineurs pénètrent le bouclier warp du vaisseau. Cette rencontre se produit uniquement dans le Warp. Il n'y a pas de rencontre dans l'espace réel.
-4. **Démon errant** (créé aléatoirement en tant que Prince démon instantané ou Spawn du Chaos) pénètre le bouclier warp du vaisseau. Cette rencontre se produit uniquement dans le Warp. Il n'y a pas de rencontre dans l'espace réel.
-5. **Bataille spatiale :** Le vaisseau est en combat avec un vaisseau ennemi (lancez 1d6 pour la taille de l'ennemi : 1-2=fighter, 3-4=cutter, 5=brig, 6=frigate). À chaque tour, le Pilote/Navigator doit réussir un test d'Initiative sinon chaque membre de l'équipage subit une attaque de Force 2 lorsque le vaisseau est touché par des bordées laser (les armures et les champs ne protègent pas). Un membre de l'équipage est désigné comme le tireur et peut faire un test de Compétence avec les Armes chaque tour pour toucher le vaisseau ennemi. Un coup détruit un chasseur, deux coups détruisent un coupeur, trois coups détruisent une brig et quatre coups détruisent une fregate. Les deux côtés tirent simultanément. Le Pilote/Navigator du joueur peut tenter une action d'abordage en faisant un test d'Intelligence à -2 à chaque tour, mais le vaisseau du joueur ne peut pas tirer et tenter un abordage le même tour.
-6. **Rencontre spéciale aléatoire**
-7. **Trou de ver :** Le Navigateur doit réussir un Test d'Intelligence pour éviter, sinon le vaisseau est projeté de 1d6x5 années-lumière dans une direction aléatoire.
+1. **Astéroides :** le Navigator fait un jet d'`Agilitée`, sinon
+- 1 : les scans indiquent que le champ d'astéroide est composé d'un mineral rare 
+- 2-5 : dégats mineurs au vaisseau
+- 6 : une flotte ennemie prend l'équipage en embuscade
+2. **Traînée de comète :** le Navigator fait un jet d'`Agilitée`, sinon les PJ sont `perturbé(2)` à cause des radiations
+3. **objet perdu :**
+  - 1-2 : cerceuil avec sceau de pureté, donne un équipement
+  - 3-4 : ancienne mine à la dérive, le Navigator fait un jet d'`Agilitée` pour l'éviter
+  - 5-6 : voir les babioles (p248)
+4. **vagues gravitationelles :**
+  - 1-2 : le Voidmaster suggère d'utiliser une lune voisine pour se propulser et atteindre sa déstination plus vite, le Navigator fait un jet d'`agilitée`
+  - 3-4 : puit gravitationel ralentisant le temps et pouvant entrainer un retard d'une semaine sur le trajet
+  - 5-6 : ...
+5. **Bataille spatiale :** bataille avec un vaisseau ennemi (`1d6` pour la taille : 1-2=fighter, 3-4=cutter, 5=brig, 6=frigate). À chaque tour, le Pilote/Navigator doit réussir un test d'Initiative, sinon le vaisseau est touché par des bordées laser (les armures et les champs ne protègent pas). Un membre de l'équipage est désigné comme le tireur et peut faire un test de Compétence avec les Armes chaque tour pour toucher le vaisseau ennemi. Un coup détruit un fighter, deux coups détruisent un cutter, trois coups détruisent une brig et quatre coups détruisent une frigate. Les deux côtés tirent simultanément. Le Navigator peut tenter un abordage avec un jet d'Intelligence à -2, mais les PJ ne peuvent pas tirer et tenter un abordage le même tour.
+6. 
+7. **Trou de ver :** le Navigateur fait un Test d'`Intelligence` pour l'éviter, sinon le vaisseau est projeté dans une direction aléatoire
+  - 1-2 : derrière la cicatrix maledictum
+  - 3-4 : ...
+  - 5-6 : ...
 8. **Action d'abordage :** 1D4 Guerriers Necron contournent le bouclier du vaisseau et téléportent à l'intérieur.
 9. **Action d'abordage :** Vaisseau impérial : 1d6 Régiments Navals et un Officier Naval (Créez comme l'Armée Impériale). Ils n'attaqueront pas les serviteurs impériaux, à moins que ceux-ci ne se comportent de manière suspecte.
-10. **Space Hulk :** Le vaisseau rencontre un énorme vaisseau abandonné. Lancez sur la Table des Rencontres des Space Hulks si vous souhaitez l'explorer.
+10. **Space Hulk :** 
+  - 1-2-3 : space hulk détéctable de loin (pas de surprise)
+  - 4-5 : apparition "soudaine"
+  - 6 : le space hulk semble orienté pour s'écraser sur une planète voisine  
+  _Un signal de détresse impérial retentit sur les auspex. Alors que vous vous demandez s'il faut enquêter ou non, le Voidmaster hurle et fait violemment basculer le vaisseau d'un côté. Le Seneshal suggère qu'il pourrait s'agir de la proue d'un marchand de classe Vagabond._
 11. **Action d'abordage :** Pillards Orks : 1d6, équipés de manière aléatoire.
 12. **Action d'abordage :** Pirates : 1d6 Humains de base et un Officier Champion Humain. Équipés comme l'Armée Impériale.
 13. **Pirates :** 1d6 Voyous Humains de base ont réussi à se faufiler à bord du vaisseau et attaquent maintenant. Comme l'équipage ne s'attendait à rien, personne n'est protégé par une armure et aucune arme autre qu'un seul pistolet ou une arme de combat rapproché (au choix du joueur) n'est portée. Tout le reste est stocké dans l'armurerie du vaisseau.
@@ -150,7 +169,7 @@
 # Scénarios
 
 ## L'Espace pour Linceul
-- Acroche : un vaisseau a émit un signal de détresse il y a quelques temps, mais personne n'y a prêter attention
+- Acroche : un vaisseau a émis un signal de détresse il y a quelque temps, mais personne n'y a prêté attention
 - type : Rogue Trader
 - source : web
 - Graphe : [html version](https://iron-wolf.github.io/writing/w40k_jdr/espace_pour_linceul.html)
