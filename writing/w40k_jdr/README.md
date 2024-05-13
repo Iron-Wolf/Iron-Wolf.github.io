@@ -11,32 +11,32 @@
 [Excel ultra riche](https://docs.google.com/spreadsheets/u/0/d/1q0BGLDtKjNVaiZ7ikuCWqzY7rPeOP4tEt3p0Lon9dmM/htmlview#)  
 [autre tables pratiques](https://chartopia.d12dev.com/collection/3291/)  
 [création de planète](http://darktrader.wikidot.com/random-tables)  
-[planète en pixel](https://deep-fold.itch.io/pixel-planet-generator)
+[planète en pixel art](https://deep-fold.itch.io/pixel-planet-generator)
 
 
 ## Résumé
-| d20 | [espace profond](#espace-profond) | [station spaciale](#station-spaciale) | [space hulk](#space-hulk) | [hive world](#hive-world)     | [death world](#death-world)            |
-|-----|-----------------------------------|---------------------------------------|---------------------------|--------------------------------|----------------------------------------|
-| 1   | Astéroides                        | vaisseau spacial                      | Atmosphère résiduelle     | Nuage de gaz                   | fruit violet !                         |
-| 2   | Traînée de comète                 | Fournisseur                           | Zone de radiation         | Fournisseur                    | fosse piégée                           |
-| 3   | objet perdu                       | Noble perdu                           | Étrangetés Warp           | Gang Echer                     | Ancien Robot de Terraformation         |
-| 4   | vagues gravitationelles           | Gang                                  |                           |                                |                                        |
-| 5   | Bataille spatiale                 |                                       |                           |                                | Arbre de fruits                        |
-| 6   | Nébuleuse                         |                                       | Équipement récupérable    | Entrée d'une tombe             | Perdu dans les champignons             |
-| 7   | Trou de ver                       |                                       |                           | Marchand riche                 | Homme de tribu mutant                  |
-| 8   |  Vaisseau marchand                |                                       |                           | Bar                            |                                        |
-| 9   |  Station Spaciale                 | Fonctionnaire Impériale               |                           | Cannibales mutants             | balise de détresse                     |
-| 10  | Space Hulk                        | Aventurier à louer                    | Soute à marchandises      | Voyant aveugle                 |                                        |
-| 11  |                                   |                                       |                           |                                | Spores hallucinogènes                  |
-| 12  |                                   |                                       | Rack d'armes              | Adeptus Arbites                | loot aléatoire                       |
-| 13  | Pirates                           | Adeptus Arbites                       |                           |                                | Tornade de terraformation dégénérative |
-| 14  | Vaisseau de contrebande           |                                       | Laboratoire               |                                | Vaisseau écrasé ou Expédition perdue   |
-| 15  | Vaisseau Noir                     | Cadavre                               |                           |                                |                                        |
-| 16  | Vaisseau impérial                 | Taxe de sortie                        |                           | Guilde des faiseurs de rumeurs |                                        |
-| 17  | Exploration                       | Pickpocket                            | Explorateurs              |                                |                                        |
-| 18  | Disfonctionnement                 | Vaisseau d'aristocrate                | Chambre de stase active   | Tremblement de ruche           |                                        |
-| 19  | Action d'abordage                 | Mission aléatoire                     |                           |                                |                                        |
-| 20  | signal de détresse                |                                       |                           |                                |                                        |
+| d20 | [espace](#espace-profond) | [spatioport](#station-et-spatioport) | [space hulk](#space-hulk) | [hive world](#hive-world) | [death world](#death-world) |
+|-----|---------------------------|--------------------------------------|---------------------------|---------------------------|-----------------------------|
+| 1   | Astéroides                | vaisseau spacial                     | Atmosphère résiduelle     | Nuage de gaz              | fruit violet !              |
+| 2   | Traînée de comète         | Fournisseur                          | Zone de radiation         | Fournisseur               | fosse piégée                |
+| 3   | objet perdu               | Noble perdu                          | Étrangetés Warp           | Gang Echer                | Robot de Terraformation     |
+| 4   | vagues gravitationelles   | Gang                                 |                           |                           |                             |
+| 5   | Bataille spatiale         |                                      |                           |                           | Arbre de fruits             |
+| 6   | Nébuleuse                 |                                      | Équipement récupérable    | Entrée d'une tombe        | Perdu dans les champignons  |
+| 7   | Trou de ver               |                                      |                           | Marchand riche            | Homme de tribu mutant       |
+| 8   | Vaisseau marchand         |                                      |                           | Bar                       |                             |
+| 9   | Station Spaciale          | Fonctionnaire Impériale              |                           | Cannibales mutants        | balise de détresse          |
+| 10  | Space Hulk                | Aventurier à louer                   | Soute à marchandises      | Voyant aveugle            |                             |
+| 11  |                           |                                      |                           | lieu unique               | Spores hallucinogènes       |
+| 12  |                           |                                      | Rack d'armes              | Adeptus Arbites           | loot aléatoire              |
+| 13  | Pirates                   | Adeptus Arbites                      |                           |                           | Tornade/tempête             |
+| 14  | Vaisseau de contrebande   |                                      | Laboratoire               |                           | Vaisseau/Expédition perdue  |
+| 15  | Vaisseau Noir             | Cadavre                              |                           |                           | Traité impérial             |
+| 16  | Vaisseau impérial         | Taxe de sortie                       |                           | faiseurs de rumeurs       |                             |
+| 17  | Exploration               | Pickpocket                           | Explorateurs              |                           |                             |
+| 18  | Disfonctionnement         | Vaisseau d'aristocrate               | Chambre de stase active   | Tremblement de ruche      |                             |
+| 19  | Action d'abordage         | Mission aléatoire                    |                           |                           |                             |
+| 20  | signal de détresse        |                                      |                           |                           |                             |
 
 
 ### Espace Profond
@@ -103,7 +103,7 @@
   - 2 : double peine : lancer `2d20` sur cette table (ignorer cette entrée pour les 2 jets)
   - 3-6 : signal de détresse authentique. Le vaisseau est échoué dans l'espace
 
-### Station Spaciale
+### Station et Spatioport
 1. **Vaisseau spatial :** Petit vaisseau (lancez 1D4 pour la taille : 1-3=coupeur, 4-5=brig, 6=fregate). Vous pouvez négocier avec le Capitaine pour le passage, tenter de voler ou attaquer le vaisseau, etc. L'équipage sera non blindé et équipé d'armes de combat rapproché aléatoires. Le vaisseau transporte `3d20` deniers en cargaison. Il est capable de saut warp.
 2. **Fournisseur :** vend des articles courants (tout ce qui a une valeur de moins de 5 points), mais il a `1d6=1` de chance de posséder un objet rare
 3. **Noble perdu :** Ramenez-le chez lui en sécurité pour une récompense de `2D20` deniers
@@ -155,7 +155,11 @@
 15. **Pillards du Chaos :** 1D4 Mercenaires Humains de base (chacun a une mutation aléatoire) dirigés par un Space Marine Traître de base (mutation aléatoire et 50% de chance de pouvoirs psychiques).
 16. ...
 17. **Explorateurs :** `1d4` Explorateurs de base salvage l'épave. Ils peuvent négocier si le MJ le juge approprié.
-18. **Chambre de stase active :** Peut contenir n'importe quoi.
+18. **Chambre de stase active :**
+  - 1 : un schéma SCS datant de l'hérésie d'Horus (recherché par l'Adeptus Mechanicus)
+  - 2-3 : ...
+  - 4-5 : ...
+  - 6 : ...
 19. **Groupe aléatoire :**
   - 1-5 : renégat du Chaos
   - 6 : Sensei
@@ -166,7 +170,7 @@
 2. **Fournisseur :** vend des articles courants (tout ce qui a une valeur de moins de 5 points et tout ce qui est sur la table d'équipement), mais il a 15% de chance de posséder un objet rare aléatoire valant jusqu'à 20 points. La valeur en points se traduit en deniers impériaux sur une base de 1 pour 1.
 3. **Gang Echer :**
 4. **Gang :** 1 officier mercenaire et 1D4 mercenaires humains ; désespérés de "recruter". Créez-les comme l'armée impériale.
-5. **Insectes de tunnel :**
+5. ...
 6. **Entrée d'une tombe :** cf table de tombe
 7. **Marchand riche**, 1D4 gardes voyous humains (humains de base avec des épées et des autoguns) et des marchandises aléatoires valant 1D20 deniers impériaux.
 8. **Bar :** Vend de la nourriture et de la bière locale, 1d6 clients sont actuellement à l'intérieur, lancez 1d6 pour chacun
@@ -178,13 +182,16 @@
   - 6 : rencontres spéciales de n'importe quelle sorte
 9. **Cannibale mutant :** 1d6 voyous humains (humains de base avec une mutation), et des armes improvisées.
 10. **Voyant aveugle :** Répond à une (seule) question oui ou non pour 1D10 deniers, 60% d'exactitude. Le voyant est un psyker avec des pouvoirs spéciaux, donc la question peut porter sur n'importe quoi, et le MJ doit répondre honnêtement.
-11. **Pillards orks :** 1d6 équipés de manière aléatoire.
+11. **lieu unique :**
+  - 1-2 : Manufactorum
+  - 3-4 : Librarium
+  - 5-6 : ...
 12. **Adeptus Arbites :** équipés de manière aléatoire ; interrogez quiconque agit de manière suspecte.
-13. **Genestealer solitaire** en mission d'enlèvement.
+13. ...
 14. **Cadavre** avec des bijoux valant `1D20` deniers (`1d6<5` de chances que ce soit un piège posé par `1d6` gangsters, des humains de base, l'un ayant une mutation, épées).
-15. **araignée géante :**
+15. ...
 16. **Guilde des faiseurs de rumeurs :** Répond aux questions concernant la zone locale seulement pour `1d6` deniers chacun, 80% d'exactitude.
-17. **1 insecte géant :**
+17. ...
 18. **Tremblement de ruche :** Sauvegarde d'initiative ou coincé sous les décombres; PJ et PJ qui aide lance `1D6=1` de chance de se dégager (faciliter le jet à chaque tour); Lancez `1D6=1` de rencontre chaque tour tant qu'il y a un PJ coincé, ne compte que si rencontre hostile (indiquant un piège).
 19. **Taxe de sortie :** Elle est gardée par 1D4 gardes voyous humains (humains de base avec des épées et des autoguns) qui ne vous laisseront pas partir tant que vous n'aurez pas payé une taxe d'émigration de 1 denier chacun.
 20. ...
@@ -208,9 +215,13 @@
   - 1-2 : Noeud de Krysospine valant `2D20` deniers
   - 3-4 : ...
   - 5-6 : ...
-13. **Tornade de terraformation dégénérative :** Sauvegarde d'Initiative ou emporté de 4d6" dans une direction aléatoire et subit 2d6 points de dégâts. Les personnages emportés hors du plateau (plus de 17") sont hors de contact et font une rencontre séparée le lendemain
-14. **Vaisseau écrasé ou Expédition perdue :**
-15. **Rencontre aléatoire :**
+13. **Tornade/tempête :** Sauvegarde d'Initiative ou emporté de 4d6" dans une direction aléatoire et subit 2d6 points de dégâts. Les personnages emportés hors du plateau (plus de 17") sont hors de contact et font une rencontre séparée le lendemain
+14. **Vaisseau/Expédition perdue :**
+15. **Traité impérial :**
+  - 1 : le monde ne peut plus être sauvé et doit être rasé (Exterminatus)
+  - 2-3 : ...
+  - 4-5 : ...
+  - 6 : ...
 16. 
 17. 
 18. 
