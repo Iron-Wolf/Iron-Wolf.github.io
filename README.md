@@ -1,3 +1,6 @@
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Iron-Wolf&layout=compact&langs_count=4&theme=ambient_gradient)
+
+
 # Intro
 Repo containing static Html files.
 
