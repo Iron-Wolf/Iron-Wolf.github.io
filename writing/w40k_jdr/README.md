@@ -10,7 +10,8 @@
 [tableaux de rencontres](https://www.dakkadakka.com/dakkaforum/posts/list/493584.page)  
 [Excel ultra riche](https://docs.google.com/spreadsheets/u/0/d/1q0BGLDtKjNVaiZ7ikuCWqzY7rPeOP4tEt3p0Lon9dmM/htmlview#)  
 [autre tables pratiques](https://chartopia.d12dev.com/collection/3291/)  
-[création de planète](http://darktrader.wikidot.com/random-tables)  
+[map interactive ultra complète](https://jambonium.co.uk/40kmap)
+[créateur de planète](http://darktrader.wikidot.com/random-tables)  
 [planète en pixel art](https://deep-fold.itch.io/pixel-planet-generator)
 
 
