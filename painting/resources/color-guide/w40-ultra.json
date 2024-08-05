@@ -46,7 +46,7 @@
         ]
       },
       {
-        "section":"leather ?",
+        "section":"leather",
         "paints":[
           "b_mournfang-brown",
           "s_agrax-earthshade",
@@ -62,11 +62,11 @@
         ]
       },
       {
-        "section":"bolter (?)",
+        "section":"bolter",
         "paints":[
           "b_mephiston-red",
-          "s_agrax-earthshade","s_nuln-oil",
-          "b_mephiston-red","l_evil-sunz-scarlet"
+          "s_agrax-earthshade",
+          "l_evil-sunz-scarlet"
         ]
       },
       {
