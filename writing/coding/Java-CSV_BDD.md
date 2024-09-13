@@ -203,12 +203,47 @@ La où j'ai commencé à avoir des doute, c'est que la mémoie restait à 1,5go 
 Mêem avec 1 Thread on avait le problème... Le soucis vient donc d'ailleurs.
 
 Résolution : 
-```java
-final List<T> list = entityStream
-  .map(processFunction)
-  .parallel() <- cette méthode de l'API ne se gène pas d'utiliser autant de mémoire que possible
-  .toList();
+```diff
+--final List<T> list = entityStream
+--  .map(processFunction)
+--  .parallel() // <- Cette méthode ne limite pas sont utilisation de la mémoire
+--  .toList();
+
+// Obtenir un itérateur sur la liste pour éviter la création de sous-listes
+--Iterator<T> iterator = list.iterator();
+++Iterator<T> iterator = entityStream.iterator();
 ```
 
 # Conslusion
-TODO...
+Tentative d'explication de l'algo (à retravailler ?) :
+```java
+                                                                         
+                        ┌─────────────────────────┐                      
+                        │ Création d'autant de    │                      
+                        │ Thread que possible     │                      
+┌─ CSV ────────┐        └─────────┬───────────────┘                      
+│              │                  │                                      
+│  ----------  │              ┌───┴───────────────┐                      
+│  ----------  │              │                   │                      
+│  ----------  │              ▼                   ▼            ┌─ BDD ──┐
+│  ----------  │        ┌─ Thd 1 ───┐       ┌─ Thd 2 ───┐      │        │
+│  ----------  │        │  .......  │       │  .......  │      │        │
+│  ----------  │......... ►:add  :  │........► :add  :  │      │        │
+│  ----------  │        │  :.....:  │       │  :.....:  │      │        │
+│  ----------  │        │     ▼     │       │     ▼     │      │        │
+│              │        │  ┌─────┐  │       │  ┌─────┐  │      │        │
+└──────────────┘        │  │save │~~~~~~~~~~│  │save │  │~~~~~►│        │
+                        │  └─────┘  │       │  └─────┘~~~~~~~~►│        │
+                        └─────┬─────┘       └─────┬─────┘      │        │
+                              │                   │            └────────┘
+                              └───┬───────────────┘                      
+                                  │                                      
+                                  ▼                                      
+                        ┌─────────────────────────┐                      
+                        │ Attente de la fin des   │                      
+                        │ Threads                 │                      
+                        └─────────────────────────┘                      
+```
+
+Remarque : la conso mémoire est conditionnée par le nombre de Thread.
+
