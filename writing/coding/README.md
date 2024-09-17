@@ -6,3 +6,5 @@ idées :
 - Java : optimisation de lecture de fichier Excel (streaming avec ApachePOI)
 - Java : optimisation du chargement de fichier CSV (Executor Service + JdbcTemplate)
 
+Articles :
+- [java CSV](Java-CSV_BDD.md)
