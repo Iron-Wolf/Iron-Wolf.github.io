@@ -89,7 +89,7 @@ public int process(final Stream<E> entityStream, final int chunkSize) {
   // ▲▲▲ CODE NON FOURNIT PAR CHATGPT ▲▲▲
 
   // Diviser la liste en sous-listes (batches)
-  final List<List<T>> batches = partitionList(list, BATCH_SIZE);
+  final List<List<T>> batches = partitionList(list, BATCH_SIZE); // méthode pas détaillée, mais vous voyez l'idée...
 
   // Créer un pool de threads pour traiter les batchs en parallèle
   ExecutorService executorService = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
@@ -115,11 +115,49 @@ Rsultats :
 
 
 # 2eme optimisation : changement du JdbcTemplate
-Le code de sauvvegarde utilise le JdbcTemplate de SpringFramework (`org.springframework.jdbc.core`).  
-Or, cette classe ne semble pas très optimisée pour la sauvegarde de beaucoup de données.
-Il semblerait que le "batch update" JDBC classique (présent dans `java.sql`) soit plus pérformant.  
+Le code de sauvegarde utilise le `JdbcTemplate.batchUpdate` de SpringFramework (`org.springframework.jdbc.core`).  
+Dans notre cas, les performances ne sont pas optimales :  
+- on fait 1000 enregistrements sur 10 Threads
+- Malgré l'utilisation du PreparedStatement en fond, il n'y a pas de gestion de transaction
+- on fait donc autant de commit en base que de Threads 
 
+Implémenter le PreparedStatement nous même permet de reprendre la main sur la gestion des commit en base.  
 Cf implémentation de cet article : https://www.codejava.net/java-se/jdbc/jdbc-batch-update-examples
+
+```java
+public int save(final List<Pcr> pcrs) {
+  final DataSource dataSource = jdbcTemplate.getDataSource();
+  if (dataSource == null) {
+    throw new NoSuchElementException("Problème lors de la récupération de la DataSource");
+  }
+
+  int[] result;
+
+  try (final Connection connection = dataSource.getConnection();
+       PreparedStatement statement = connection.prepareStatement(saveSql)) { // "saveSql" est juste un INSERT avec des paramètres anonymes '?'
+    // on commit uniquement lorsque le batch complet a été joué
+    connection.setAutoCommit(false);
+
+    // boucle sur le lot de PCR (pré-découpée par la méthode "proces")
+    for (Pcr pcr : pcrs) {
+      final Object[] objectArray = toObjectArray(pcr);
+      for (int i = 0; i < objectArray.length; i++) {
+        // ajoute chaque objet avec sont type attendus en BDD
+        statement.setObject(i + 1, objectArray[i], DATA_TYPE[i]);
+      }
+      statement.addBatch();
+    }
+    result = statement.executeBatch();
+    connection.commit();
+  } catch (SQLException e) {
+    log.warn("Problème lors de l'enregistrement en base");
+    throw new TechnicalException("Problème lors de l'enregistrement en base", e);
+  }
+  // il n'y a qu'une commande "INSERT" par batch, donc on a juste
+  // besoin de compter le nombre de lignes dans le tableau
+  return result.length;
+}
+```
 
 Résultats :
 - temps de traitement de 40 à 20sec (on peut pas faire beaucoup mieu à ce niveau)
@@ -187,7 +225,7 @@ for (int i = 0; i < THREAD_POOL_SIZE; i++) {
 Problème : la conso ne diminue toujour pas.  
 On est à 1,5Go au lieu de 2Go, mais ça reste toujours énorme.  
 La où j'ai commencé à avoir des doute, c'est que la mémoie restait à 1,5go alors que je baissait le nombre de Thread.  
-Mêem avec 1 Thread on avait le problème... Le soucis vient donc d'ailleurs.
+Même avec 1 Thread on avait le problème... Le soucis vient donc d'ailleurs.
 
 Résolution : 
 ```diff
