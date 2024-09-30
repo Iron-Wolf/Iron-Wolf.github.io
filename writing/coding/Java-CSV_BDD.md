@@ -109,9 +109,12 @@ public int process(final Stream<E> entityStream, final int chunkSize) {
 }
 ```
 
-Rsultats :
-- temps de traitement de 1:10 à 40sec
-- mémoire Heap qui dépasse les 2Go
+Résultats :
+| | avant | après | Commentaire
+|---|---|---|---|
+| Temps | **0:01:10**| **0:00:40** | joli gain, sans être incroyable
+| Heap | 250Mo | +2Go | la ça fait mal
+| Thread | 1 | 10 |
 
 
 # 2eme optimisation : changement du JdbcTemplate
@@ -160,8 +163,11 @@ public int save(final List<Pcr> pcrs) {
 ```
 
 Résultats :
-- temps de traitement de 40 à 20sec (on peut pas faire beaucoup mieu à ce niveau)
-- mémoire Heap toujours en caraffe, mais normal vu qu'on a rien touché à ce niveau là
+| | avant | après | Commentaire
+|---|---|---|---|
+| Temps | **0:00:40** | **0:00:20** | on peut pas faire beaucoup mieu
+| Heap | +2Go | +2Go | toujours en caraffe (normal, on y a pas touché)
+| Thread | 1 | 10 |
 
 
 # Réduction de l'empreinte mémoire
@@ -238,6 +244,14 @@ Résolution :
 --Iterator<T> iterator = list.iterator();
 ++Iterator<T> iterator = entityStream.iterator();
 ```
+
+Résultats :
+| | avant | après | Commentaire
+|---|---|---|---|
+| Temps | 0:00:20 | 0:00:35 | on perd un peu de perfs
+| Heap | **250Mo** | **300Mo** | conso mémoire limitée
+| Thread | 1 | 4 | bon compromis temps/mémoire
+
 
 # Conslusion
 Tentative d'explication de l'algo (à retravailler ?) :
