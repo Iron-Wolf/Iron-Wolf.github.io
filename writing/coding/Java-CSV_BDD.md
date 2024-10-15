@@ -118,6 +118,13 @@ Résultats :
 
 
 # 2eme optimisation : changement du JdbcTemplate
+
+> [!NOTE]  
+> Au final, on a abandonné le refacto du JdbcTemplate, car le gain n'est plus très interessant.  
+> Le fait de passer le traitement sur 4 Threads, empêche d'exploiter à fond la connection à la BDD.  
+> Du coup, on a que 4 requête SQL à faire à la fois, donc quelques secondes max à gagner.  
+> On a préféré laisser un code lisible, mais sur une couche d'abstraction supérieure (côté DAO).
+
 Le code de sauvegarde utilise le `JdbcTemplate.batchUpdate` de SpringFramework (`org.springframework.jdbc.core`).  
 Dans notre cas, les performances ne sont pas optimales :  
 - on fait 1000 enregistrements sur 10 Threads
@@ -171,6 +178,9 @@ Résultats :
 
 
 # Réduction de l'empreinte mémoire
+On a optimisé le temps d'execution, mais l'empreinte mémoire reste au dessus de 2Go.  
+Il est temps de s'attaquer à ce problème.
+
 Première tentative :
 ```java
 final List<T> list = entityStream
@@ -285,3 +295,48 @@ Tentative d'explication de l'algo (à retravailler ?) :
 
 Remarque : la conso mémoire est conditionnée par le nombre de Thread.
 
+
+# Gestion d'erreur
+Le code est bien et gère correctement les coupure de la BDD, mais il reste un autre soucis.  
+Lorsqu'on charge un fichier en erreur, le traitement plante sans remonter l'exception.  
+
+Il y avait 2 solutions : 
+- ajouter un "throw Exception" (donc, pas une exception runtime) au niveau du save dans le DAO
+  - mais cela obligais à modifier la fonction "save" qui est réécrite dans chaque DAO
+  - du coup, il aurait fallu propager cette definition à toutes les méthodes "save"
+  - c'est bien, mais lourd en terme de modif
+- sinon, on ajout un "catch" de cette exception spécifique, autour du "processFunction.apply"
+  - l'appel est bien catch, mais cela crée un code un peu trop magique
+  - le "processFunction.apply" pourrait d'ailleur lever tout un tas d'autre exception
+
+On a donc choisit la 3eme solution.  
+Cela consitait à réécrire une bonne partie du code, en passant par "future.get()" :  
+```java
+public static void computeInParallel(final Runnable task, final Logger log) {
+
+    // nombre de Threads fixe, pour limiter les consommations de ressources
+    final ExecutorService executorService = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
+    final List<Future<?>> futures = new ArrayList<>();
+
+    for (int i = 0; i < THREAD_POOL_SIZE; i++) {
+        // lance la tâche sur le nombre de Threads disponible
+        futures.add(executorService.submit(task));
+    }
+
+    futures.parallelStream()
+            .forEach((Future<?> future) -> {
+                try {
+                    // attend la fin de la tâche (sert uniquement à remonter l'Exception s'il y a un souci)
+                    future.get();
+                } catch (InterruptedException | ExecutionException e) {
+                    log.warn("Plantage d'une tâche en parallèle, on coupe tous les Threads en cours");
+                    // Force le shutdown de tous les Threads.
+                    // On ne cherche pas à relancer les tâches qui ont planté
+                    executorService.shutdownNow();
+                    Thread.currentThread().interrupt();
+                }
+            });
+
+    executorService.shutdown();
+}
+```
