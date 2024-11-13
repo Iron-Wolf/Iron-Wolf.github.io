@@ -12,16 +12,17 @@
 </head>
 <body>
 
-	<h2>Plan de Maison</h2>
 	<input type="file" id="fileInput" accept=".xml">
 	<br/>
+
 	<div id="coordinates"></div>
 	<br/>
-	<canvas id="canvas" width="800" height="800" onmousemove="getMousePos(event)">
-		Your browser does not support the canvas element.
-	</canvas>
 
+	<svg id="planSVG" width="800" height="800" 
+		onmousemove="getMousePos(event)"
+		style="border: 1px solid #ccc;">
+	</svg>
 
-	<script type='text/javascript' src='canvas_handler.js'></script>
+	<script type='text/javascript' src='svg_handler.js'></script>
 </body>
 </html>
