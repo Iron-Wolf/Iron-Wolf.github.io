@@ -2,35 +2,43 @@
 var walls;
 
 document.getElementById("fileInput").addEventListener("change", function(event) {
-	const file = event.target.files[0];
-	if (file) {
-		const reader = new FileReader();
-		reader.onload = function(e) {
-			const xmlData = e.target.result;
-			walls = parseXML(xmlData);
-			drawSvg();
-		};
-		reader.readAsText(file);
-	}
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const xmlData = e.target.result;
+            walls = parseXML(xmlData);
+            drawSvg();
+        };
+        reader.readAsText(file);
+    }
 });
+
+function decode() {
+    let decoded = atob(textInput.value);
+    console.log(decoded);
+    walls = parseXML(decoded);
+    drawSvg();
+}
+
 
 // Parse XML and extract walls data
 function parseXML(xml) {
-	const parser = new DOMParser();
-	const xmlDoc = parser.parseFromString(xml, "application/xml");
-	const walls = xmlDoc.getElementsByTagName("wall");
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xml, "application/xml");
+    const walls = xmlDoc.getElementsByTagName("wall");
 
-	const wallData = [];
-	for (let wall of walls) {
-		wallData.push({
-			xStart: parseFloat(wall.getAttribute("xStart")),
-			yStart: parseFloat(wall.getAttribute("yStart")),
-			xEnd: parseFloat(wall.getAttribute("xEnd")),
-			yEnd: parseFloat(wall.getAttribute("yEnd")),
-			thickness: parseFloat(wall.getAttribute("thickness"))
-		});
-	}
-	return wallData;
+    const wallData = [];
+    for (let wall of walls) {
+        wallData.push({
+            xStart: parseFloat(wall.getAttribute("xStart")),
+            yStart: parseFloat(wall.getAttribute("yStart")),
+            xEnd: parseFloat(wall.getAttribute("xEnd")),
+            yEnd: parseFloat(wall.getAttribute("yEnd")),
+            thickness: parseFloat(wall.getAttribute("thickness"))
+        });
+    }
+    return wallData;
 }
 
 // Find root SVG element
@@ -47,30 +55,32 @@ function getMousePos(event) {
 }
 
 function drawSvg() {
-	for (let wall of walls) {
-		// create the <line> SVG
-		const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-		line.setAttribute('x1', wall.xStart);
-		line.setAttribute('y1', wall.yStart);
-		line.setAttribute('x2', wall.xEnd);
-		line.setAttribute('y2', wall.yEnd);
-		line.setAttribute('stroke', 'black');
-		line.setAttribute('stroke-width', wall.thickness);
-		svg.appendChild(line);
-	}
+    svg.innerHTML = "";
+
+    for (let wall of walls) {
+        // create the <line> SVG
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', wall.xStart);
+        line.setAttribute('y1', wall.yStart);
+        line.setAttribute('x2', wall.xEnd);
+        line.setAttribute('y2', wall.yEnd);
+        line.setAttribute('stroke', 'black');
+        line.setAttribute('stroke-width', wall.thickness);
+        svg.appendChild(line);
+    }
 
     // SVG order can overlap, so we draw text AFTER the walls
     for (let wall of walls) {
         // add text in the middle of the wall
-		const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-		var a = wall.xStart-wall.xEnd;
-		var b = wall.yStart-wall.yEnd;
-		var l = Math.sqrt( a*a + b*b );
-		text.setAttribute('x', ((wall.xStart+wall.xEnd) / 2));
-		text.setAttribute('y', ((wall.yStart+wall.yEnd) / 2));
+        const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        var a = wall.xStart-wall.xEnd;
+        var b = wall.yStart-wall.yEnd;
+        var l = Math.sqrt( a*a + b*b );
+        text.setAttribute('x', ((wall.xStart+wall.xEnd) / 2));
+        text.setAttribute('y', ((wall.yStart+wall.yEnd) / 2));
         text.setAttribute('fill', 'red');
-		text.textContent = Math.round(l);
-		svg.appendChild(text);
+        text.textContent = Math.round(l);
+        svg.appendChild(text);
     }
 }
 

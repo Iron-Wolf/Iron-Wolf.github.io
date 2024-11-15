@@ -12,17 +12,18 @@
 </head>
 <body>
 
-	<input type="file" id="fileInput" accept=".xml">
-	<br/>
+    <input type="file" id="fileInput" accept=".xml"/>
+    <input type="text" id="textInput" onfocusout="decode()"/>
+    <br/>
 
-	<div id="coordinates"></div>
-	<br/>
+    <div id="coordinates"></div>
+    <br/>
 
-	<svg id="planSVG" width="800" height="800" 
-		onmousemove="getMousePos(event)"
-		style="border: 1px solid #ccc;">
-	</svg>
+    <svg id="planSVG" width="800" height="800" 
+        onmousemove="getMousePos(event)"
+        style="border: 1px solid #ccc;">
+    </svg>
 
-	<script type='text/javascript' src='svg_handler.js'></script>
+    <script type='text/javascript' src='svg_handler.js'></script>
 </body>
 </html>
