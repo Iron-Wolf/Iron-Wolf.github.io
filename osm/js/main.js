@@ -38,12 +38,75 @@ var map = L.map('map', {
 })
 
 // add a simple tile layer
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//L.TileLayer.BoundaryCanvas('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+//  subdomains: ['a', 'b', 'c'],
+//  maxNativeZoom: 19, // max value authorized by the leaflet API, to retrieve the map tiles
+//  maxZoom: 20, // allow to zoom beyond the maxNativeZoom (but image will be blurred)
+//  crossOrigin: true, // tile caching
+//}).addTo(map);
+
+// JSON generated with : https://geojson.io/#map=2/0/20
+var fraJson = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+	    "id":"FRA",
+      "properties": {"name":"France"},
+      "geometry": {
+		  "type":"MultiPolygon",
+        "coordinates": [
+			    [
+            [
+              [
+              -1.7891130143000282,
+              48.150397804808506
+              ],
+              [
+              -1.6597730499656222,
+              48.18937321844703
+              ],
+              [
+              -1.5375473668235031,
+              48.160431634399714
+              ],
+              [
+              -1.533115532636856,
+              48.07469371870582
+              ],
+              [
+              -1.683699841445474,
+              48.045669971693144
+              ],
+              [
+              -1.7856011020507196,
+              48.08297402498175
+              ],
+              [
+              -1.7891065765123528,
+              48.150987271163984
+              ]
+			      ]
+          ]
+        ]
+      }
+    }
+  ]
+};
+
+
+var osm = new L.TileLayer.BoundaryCanvas("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  boundary: fraJson,
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   subdomains: ['a', 'b', 'c'],
   maxNativeZoom: 19, // max value authorized by the leaflet API, to retrieve the map tiles
-  maxZoom: 20 // allow to zoom beyond the maxNativeZoom (but image will be blurred)
-}).addTo(map);
+  maxZoom: 20, // allow to zoom beyond the maxNativeZoom (but image will be blurred)
+  crossOrigin: true, // tile caching
+});
+map.addLayer(osm);
+var frLayer = L.geoJSON(fraJson);
+map.fitBounds(frLayer.getBounds());
 
 // =======================
 //     INIT VARIABLES
