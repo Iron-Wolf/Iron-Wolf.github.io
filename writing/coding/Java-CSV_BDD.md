@@ -19,14 +19,14 @@ Le temps de traitement complet est de 1:10 sur ma machine (i5 + 32Go de RAM).
                                   │        │                                              
                ┌──────────────────┘        └──────────────────────┐                       
                ▼                                                  │                       
- ┌─ Common CSV ──────────────────┐    ┌─ Common─SQL───────────────┴─────────────────────┐ 
- │                               │    │                                                 │ 
- │  bstractS3CsvConsumerService ─┼────┼─► DbUtils                                       │ 
- │   - CSVParser                 │    │    - boucle sur le flux du CSVParser            │ 
- │                               │    │    - convertie les données en objet du modèle   │ 
- └───────────────────────────────┘    │    - ajoute la données à une liste              │ 
-                                      │    - à 1000 éléments, la liste est sauvegardée  │ 
-                                      └─────────────────────────────────────────────────┘ 
+ ┌─ Common CSV ──────────────────┐    ┌─ Common─SQL───────────────┴──────────────────────┐ 
+ │                               │    │                                                  │ 
+ │  bstractS3CsvConsumerService ─┼────┼─► DbUtils                                        │ 
+ │   - CSVParser                 │    │    - boucle sur le flux du CSVParser             │ 
+ │                               │    │    - convertie les données en objet du modèle    │ 
+ └───────────────────────────────┘    │    - ajoute la données à un buffer               │ 
+                                      │    - sauvegarde du buffer, tous les 1000 éléments│
+                                      └──────────────────────────────────────────────────┘ 
 ```
 
 
@@ -37,20 +37,18 @@ public int process(final Stream<E> entityStream, final int chunkSize) {
   entityStream // Stream du CSVParser qui contient toutes les lignes du CSV
     .forEach(entity -> {
       processedCounter.incrementAndGet(); //compte le nombre de ligne traité
-      
       final T value = processFunction.apply(entity); // convertie le CSVRecord en objet du model (pour le save)
-      
       if (value != null) {
-        valuesBuffer.add(value); // ajoute les éléments à la liste
+        valuesBuffer.add(value); // ajoute les éléments à un buffer
       }
       
       if (valuesBuffer.size() >= chunkSize) { // le chunkSize vaut 1000
-        save(); // on a nos 1000 items, on lance la sauvegarde
+        save(); // on a 1000 éléments, on lance la sauvegarde et on vide le buffer
       }
     });
   
   if (!valuesBuffer.isEmpty()) {
-    save(); // la méthode "save" vide la liste donc ce cas ne doit jamais arriver...
+    save(); // le chunkSize n'a pas été dépassé, on sauvegarde le reste des éléments
   }
   
   return processedCounter.get();
@@ -58,9 +56,9 @@ public int process(final Stream<E> entityStream, final int chunkSize) {
 ```
 
 Plusieurs problèmes :
-- les données sont lue séquentiellements (via un ForEach) mais l'ordre en base n'a pas d'importance
+- les données sont lu séquentiellements (via un ForEach) mais l'ordre en base n'a pas d'importance
   - y a moyen de découper ça et faire des traitement par lot
-- tant que les données sont envoyés à la base (via le save) il ne se passe rien
+- lorsque les données sont envoyés à la base (via le save) le code ne fait rien
   - y a moyen de traiter les 1000 lignes suivantes en attendant
 - la méthode de sauvegarde passe par le JdbcTemplate de SpringBoot
   - à priori le JdbcTemplate de Java est plus rapide
@@ -84,7 +82,7 @@ public int process(final Stream<E> entityStream, final int chunkSize) {
   // map les objets vers le type accepté par la méthode de sauvegarde
   final List<T> list = entityStream
     .map(processFunction)
-    .parallel() // <- petit optimisation qui va évidement n'avoir AUCUN impact sur la suite...
+    .parallel() // <- petite optimisation, qui va évidement n'avoir AUCUN impact sur la suite...
     .toList();
   // ▲▲▲ CODE NON FOURNIT PAR CHATGPT ▲▲▲
 
@@ -264,7 +262,7 @@ Résultats :
 
 
 # Conslusion
-Tentative d'explication de l'algo (à retravailler ?) :
+Tentative d'explication de l'algo :
 ```
                         ┌─────────────────────────┐                      
                         │ Création d'autant de    │                      
@@ -293,6 +291,9 @@ Tentative d'explication de l'algo (à retravailler ?) :
                         └─────────────────────────┘                      
 ```
 
+Chaque Thread va lire les données séquentiellement dans le fichier (pour éviter les doublons).  
+Ensuite, il peut traiter et sauvegarder les données dans sont coin.  
+Charge à la BDD de traiter la charge.  
 Remarque : la conso mémoire est conditionnée par le nombre de Thread.
 
 
@@ -300,7 +301,7 @@ Remarque : la conso mémoire est conditionnée par le nombre de Thread.
 Le code est bien et gère correctement les coupure de la BDD, mais il reste un autre soucis.  
 Lorsqu'on charge un fichier en erreur, le traitement plante sans remonter l'exception.  
 
-Il y avait 2 solutions : 
+On a initialement identifié 2 solutions : 
 - ajouter un "throw Exception" (donc, pas une exception runtime) au niveau du save dans le DAO
   - mais cela obligais à modifier la fonction "save" qui est réécrite dans chaque DAO
   - du coup, il aurait fallu propager cette definition à toutes les méthodes "save"
@@ -309,8 +310,8 @@ Il y avait 2 solutions :
   - l'appel est bien catch, mais cela crée un code un peu trop magique
   - le "processFunction.apply" pourrait d'ailleur lever tout un tas d'autre exception
 
-On a donc choisit la 3eme solution.  
-Cela consitait à réécrire une bonne partie du code, en passant par "future.get()" :  
+C'était pas terrible, donc on a choisit une autre solution.  
+Mais, elle consitait à réécrire une bonne partie du code, en passant par "future.get()" :  
 ```java
 public static void computeInParallel(final Runnable task, final Logger log) {
 
@@ -340,3 +341,6 @@ public static void computeInParallel(final Runnable task, final Logger log) {
     executorService.shutdown();
 }
 ```
+
+# Amélioration avec la librairie Flux
+TODO...
