@@ -1,5 +1,5 @@
 # Contexte
-/!\ les chiffres non siginficatifs (nombre de ligne du CSV par exmeple) sont arrondies pour simplifier les explications
+/!\ certains chiffres non siginficatifs (comme nombre de ligne du CSV) sont arrondie pour simplifier les explications
 
 Chargement de 2 fichiers CSV, dont un de 500 000 lignes :
 - Le TF pose les fichier dans S3 et envoie une notif Kafka à l'application
@@ -17,16 +17,16 @@ Le temps de traitement complet est de 1:10 sur ma machine (i5 + 32Go de RAM).
              │         │      │   │        ▲   │      ╰───────╯                           
              └─────────┘      └───┼────────┼───┘                                          
                                   │        │                                              
-               ┌──────────────────┘        └──────────────────────┐                       
-               ▼                                                  │                       
- ┌─ Common CSV ──────────────────┐    ┌─ Common─SQL───────────────┴──────────────────────┐ 
- │                               │    │                                                  │ 
- │  bstractS3CsvConsumerService ─┼────┼─► DbUtils                                        │ 
- │   - CSVParser                 │    │    - boucle sur le flux du CSVParser             │ 
- │                               │    │    - convertie les données en objet du modèle    │ 
- └───────────────────────────────┘    │    - ajoute la données à un buffer               │ 
-                                      │    - sauvegarde du buffer, tous les 1000 éléments│
-                                      └──────────────────────────────────────────────────┘ 
+               ┌──────────────────┘        └───────────────────────┐                       
+               ▼                                                   │                       
+ ┌─ Common CSV ───────────────────┐    ┌─ Common─SQL───────────────┴──────────────────────┐ 
+ │                                │    │                                                  │ 
+ │  abstractS3CsvConsumerService ─┼────┼─► DbUtils                                        │ 
+ │   - CSVParser                  │    │    - boucle sur le flux du CSVParser             │ 
+ │                                │    │    - convertie les données en objet du modèle    │ 
+ └────────────────────────────────┘    │    - ajoute la données à un buffer               │ 
+                                       │    - sauvegarde du buffer, tous les 1000 éléments│
+                                       └──────────────────────────────────────────────────┘ 
 ```
 
 
