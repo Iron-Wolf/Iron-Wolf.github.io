@@ -1,6 +1,6 @@
 # Contexte
 
-Optimisation de la lecture d'un fichier Excel en Java, depuis un repo S3.
+Optimisation de la lecture d'un fichier Excel (au format OOXML) en Java, depuis un repo S3.  
 
 # Chargement depuis S3
 La récupération du fichier depuis S3 avec l'API pose des soucis de performance si le fichier est gros :
@@ -9,7 +9,7 @@ try (final InputStream inputStream = s3Service.getContentInputStream(s3Path.buck
   return OPCPackage.open(inputStream);
 }
 ```
-L'appel à `OPCPackage.open` fait que **le fichier complet est télécharger en mémoire** -> pas bon du tout
+L'appel à `OPCPackage.open` fait que **le fichier complet est télécharger en mémoire** -> pas bon du tout  
 OPCPackage est un objet mis à dispo par Apache POI.
 
 Correction :
@@ -58,3 +58,7 @@ Process :
         - `consumer` pour chaque ligne de la feuille
 
 
+# Ressources
+- diff entre XSSF et HSSF : https://poi.apache.org/components/spreadsheet/
+- exemple d'implémentation HSSF : https://svn.apache.org/repos/asf/poi/trunk/poi-examples/src/main/java/org/apache/poi/examples/hssf/eventusermodel/XLS2CSVmra.java
+- exemple d'implémentation XSSF : https://svn.apache.org/repos/asf/poi/trunk/poi-examples/src/main/java/org/apache/poi/examples/xssf/eventusermodel/XLSX2CSV.java
