@@ -110,7 +110,7 @@ function getDivIcon(inputString) {
   let displayString = inputString;
   if (!isNaN(parseFloat(inputString)) && isFinite(inputString)) {
     // inputString is a number, extract the decimal part
-    const decimalPart = inputString.split('.')[1];
+    const decimalPart = (inputString + "").split(".")[1];
     if (decimalPart) {
       displayString = decimalPart;
     }
