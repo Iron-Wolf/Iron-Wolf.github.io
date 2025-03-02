@@ -6,7 +6,7 @@
  */
 function addRestaurantMarkers(jsonArray, layerGroup) {
   for (var i = 0; i < jsonArray.length; ++i) {
-    if (jsonArray[i].url === "") {
+    if (!jsonArray[i].url) { // check null and empty string
       // marker has no url, display name only
       var popupContent = getPopupContent(jsonArray[i].name, "")
     }
@@ -16,8 +16,8 @@ function addRestaurantMarkers(jsonArray, layerGroup) {
         <a href="${jsonArray[i].url}" target="_blank">${jsonArray[i].name}</a>`, "")
     }
 
-    var emojiIcon = getEmojiIcon(jsonArray[i].emoji)
-    addMarker(jsonArray[i].lat, jsonArray[i].lng, emojiIcon, popupContent, layerGroup)
+    var divIcon = getDivIcon(jsonArray[i].emoji)
+    addMarker(jsonArray[i].lat, jsonArray[i].lng, divIcon, popupContent, layerGroup)
   }
 }
 
@@ -62,7 +62,7 @@ function addParkingMarkers(jsonArray, layerGroup) {
 function addMarker(lat, lng, customIcon, popupContent, layerGroup) {
   var usableIcon = customIcon;
 
-  /* Replaced by "getEmojiIcon" method (keep here for reference) */
+  /* Replaced by "getDivIcon" method (keep here for reference) */
   /*if (typeof customIcon === typeof "") {
     // CustomIcon is a string, we need to convert it to a usable object
     usableIcon = L.divIcon({
@@ -104,15 +104,23 @@ function getPopupContent(header, content) {
 
 /**
  * Return an icon object containing the given string.
- * It's recommended to use an emoji.
- * @param {string} emojiString 
+ * @param {string} inputString 
  */
-function getEmojiIcon(emojiString) {
+function getDivIcon(inputString) {
+  let displayString = inputString;
+  if (!isNaN(parseFloat(inputString)) && isFinite(inputString)) {
+    // inputString is a number, extract the decimal part
+    const decimalPart = inputString.split('.')[1];
+    if (decimalPart) {
+      displayString = decimalPart;
+    }
+  }
+  
   return L.divIcon({
     className: 'custom-div-icon',
     html: `
       <div style="background-color:#c30b82;" class="marker-pin"></div>
-      <span>${emojiString}</span>`,
+      <span>${displayString}</span>`,
     iconSize: [30, 42],
     iconAnchor: [15, 42], // half of width + height
     popupAnchor: [0, -30] // popup on top
