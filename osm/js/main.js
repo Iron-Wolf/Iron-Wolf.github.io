@@ -60,7 +60,8 @@ var tileLayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 // =======================
 //     INIT VARIABLES
 // =======================
-var lgRestaurant = L.layerGroup();
+var lgRestauFav = L.layerGroup();
+var lgRestauGoogle = L.layerGroup();
 var lgParking = L.layerGroup();
 
 // =======================
@@ -123,25 +124,52 @@ function spibidiStop(element) {
  * then toggle it's visibility
  * @param {*} element The input checkbox
  */
-function toggleRestaurantCheckbox(element) {
+function toggleRestauFavCheckbox(element) {
   if (element.type != "checkbox") {
     // the method doesn't know the element
     return;
   }
 
   if (element.checked) {
-    if (lgRestaurant.getLayers().length === 0) {
+    if (lgRestauFav.getLayers().length === 0) {
       // our layerGroup is empty, we load data from the file
-      fetch("./resources/data/restaurant.json")
+      fetch("./resources/data/restaurant_fav.json")
         .then(response => { return response.json(); })
-        .then(data => addRestaurantMarkers(data, lgRestaurant));
+        .then(data => addRestaurantMarkers(data, lgRestauFav));
     }
     // add markers on the map
-    lgRestaurant.addTo(map);
+    lgRestauFav.addTo(map);
   }
   else {
     // remove markers from the map
-    map.removeLayer(lgRestaurant);
+    map.removeLayer(lgRestauFav);
+  }
+}
+
+/**
+ * Add markers to the layerGroup if it's empty,
+ * then toggle it's visibility
+ * @param {*} element The input checkbox
+ */
+function toggleRestauGoogleCheckbox(element) {
+  if (element.type != "checkbox") {
+    // the method doesn't know the element
+    return;
+  }
+
+  if (element.checked) {
+    if (lgRestauGoogle.getLayers().length === 0) {
+      // our layerGroup is empty, we load data from the file
+      fetch("./resources/data/restaurant_google_202503.json")
+        .then(response => { return response.json(); })
+        .then(data => addRestaurantMarkers(data, lgRestauGoogle));
+    }
+    // add markers on the map
+    lgRestauGoogle.addTo(map);
+  }
+  else {
+    // remove markers from the map
+    map.removeLayer(lgRestauGoogle);
   }
 }
 

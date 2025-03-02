@@ -12,6 +12,28 @@ To test localy and avoid CORS errors, use a simple HTTP server (in the root fold
 # [OSM project](https://iron-wolf.github.io/osm/index.html)
 Goal : simple Map I use as a memo
 
+### Extract data from Google
+- I use the [Nearby Search](https://developers.google.com/maps/documentation/places/web-service/nearby-search) [playground](https://places-search-405409.ue.r.appspot.com/) to extract data (in packs of 20, because google...)
+- Then [JmesPath](https://play.jmespath.org/) to transform the JSON
+  ```jmespath
+  places[?rating>'4.1'].{
+    name: displayName.text,
+    emoji: rating,
+    url: websiteUri,
+    lat: location.latitude,
+    lng: location.longitude}
+  ```
+- [JQ](https://www.devtoolsdaily.com/jq_playground/) is also possible, but more verbose :
+  ```jq
+  [.places[] | select(.rating > 4.1) | {
+    name: .displayName.text,
+    emoji: .rating,
+    url: .websiteUri,
+    lat: .location.latitude,
+    lng: .location.longitude}]
+  ```
+- sort the data with : https://codeshack.io/json-sorter/
+
 ### Todo
 - [x] Add restaurants
 - [x] Add [parking occupation](https://data.rennesmetropole.fr/explore/dataset/export-api-parking-citedia/information/)
