@@ -1,10 +1,17 @@
 [
-	{
-		"name": "BDS Restaurant",
-		"emoji": 4.4,
-		"url": "https://bds-restaurant.com/bds-rennes",
-		"lat": 48.1097441,
-		"lng": -1.6804211
+  {
+		"name": "A Fuoco Nero",
+		"emoji": 4.9,
+		"url": "https://www.afuoconero.fr/",
+		"lat": 48.1118307,
+		"lng": -1.6767437
+	},
+  {
+		"name": "AKADY - restaurant solidaire",
+		"emoji": 4.8,
+		"url": "https://m.facebook.com/100064702934368/",
+		"lat": 48.1039317,
+		"lng": -1.6773358
 	},
 	{
 		"name": "Baan Meh- Restaurant Thaïlandais depuis 2006",
@@ -12,6 +19,13 @@
 		"url": "http://www.baanmeh.fr/",
 		"lat": 48.1154751,
 		"lng": -1.6919503
+	},
+	{
+		"name": "Basilic & Co - pizzas de terroirs",
+		"emoji": 4.5,
+		"url": "https://basilic-and-co.com/restaurants/pizzeria-rennes/republique/",
+		"lat": 48.1096550,
+		"lng": -1.6776639
 	},
 	{
 		"name": "Barex’po restaurant",
@@ -34,6 +48,13 @@
 		"lat": 48.109196,
 		"lng": -1.679953
 	},
+  {
+		"name": "Black Temple Food",
+		"emoji": 4.6,
+		"url": "https://www.blacktemplefood.com/",
+		"lat": 48.1143392,
+		"lng": -1.6816653
+	},
 	{
 		"name": "Bretone",
 		"emoji": 4.7,
@@ -55,12 +76,40 @@
 		"lat": 48.11166970000001,
 		"lng": -1.6854118
 	},
+  {
+		"name": "Café du Port",
+		"emoji": 4.6,
+		"url": "http://cafe-du-port-rennes.poi.place/",
+		"lat": 48.1105465,
+		"lng": -1.6832935
+	},
+  {
+		"name": "Casa Antonio",
+		"emoji": 4.6,
+		"url": null,
+		"lat": 48.1083791,
+		"lng": -1.6760965
+	},
 	{
 		"name": "Chez Brume",
 		"emoji": 4.6,
 		"url": "https://www.chezbrume.fr/",
 		"lat": 48.1088569,
 		"lng": -1.6805028
+	},
+  {
+		"name": "Chez Paul",
+		"emoji": 4.5,
+		"url": "https://www.facebook.com/ChezPaulRennes/",
+		"lat": 48.1086639,
+		"lng": -1.6818490
+	},
+  {
+		"name": "Chez tėta Maison La Source",
+		"emoji": 4.9,
+		"url": "http://chezteta-maisonlasource.fr/",
+		"lat": 48.1092822,
+		"lng": -1.6825363
 	},
 	{
 		"name": "Ciao Bella - Pizza Napoletana",
@@ -111,6 +160,20 @@
 		"lat": 48.1119062,
 		"lng": -1.6845667000000002
 	},
+  {
+		"name": "Curry Bowl",
+		"emoji": 4.9,
+		"url": "https://www.currybowlfrance.fr/",
+		"lat": 48.1119222,
+		"lng": -1.6756959
+	},
+  {
+		"name": "El habanero",
+		"emoji": 4.8,
+		"url": "https://instagram.com/elhabanerorennes?igshid=YmMyMTA2M2Y=",
+		"lat": 48.1119413,
+		"lng": -1.6754942
+	},
 	{
 		"name": "Fox and Friends Pub",
 		"emoji": 4.6,
@@ -145,6 +208,13 @@
 		"url": null,
 		"lat": 48.104594999999996,
 		"lng": -1.679273
+	},
+  {
+		"name": "Koboon Rennes",
+		"emoji": 4.5,
+		"url": "https://www.koboon-resto.fr/",
+		"lat": 48.1107975,
+		"lng": -1.6768553
 	},
 	{
 		"name": "Kôlochô",
@@ -202,6 +272,13 @@
 		"lat": 48.111517199999994,
 		"lng": -1.6854901999999998
 	},
+  {
+		"name": "La Parisienne",
+		"emoji": 4.6,
+		"url": "https://www.laparisienne-rennes.com/",
+		"lat": 48.1094339,
+		"lng": -1.6836705
+	},
 	{
 		"name": "La Réserve",
 		"emoji": 4.5,
@@ -222,6 +299,20 @@
 		"url": "http://www.tavernedelamarine.com/",
 		"lat": 48.1094894,
 		"lng": -1.6848003999999999
+	},
+  {
+		"name": "La Taverne Grecque",
+		"emoji": 4.6,
+		"url": "https://www.facebook.com/tavernayannis/?locale=fr_FR",
+		"lat": 48.1105704,
+		"lng": -1.6833808
+	},
+  {
+		"name": "Le 2 rue des Dames",
+		"emoji": 4.8,
+		"url": "http://www.le2ruedesdames.fr/",
+		"lat": 48.1106653,
+		"lng": -1.6833568
 	},
 	{
 		"name": "Le Bistrot Des Remparts",
@@ -244,6 +335,27 @@
 		"lat": 48.107598900000006,
 		"lng": -1.6755307
 	},
+  {
+		"name": "Le bocal",
+		"emoji": 4.7,
+		"url": null,
+		"lat": 48.1095586,
+		"lng": -1.6812708
+	},
+  {
+		"name": "Le Maquis Fast good africain",
+		"emoji": 4.9,
+		"url": "http://lemaquis-rennes.fr/",
+		"lat": 48.1164452,
+		"lng": -1.6809517
+	},
+  {
+		"name": "Le Gorille Bleu",
+		"emoji": 4.8,
+		"url": "https://le-gorille-bleu.eatbu.com/?lang=fr",
+		"lat": 48.1111970,
+		"lng": -1.6831680
+	},
 	{
 		"name": "Le Grill",
 		"emoji": 4.4,
@@ -264,6 +376,20 @@
 		"url": "https://www.instagram.com/le_hangar_rennes_/?hl=fr",
 		"lat": 48.1133269,
 		"lng": -1.6854810999999998
+	},
+  {
+		"name": "Le Petit Hanoï",
+		"emoji": 4.5,
+		"url": "https://lepetithanoi-rennes.fr/",
+		"lat": 48.1084178,
+		"lng": -1.6842026
+	},
+  {
+		"name": "Le Vasselot",
+		"emoji": 4.9,
+		"url": "https://levasselotrennes.eatbu.com/?lang=fr",
+		"lat": 48.1085230,
+		"lng": -1.6769155
 	},
 	{
 		"name": "Les Burgers de Colette - Rennes",
@@ -356,6 +482,13 @@
 		"lat": 48.11497,
 		"lng": -1.6763166999999999
 	},
+  {
+		"name": "Parfums d'Asie",
+		"emoji": 4.7,
+		"url": "http://www.parfumsdasie.fr/",
+		"lat": 48.1154843,
+		"lng": -1.6808015
+	},
 	{
 		"name": "POUTINEBROS RENNES",
 		"emoji": 4.3,
@@ -376,6 +509,34 @@
 		"url": "http://www.ramenya.fr/",
 		"lat": 48.114367699999995,
 		"lng": -1.6791121999999998
+	},
+  {
+		"name": "Restaurant La Petite Ourse",
+		"emoji": 4.9,
+		"url": "http://restaurantlapetiteourse.com/",
+		"lat": 48.1083240,
+		"lng": -1.6828870
+	},
+  {
+		"name": "Restaurant LUCA",
+		"emoji": 4.5,
+		"url": "http://www.restaurantluca.com/",
+		"lat": 48.1092321,
+		"lng": -1.6832934
+	},
+  {
+		"name": "Restaurant O'Liban",
+		"emoji": 4.5,
+		"url": "https://www.oliban-rennes.fr/",
+		"lat": 48.1137679,
+		"lng": -1.6809151
+	},
+  {
+		"name": "Restaurant Rennes-Kaboul",
+		"emoji": 4.8,
+		"url": "https://renneskaboul.fr/fr/menu/8977809014473621632",
+		"lat": 48.1168770,
+		"lng": -1.6780702
 	},
 	{
 		"name": "Roadside | Burger Restaurant Rennes",
@@ -418,6 +579,27 @@
 		"url": "https://seoultogo.fr/",
 		"lat": 48.1122893,
 		"lng": -1.6934184
+	},
+  {
+		"name": "Symbiozh",
+		"emoji": 4.7,
+		"url": "https://symbiozh.fr/",
+		"lat": 48.1155784,
+		"lng": -1.6807652
+	},
+  {
+		"name": "The Mix",
+		"emoji": 4.8,
+		"url": "https://commande-en-ligne.laddition.com/commande-en-ligne/the-mix",
+		"lat": 48.1071442,
+		"lng": -1.6715887
+	},
+  {
+		"name": "Toast it | Street-food",
+		"emoji": 4.9,
+		"url": "https://www.toast-it.fr/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=5597792636225409345",
+		"lat": 48.1105016,
+		"lng": -1.6755078
 	},
 	{
 		"name": "Tripletta Rennes",
