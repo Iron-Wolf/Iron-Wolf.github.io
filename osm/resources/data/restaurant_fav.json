@@ -1,5 +1,12 @@
 [
   {
+    "name": "Lycée des métiers Louis Guilloux",
+    "emoji": "🧑‍🍳",
+    "url": "https://lycee-des-metiers-louis-guilloux.fr/restaurant/",
+    "lat": 48.1249216,
+    "lng": -1.6321855
+  },
+  {
     "name": "Black Temple Food ?",
     "emoji": "🧆",
     "url": "https://blacktemplefood.fr/menu/",
