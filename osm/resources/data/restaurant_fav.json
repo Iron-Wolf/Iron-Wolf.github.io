@@ -28,7 +28,7 @@
     "lng": -1.6765000
   },
   {
-    "name": "Ramen Ya ?",
+    "name": "Ramen Ya",
     "emoji": "🍜",
     "url": "https://www.ramenya.fr/",
     "lat": 48.1143659, 
@@ -84,13 +84,6 @@
     "lng": -1.6855042
   },
   {
-    "name": "Poutinebros",
-    "emoji": "🍟",
-    "url": "https://www.poutinebros.com/",
-    "lat": 48.1138143,
-    "lng": -1.6809343
-  },
-  {
     "name": "Ker Soazig",
     "emoji": "🥞",
     "url": "https://www.kersoazig.fr",
@@ -126,13 +119,6 @@
     "lng": -1.6804788
   },
   {
-    "name": "Satio",
-    "emoji": "🥗",
-    "url": "http://satio-restaurant.fr/",
-    "lat": 48.1085013,
-    "lng": -1.6772324
-  },
-  {
     "name": "Banh Mi Viet",
     "emoji": "🥪",
     "url": "https://banhmiviet-rennes.fr/",
@@ -154,7 +140,7 @@
     "lng": -1.7141108
   },
   {
-    "name": "O’Liban ?",
+    "name": "O’Liban",
     "emoji": "🧆",
     "url": "https://restaurant-oliban.business.site/",
     "lat": 48.1137679,
@@ -210,7 +196,7 @@
     "lng": -1.6431742
   },
   {
-    "name": "Barbakoa ?",
+    "name": "Barbakoa",
     "emoji": "🥩",
     "url": "https://barbakoa.hubside.fr/notre-carte",
     "lat": 48.0501528, 
@@ -245,7 +231,7 @@
     "lng": -1.6807738
   },
   {
-    "name": "Nakama ?",
+    "name": "Nakama",
     "emoji": "🐙",
     "url": "https://nakama.eatbu.com/",
     "lat": 48.1107483, 
@@ -273,7 +259,7 @@
     "lng": -1.6641979
   },
   {
-    "name": "Carnivore ?",
+    "name": "Carnivore",
     "emoji": "🥩",
     "url": "",
     "lat": 48.1127973, 
@@ -281,13 +267,6 @@
   },
   
   
-  {
-    "name": "Aux Marchés des Halles",
-    "emoji": "🛒",
-    "url": "https://www.ollca.com/rennes/boutiques/aux-marches-des-halles",
-    "lat": 48.1128096,
-    "lng": -1.6826093
-  },
   {
     "name": "Le Bœuf Tricolore",
     "emoji": "🛒",
