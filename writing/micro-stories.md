@@ -40,10 +40,10 @@ La dernière chose qu'elle entendit fut le champ d'un coq.
 
 Tentative de traduction du Jabberwocky :
 
-C'était vriblant, et les visqueux tauves
-Virevoltaient et fouillardaient dans la ravée;
-Tout flémir étaient les Girvouettes,
-Et les raths errants dégribraient.
+C'était vriblant, et les visqueux tauves  
+Virevoltaient et fouillardaient dans la ravée;  
+Tout flémir étaient les Girvouettes,  
+Et les raths errants dégribraient.  
 
 ---
 
