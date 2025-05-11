@@ -1,5 +1,5 @@
 # 🍳 Let me cook
-<details>
+<details markdown="1">
 <summary>Terrine (sans hachoir)</summary>
 
 - 🌐 https://philippe-etchebest.com/pate-maison/
