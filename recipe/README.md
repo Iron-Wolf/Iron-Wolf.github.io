@@ -2,7 +2,7 @@
 <details markdown="1">
 <summary>Terrine (sans hachoir)</summary>
 
-- 🌐 https://philippe-etchebest.com/pate-maison/
+- 🌐 <https://philippe-etchebest.com/pate-maison/>
 - 🥣 tremper la mie de pain (sans croûte) dans du lait
 - 🔪 émincer
   - échalotes (25g)
@@ -23,10 +23,10 @@
 </details>
 
 
-<details>
+<details markdown="1">
 <summary>crème poireaux</summary>
 
-- 🌐 https://fan2recettes.fr/creme-vert-de-poireau
+- 🌐 <https://fan2recettes.fr/creme-vert-de-poireau>
 - 🔥 cuire le vert ⏲️ 15min (eau bouillante)
 - 🔁 mixer
   - poireau
@@ -39,10 +39,10 @@
 </details>
 
 
-<details>
+<details markdown="1">
 <summary>Pop Cake</summary>
 
-- 🌐 https://chezlours-bayonne.fr/recette-de-pop-cake-quatre-quart-au-mascarpone/
+- 🌐 <https://chezlours-bayonne.fr/recette-de-pop-cake-quatre-quart-au-mascarpone/>
 - 🔥 fondre le chocolat (200g)
 - 🔁 mélanger
   - quatre-quarts émietté
@@ -54,10 +54,10 @@
 
 
 # 🧽 Divers
-<details>
+<details markdown="1">
 <summary>Pain vaisselle</summary>
 
-- 🌐 https://www.oumnaturel.com/cake-vaisselle/
+- 🌐 <https://www.oumnaturel.com/cake-vaisselle/>
 - 🔁 mélange sec
   - Sodium Coco Sulfate (150g)
   - Sodium Cocoyl Iséthionate (25g)
