@@ -1,8 +1,8 @@
 /**
  * Loop on the Json array and add markers
  * to the layerGroup
- * @param {*} jsonArray 
- * @param {*} layerGroup 
+ * @param {Object} jsonArray 
+ * @param {L.LayerGroup} layerGroup 
  */
 function addRestaurantMarkers(jsonArray, layerGroup) {
   for (var i = 0; i < jsonArray.length; ++i) {
@@ -22,62 +22,39 @@ function addRestaurantMarkers(jsonArray, layerGroup) {
 }
 
 /**
- * Loop on the Json array and add markers
+ * Loop on the Json data and add markers
  * to the layerGroup
- * @param {*} jsonArray 
- * @param {*} layerGroup 
+ * @param {Object} data - Raw JSON data returned from the API.
+ * @param {L.LayerGroup} layerGroup - The Leaflet LayerGroup where markers will be added.
+ * @param {ParkingDataExtractor} extractor - Field extraction logic for the data structure.
  */
-function addParkingMarkers(jsonArray, layerGroup) {
-  jsonArray.records.forEach(item => {
-    var statusColor = item.fields.status === "OUVERT" ? "🟢" : "🔴"
-    var iconColor = item.fields.status === "OUVERT" ? greenIcon : redIcon
-    // check if the parking has less than 30% place available
-    var lowPercent = calculatePercent(30, item.fields.max)
-    if (item.fields.free <= lowPercent) {
-      statusColor = "🟠"
-      iconColor = orangeIcon
+function addGenericParkingMarkers(data, layerGroup, extractor) {
+  extractor.getRecords(data).forEach(item => {
+    const status = extractor.getStatus(item);
+    const free = extractor.getFree(item);
+    const max = extractor.getMax(item);
+    const coords = extractor.getCoordinates(item);
+    const name = extractor.getName(item);
+
+    let statusColor = status === "OUVERT" ? "🟢" : "🔴";
+    let iconColor = status === "OUVERT" ? greenIcon : redIcon;
+
+    const lowPercent = calculatePercent(30, max);
+    if (free <= lowPercent) {
+      statusColor = "🟠";
+      iconColor = orangeIcon;
     }
 
-    var popupContent = getPopupContent(
-      `${item.fields.key} ${statusColor}`, // header
-      `Free : ${item.fields.free}/${item.fields.max}` // content
-    )
-
-    addMarker(item.fields.geo[0],
-      item.fields.geo[1],
-      iconColor, // custom icon from leaflet-color-markers folder
-      popupContent,
-      layerGroup);
-  });
-}
-
-/**
- * Loop on the Json array and add markers
- * to the layerGroup
- * @param {*} jsonArray 
- * @param {*} layerGroup 
- */
-function addParkingStarMarkers(jsonArray, layerGroup) {
-  jsonArray.results.forEach(item => {
-    var statusColor = item.etatouverture === "OUVERT" ? "🟢" : "🔴"
-    var iconColor = item.etatouverture === "OUVERT" ? greenIcon : redIcon
-    // check if the parking has less than 30% place available
-    var lowPercent = calculatePercent(30, item.capacitesoliste)
-    if (item.jrdinfosoliste <= lowPercent) {
-      statusColor = "🟠"
-      iconColor = orangeIcon
-    }
-
-    var popupContent = getPopupContent(
-      `${item.nom} ${statusColor}`, // header
-      `Free : ${item.jrdinfosoliste}/${item.capacitesoliste}` // content
-    )
+    const popupContent = getPopupContent(
+      `${name} ${statusColor}`,
+      `Free : ${free}/${max}`
+    );
 
     addMarker(
-      item.coordonnees.lat,
-      item.coordonnees.lon,
-      iconColor, // custom icon from leaflet-color-markers folder
-      popupContent,
+      coords.lat, 
+      coords.lon, 
+      iconColor, 
+      popupContent, 
       layerGroup);
   });
 }
@@ -86,9 +63,9 @@ function addParkingStarMarkers(jsonArray, layerGroup) {
  * Add a marker in the layerGroup
  * @param {number} lat 
  * @param {number} lng 
- * @param {number} customIcon icon for the marker (could be an object or a string)
+ * @param {object} customIcon icon for the marker (could be an object or a string)
  * @param {string} popupContent 
- * @param {object} layerGroup 
+ * @param {L.LayerGroup} layerGroup 
  */
 function addMarker(lat, lng, customIcon, popupContent, layerGroup) {
   var usableIcon = customIcon;

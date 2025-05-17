@@ -179,7 +179,7 @@ function toggleRestauGoogleCheckbox(element) {
  * @param {*} element The input checkbox
  */
 function toggleParkingCheckbox(element) {
-  if (element.type != "checkbox") {
+  if (element.type !== "checkbox") {
     // the method doesn't know the element
     return;
   }
@@ -188,27 +188,31 @@ function toggleParkingCheckbox(element) {
     // disable checkbox while loading data
     element.disabled = true;
 
-    // load data from the API.
     // Doc : https://data.rennesmetropole.fr/explore/dataset/export-api-parking-citedia/information/
-    fetch("https://data.rennesmetropole.fr/api/records/1.0/search/?dataset=export-api-parking-citedia")
-      .then(response => { return response.json(); })
-      .then(data => {
-        addParkingMarkers(data, lgParking)
-        element.disabled = false;
-      });
-    // add markers on the map
-    lgParking.addTo(map);
-
-    // load data from the API.
+    const rennesApi = "https://data.rennesmetropole.fr/api/records/1.0/search/?dataset=export-api-parking-citedia";
     // Doc : https://data.explore.star.fr/explore/dataset/tco-parcsrelais-star-etat-tr/api/
-    fetch("https://data.explore.star.fr/api/explore/v2.1/catalog/datasets/tco-parcsrelais-star-etat-tr/records?select=nom%2C%20coordonnees%2C%20etatouverture%2C%20capacitesoliste%2C%20jrdinfosoliste&limit=20")
-      .then(response => { return response.json(); })
-      .then(data => {
-        addParkingStarMarkers(data, lgParkingStar)
-        element.disabled = false;
-      });
-    // add markers on the map
-    lgParkingStar.addTo(map);
+    const starApi = "https://data.explore.star.fr/api/explore/v2.1/catalog/datasets/tco-parcsrelais-star-etat-tr/records?select=nom%2C%20coordonnees%2C%20etatouverture%2C%20capacitesoliste%2C%20jrdinfosoliste&limit=20";
+
+    Promise.all([
+      fetch(rennesApi)
+        .then(res => res.json())
+        .then(data => {
+          addGenericParkingMarkers(data, lgParking, rennesApiExtractor);
+          // add markers on the map
+          lgParking.addTo(map);
+        }),
+      fetch(starApi)
+        .then(res => res.json())
+        .then(data => {
+          addGenericParkingMarkers(data, lgParkingStar, starApiExtractor);
+          // add markers on the map
+          lgParkingStar.addTo(map);
+        })
+    ])
+    .catch(err => console.error("Erreur de chargement :", err))
+    .finally(() => {
+      element.disabled = false;
+    });
   }
   else {
     // clear layerGroup, because data are recalculated everytime
@@ -216,3 +220,44 @@ function toggleParkingCheckbox(element) {
     lgParkingStar.clearLayers();
   }
 }
+
+// =======================
+//       EXTRACTORS
+// =======================
+/**
+ * @typedef {Object} ParkingDataExtractor
+ * Extractor object used to adapt API-specific data structures to a common format.
+ *
+ * @property {(data: Object) => Array} getRecords - Extracts the array of records from the API response.
+ * @property {(record: Object) => string} getStatus - Extracts the parking status ("OUVERT", etc.).
+ * @property {(record: Object) => number} getFree - Extracts the number of free spots.
+ * @property {(record: Object) => number} getMax - Extracts the total capacity.
+ * @property {(record: Object) => { lat: number, lon: number }} getCoordinates - Extracts GPS coordinates.
+ * @property {(record: Object) => string} getName - Extracts the parking name or key.
+ */
+
+/** @type {ParkingDataExtractor} */
+const rennesApiExtractor = {
+  getRecords: data => data.records,
+  getStatus: item => item.fields.status,
+  getFree: item => item.fields.free,
+  getMax: item => item.fields.max,
+  getCoordinates: item => ({
+    lat: item.fields.geo[0],
+    lon: item.fields.geo[1]
+  }),
+  getName: item => item.fields.key
+};
+
+/** @type {ParkingDataExtractor} */
+const starApiExtractor = {
+  getRecords: data => data.results,
+  getStatus: item => item.etatouverture,
+  getFree: item => item.jrdinfosoliste,
+  getMax: item => item.capacitesoliste,
+  getCoordinates: item => ({
+    lat: item.coordonnees.lat,
+    lon: item.coordonnees.lon
+  }),
+  getName: item => item.nom
+};
