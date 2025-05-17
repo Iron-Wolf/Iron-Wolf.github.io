@@ -63,6 +63,7 @@ var tileLayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 var lgRestauFav = L.layerGroup();
 var lgRestauGoogle = L.layerGroup();
 var lgParking = L.layerGroup();
+var lgParkingStar = L.layerGroup();
 
 // =======================
 //        METHODS
@@ -195,12 +196,23 @@ function toggleParkingCheckbox(element) {
         addParkingMarkers(data, lgParking)
         element.disabled = false;
       });
-
     // add markers on the map
     lgParking.addTo(map);
+
+    // load data from the API.
+    // Doc : https://data.explore.star.fr/explore/dataset/tco-parcsrelais-star-etat-tr/api/
+    fetch("https://data.explore.star.fr/api/explore/v2.1/catalog/datasets/tco-parcsrelais-star-etat-tr/records?select=nom%2C%20coordonnees%2C%20etatouverture%2C%20capacitesoliste%2C%20jrdinfosoliste&limit=20")
+      .then(response => { return response.json(); })
+      .then(data => {
+        addParkingStarMarkers(data, lgParkingStar)
+        element.disabled = false;
+      });
+    // add markers on the map
+    lgParkingStar.addTo(map);
   }
   else {
     // clear layerGroup, because data are recalculated everytime
     lgParking.clearLayers();
+    lgParkingStar.clearLayers();
   }
 }

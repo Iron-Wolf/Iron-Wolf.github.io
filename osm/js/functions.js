@@ -52,6 +52,37 @@ function addParkingMarkers(jsonArray, layerGroup) {
 }
 
 /**
+ * Loop on the Json array and add markers
+ * to the layerGroup
+ * @param {*} jsonArray 
+ * @param {*} layerGroup 
+ */
+function addParkingStarMarkers(jsonArray, layerGroup) {
+  jsonArray.results.forEach(item => {
+    var statusColor = item.etatouverture === "OUVERT" ? "🟢" : "🔴"
+    var iconColor = item.etatouverture === "OUVERT" ? greenIcon : redIcon
+    // check if the parking has less than 30% place available
+    var lowPercent = calculatePercent(30, item.capacitesoliste)
+    if (item.jrdinfosoliste <= lowPercent) {
+      statusColor = "🟠"
+      iconColor = orangeIcon
+    }
+
+    var popupContent = getPopupContent(
+      `${item.nom} ${statusColor}`, // header
+      `Free : ${item.jrdinfosoliste}/${item.capacitesoliste}` // content
+    )
+
+    addMarker(
+      item.coordonnees.lat,
+      item.coordonnees.lon,
+      iconColor, // custom icon from leaflet-color-markers folder
+      popupContent,
+      layerGroup);
+  });
+}
+
+/**
  * Add a marker in the layerGroup
  * @param {number} lat 
  * @param {number} lng 
