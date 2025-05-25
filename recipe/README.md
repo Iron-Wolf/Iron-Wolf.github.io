@@ -27,13 +27,14 @@
 <summary>crème poireaux</summary>
 
 - 🌐 <https://fan2recettes.fr/creme-vert-de-poireau>
-- 🔥 cuire le vert ⏲️ 15min (eau bouillante)
+- 🔥 cuire le vert ⏲️ 15min (à la poêles, avec un max de beurre)
 - 🔁 mixer
   - poireau
-  - chèvre frais 🥄
   - jus citron 🥄🥄🥄🥄
   - crème liquie 🥄🥄🥄🥄🥄
-  - oignon rouge
+  - chèvre frais 🥄
+  - oignon rouge (1/4)
+  - huile parfumée
   - sel / épices
 
 </details>
