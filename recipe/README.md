@@ -27,15 +27,32 @@
 <summary>crème poireaux</summary>
 
 - 🌐 <https://fan2recettes.fr/creme-vert-de-poireau>
-- 🔥 cuire le vert ⏲️ 15min (à la poêles, avec un max de beurre)
+- 🔥 cuire le vert ⏲️ 15min (eau bouillante)
 - 🔁 mixer
   - poireau
-  - jus citron 🥄🥄🥄🥄
-  - crème liquie 🥄🥄🥄🥄🥄
+  - jus citron 🥄🥄🥄
+  - crème 🥄🥄🥄🥄🥄 (ou lait ?)
   - chèvre frais 🥄
   - oignon rouge (1/4)
   - huile parfumée
   - sel / épices
+
+</details>
+
+
+<details markdown="1">
+<summary>Toast Coréen</summary>
+
+- 🌐 <https://www.maangchi.com/recipe/street-toast>
+- 🔁 mélanger
+  - carotte
+  - choux
+  - oigons
+  - oeuf (entier)
+- 🔥 cuire la galette à la poêle (maximum de beurre) ⏲️ 3min par face
+  - faire une forme carrée, pendant la cuison
+- 🔥 cuire le pain de mie ⏲️ 1min par face
+- 👉 former le toat avec sauces au choix
 
 </details>
 
