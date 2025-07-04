@@ -44,7 +44,7 @@
 <summary>Toast Coréen</summary>
 
 - 🌐 <https://www.maangchi.com/recipe/street-toast>
-- 🔁 mélanger
+- 🔁 couper et mélanger
   - carotte
   - choux
   - oigons
@@ -53,6 +53,19 @@
   - faire une forme carrée, pendant la cuison
 - 🔥 cuire le pain de mie ⏲️ 1min par face
 - 👉 former le toat avec sauces au choix
+
+</details>
+
+
+<details markdown="1">
+<summary>Tarte choco</summary>
+
+- 🔥 cuire la pate (180° ⏲️ 15min)
+- 🔥 fondre le chocolat (200g)
+- 🔁 mélanger
+  - crème liquide (20g)
+  - oeuf (entier)
+- 🔥 verser l'appareil et faire re-cuire (180° ⏲️ 15min)
 
 </details>
 
