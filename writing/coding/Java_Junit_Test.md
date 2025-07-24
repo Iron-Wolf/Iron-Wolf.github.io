@@ -34,6 +34,24 @@ Utiliser l'utilitaire Spring dédié à ça :
 ResourceUtils.getFile("classpath:filename.json"));
 ```
 
+## Imbrication de plusieurs objets
+Si on a un service qui contient des objet qu'on ne veut pas mocker, il faut le faire à la main.  
+```java
+@Mock
+MonRepository monRepository;
+@InjectMocks
+MonServiceSimple monServiceSimple; // service non mocké (contient une ref à MonRepository)
+
+MonService monService; // Objet de base des tests (contient une ref à MonServiceSimple)
+@BeforeEach
+public void setUp() {
+    // injection de dépendances multi-niveau à la main (pas gérée par Mockito)
+    monService = new MonService(monServiceSimple);
+}
+```
+C'est partique si un service est sur-découpé avec des services très simples.
+On test 2 couches d'un coup (normalement, ça veut dire qu'il faut revoir la structure du code).
+
 ## Capturer les messages de log
 Ajouter l'annotation à la classe :  
 ```java
