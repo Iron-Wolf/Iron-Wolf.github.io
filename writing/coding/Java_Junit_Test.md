@@ -1,8 +1,12 @@
 # @SpringBootTest
-- utiliser `@Autowired` pour tester les services
+- `@Autowired` :
+  - utilise le Bean réel, sans le modifier
 - `@MockBean` :
-  - crée un mock Mockito et l'injecte automatiquement dans le contexte Spring
+  - Mock un objet et l'injecte dans le contexte
   - remplace le bean réel par ce mock pour toute la durée du test
+- `@SpyBean` :
+  - injecte le Bean dans le contexte
+  - permet d'utiliser `verify`, `Captor`, `doReturn` ...
 
 # Tips & Tricks
 ## Call real method
