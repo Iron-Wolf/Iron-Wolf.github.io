@@ -48,7 +48,7 @@
   - carotte
   - choux
   - oigons
-  - oeuf (entier)
+  - oeuf (1 par toast)
 - 🔥 cuire la galette à la poêle (maximum de beurre) ⏲️ 3min par face
   - faire une forme carrée, pendant la cuison
 - 🔥 cuire le pain de mie ⏲️ 1min par face
