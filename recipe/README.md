@@ -65,11 +65,11 @@
   - farine (300g)
   - beurre (100g)
 - appareil
-  - 3 oeufs
-  - lait ou crème fraiche (25cl)
+  - 3/4 oeufs
+  - lait ou crème fraiche (20/30cl)
   - lardons, oignons, ...
 - 🔥 cuire patte à feu doux avec couvercle (3min)
-- 👉 retourner la patte
+- 👉 retourner la patte ?
   - ajouter garnitures crue
   - verser l'appareil
 
@@ -92,8 +92,8 @@
 <summary>Tarte choco</summary>
 
 - 🔥 cuire la pate (180° ⏲️ 15min)
-- 🔥 fondre le chocolat (200g)
-- 🔁 mélanger
+- 🔥 fondre le chocolat au bain-marie (200g)
+- 🔁 le mélanger avec
   - crème liquide (20g)
   - oeuf (entier)
 - 🔥 verser l'appareil et faire re-cuire (180° ⏲️ 15min)
