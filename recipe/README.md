@@ -58,6 +58,37 @@
 
 
 <details markdown="1">
+<summary>Quiche poêle</summary>
+
+- 🌐 <https://pizzaalmaestro.fr/quiche-a-la-poele-express/>
+- > patte ?
+  - farine (300g)
+  - beurre (100g)
+- appareil
+  - 3 oeufs
+  - lait ou crème fraiche (25cl)
+  - lardons, oignons, ...
+- 🔥 cuire patte à feu doux avec couvercle (3min)
+- 👉 retourner la patte
+  - ajouter garnitures crue
+  - verser l'appareil
+
+</details>
+
+
+<details markdown="1">
+<summary>chili</summary>
+
+- 🌐 
+- 👉 faire tremper les haricot toute la nuit
+- 🔥 faire cuire les haricot à l'eau (1h)
+- 🔥 cuire le riz dans l'eau des haricots
+- 🔥 cuire les légumes à côté
+
+</details>
+
+
+<details markdown="1">
 <summary>Tarte choco</summary>
 
 - 🔥 cuire la pate (180° ⏲️ 15min)
