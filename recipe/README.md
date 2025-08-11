@@ -61,17 +61,18 @@
 <summary>Quiche poêle</summary>
 
 - 🌐 <https://pizzaalmaestro.fr/quiche-a-la-poele-express/>
-- > patte ?
-  - farine (300g)
+- 👉 patte
+  - farine (200g)
   - beurre (100g)
+  - 👉 mélanger puis ajouter de l'eau (former une boule non collante)
 - appareil
   - 3/4 oeufs
   - lait ou crème fraiche (20/30cl)
   - lardons, oignons, ...
 - 🔥 cuire patte à feu doux avec couvercle (3min)
-- 👉 retourner la patte ?
-  - ajouter garnitures crue
-  - verser l'appareil
+- 👉 retourner la patte
+  - ajouter la garniture crue
+  - verser l'appareil et laisser cuire avec couvercle
 
 </details>
 
