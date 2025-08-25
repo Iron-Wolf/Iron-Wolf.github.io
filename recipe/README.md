@@ -60,11 +60,16 @@
 <details markdown="1">
 <summary>Quiche poêle</summary>
 
+- 🌐 <https://lasaisonencuisine.com/recette-rapide-pate-brisee-maison/>
 - 🌐 <https://pizzaalmaestro.fr/quiche-a-la-poele-express/>
-- 👉 patte
-  - farine (200g)
-  - beurre (100g)
-  - 👉 mélanger puis ajouter de l'eau (former une boule non collante)
+- 👉 patte (4 personnes)
+  - farine (150g)
+  - beurre (70g)
+  - sel
+  - 👉 mélanger
+  - 👉 ajouter eau (5cl) (boule non collante)
+  - laisser reposer ⏲️ 30min
+  - ou abaisser la patte et la congeler
 - appareil
   - 3/4 oeufs
   - lait ou crème fraiche (20/30cl)
