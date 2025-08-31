@@ -69,7 +69,7 @@
   - 👉 mélanger
   - 👉 ajouter eau (5cl) (boule non collante)
   - laisser reposer ⏲️ 30min (au frigo pour la travailler facilement)
-  - ou abaisser la patte et la congeler
+  - puis, abaisser la patte (à congeler si besoin)
 - appareil
   - 4 oeufs
   - lait ou crème fraiche (20/30cl)
