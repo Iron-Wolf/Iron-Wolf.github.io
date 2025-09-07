@@ -91,9 +91,9 @@
     "lng": -1.6855042
   },
   {
-    "name": "Ker Soazig",
-    "emoji": "🥞",
-    "url": "https://www.kersoazig.fr",
+    "name": "PB Poulet Braisé ?",
+    "emoji": "🍗",
+    "url": "https://pbpouletbraise.fr",
     "lat": 48.1057219,
     "lng": -1.6752561
   },
@@ -161,13 +161,6 @@
     "lng": -1.6807587
   },
   {
-    "name": "Angello dei Lices ?",
-    "emoji": "🍕",
-    "url": "https://angello.toctok.fr",
-    "lat": 48.1135978,
-    "lng": -1.6825627
-  },
-  {
     "name": "La Tomate ?",
     "emoji": "🍕",
     "url": "https://angello.toctok.fr",
@@ -196,9 +189,9 @@
     "lng": -1.67964
   },
   {
-    "name": "La Fontaine Aux Perles ?",
-    "emoji": "🍷",
-    "url": "http://www.lafontaineauxperles.com/",
+    "name": "Gueuleton ?",
+    "emoji": "🥩",
+    "url": "https://cartes.gueuleton.fr/rennes/",
     "lat": 48.0936223, 
     "lng": -1.6431742
   },
@@ -224,13 +217,6 @@
     "lng": -1.6234065
   },
   {
-    "name": "Germinal ?",
-    "emoji": "🍷",
-    "url": "https://www.legerminal.com/",
-    "lat": 48.1159518, 
-    "lng": -1.6048501
-  },
-  {
     "name": "L'Edelweiss",
     "emoji": "🫕",
     "url": "http://www.l-edelweiss-rennes.fr/",
@@ -245,7 +231,7 @@
     "lng": -1.6699561
   },
   {
-    "name": "Morex ?",
+    "name": "Morex",
     "emoji": "🍔",
     "url": "https://house.morexcustom.com/",
     "lat": 48.1053660, 
@@ -271,6 +257,27 @@
     "url": "",
     "lat": 48.1127973, 
     "lng": -1.5872897
+  },
+  {
+    "name": "Crêperie Saint-Georges ?",
+    "emoji": "🥞",
+    "url": "",
+    "lat": 48.1110527,
+    "lng": -1.6824180
+  },
+  {
+    "name": "La Sarrasine ?",
+    "emoji": "🥞",
+    "url": "",
+    "lat": 48.1118111,
+    "lng": -1.6760718
+  },
+  {
+    "name": "Bretone ?",
+    "emoji": "🥞",
+    "url": "",
+    "lat": 48.1091908,
+    "lng": -1.6727306
   },
   
   
