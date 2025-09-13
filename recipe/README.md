@@ -1,3 +1,5 @@
+[Repo Github](https://github.com/Iron-Wolf/Iron-Wolf.github.io/tree/master/recipe)
+
 # 🍳 Let me cook
 <details markdown="1">
 <summary>Terrine (sans hachoir)</summary>
@@ -63,7 +65,7 @@
 - 🌐 <https://lasaisonencuisine.com/recette-rapide-pate-brisee-maison/>
 - 🌐 <https://pizzaalmaestro.fr/quiche-a-la-poele-express/>
 - 👉 patte (4 personnes)
-  - farine (200g)
+  - farine (200g / 330ml)
   - beurre (100g)
   - sel
   - 👉 mélanger
@@ -157,4 +159,8 @@
 - 👉 mettre dans un bocal pendant que c'est chaud
 
 </details>
+
+
+# Outils
+Convertion : https://www.omnicalculator.com/food/ml-to-grams
 
