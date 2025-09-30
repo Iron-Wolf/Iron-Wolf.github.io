@@ -118,10 +118,15 @@
 
 - 🌐 <https://missclaudine.fr/recettes/comment-reussir-des-nouilles-sautees-maison-savoureuses-et-simples/>
 - 🌐 <https://www.papillesetpupilles.fr/2024/06/nouilles-sautees-sauce-soja-une-recette-chinoise-facile.html/>
-- 👉 si besoin, faire mariner la viande dans le soja
+- 👉 marinade de la viande (s'il y en a) :
+  -  sauce soja 🥄🥄
+  -  mirin 🥄
+  -  (sucre 🥄)
+  -  eau 🥄
 - 🔥 cuire les nouilles à l'eau (stoper cuison à l'eau froide pour pas quelles collent)
-- 🔥 bien cuire la viande, puis les legumes coupés finnements (⏲️ 5min)
-- 🔥 ajouter les nouilles et la sauce de la marinade (⏲️ 2min)
+- 🔥 cuire la viande
+  - ajouter les legumes coupés finnements (⏲️ 3min)
+  - ajouter les nouilles et la sauce de la marinade (⏲️ 2min)
 
 </details>
 
