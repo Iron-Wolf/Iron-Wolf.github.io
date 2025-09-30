@@ -2,7 +2,7 @@
 
 # 🍳 Let me cook
 <details markdown="1">
-<summary>Terrine (sans hachoir)</summary>
+<summary>🥖 Terrine (sans hachoir)</summary>
 
 - 🌐 <https://philippe-etchebest.com/pate-maison/>
 - 🥣 tremper la mie de pain (sans croûte) dans du lait
@@ -26,7 +26,7 @@
 
 
 <details markdown="1">
-<summary>crème poireaux</summary>
+<summary>🥣 crème poireaux</summary>
 
 - 🌐 <https://fan2recettes.fr/creme-vert-de-poireau>
 - 🔥 cuire le vert ⏲️ 10min (eau bouillante)
@@ -43,7 +43,7 @@
 
 
 <details markdown="1">
-<summary>Toast Coréen</summary>
+<summary>🥪 Toast Coréen</summary>
 
 - 🌐 <https://www.maangchi.com/recipe/street-toast>
 - 🔁 couper et mélanger
@@ -60,7 +60,7 @@
 
 
 <details markdown="1">
-<summary>Quiche poêle</summary>
+<summary>🍕 Quiche poêle</summary>
 
 - 🌐 <https://lasaisonencuisine.com/recette-rapide-pate-brisee-maison/>
 - 🌐 <https://pizzaalmaestro.fr/quiche-a-la-poele-express/>
@@ -77,7 +77,7 @@
   - lait ou crème fraiche (20/30cl)
   - lardons, oignons, ...
 - 🔥 cuire patte à feu doux avec couvercle (3min)
-- 👉 retourner la patte
+- 👉 retourner la patte (pas obligatoire, surtout si la patte est rattée)
   - ajouter la garniture crue
   - verser l'appareil et laisser cuire avec couvercle
 
@@ -85,7 +85,7 @@
 
 
 <details markdown="1">
-<summary>Wrap (14 pièces)</summary>
+<summary>🌯 Wrap (14 pièces)</summary>
 
 - 🌐 
 - 🔁 mélanger
@@ -102,7 +102,7 @@
 
 
 <details markdown="1">
-<summary>chili</summary>
+<summary>🍲 chili</summary>
 
 - 🌐 
 - 👉 faire tremper les haricot toute la nuit
@@ -114,7 +114,20 @@
 
 
 <details markdown="1">
-<summary>Tarte choco</summary>
+<summary>🍜 Nouilles sautées</summary>
+
+- 🌐 <https://missclaudine.fr/recettes/comment-reussir-des-nouilles-sautees-maison-savoureuses-et-simples/>
+- 🌐 <https://www.papillesetpupilles.fr/2024/06/nouilles-sautees-sauce-soja-une-recette-chinoise-facile.html/>
+- 👉 si besoin, faire mariner la viande dans le soja
+- 🔥 cuire les nouilles à l'eau (stoper cuison à l'eau froide pour pas quelles collent)
+- 🔥 bien cuire la viande, puis les legumes coupés finnements (⏲️ 5min)
+- 🔥 ajouter les nouilles et la sauce de la marinade (⏲️ 2min)
+
+</details>
+
+
+<details markdown="1">
+<summary>🍫 Tarte choco</summary>
 
 - 🔥 cuire la pate (180° ⏲️ 15min)
 - 🔥 fondre le chocolat au bain-marie (200g)
@@ -127,7 +140,7 @@
 
 
 <details markdown="1">
-<summary>Pop Cake</summary>
+<summary>🍰 Pop Cake</summary>
 
 - 🌐 <https://chezlours-bayonne.fr/recette-de-pop-cake-quatre-quart-au-mascarpone/>
 - 🔥 fondre le chocolat (200g)
@@ -142,7 +155,7 @@
 
 # 🧽 Divers
 <details markdown="1">
-<summary>Pain vaisselle</summary>
+<summary>🧼 Pain vaisselle</summary>
 
 - 🌐 <https://www.oumnaturel.com/cake-vaisselle/>
 - 🔁 mélange sec
