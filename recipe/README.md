@@ -118,6 +118,7 @@
 
 - 🌐 <https://missclaudine.fr/recettes/comment-reussir-des-nouilles-sautees-maison-savoureuses-et-simples/>
 - 🌐 <https://www.papillesetpupilles.fr/2024/06/nouilles-sautees-sauce-soja-une-recette-chinoise-facile.html/>
+- 🌐 <https://ohmonbento.com/yakisoba-les-nouilles-grillees-a-la-japonaise/#Nouilles_sautees_Yakisoba/>
 - 👉 marinade de la viande (s'il y en a) :
   -  2CS sauce soja
   -  1CS mirin ou 1CS sauce huitre
