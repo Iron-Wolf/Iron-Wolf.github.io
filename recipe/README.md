@@ -124,7 +124,7 @@
   -  (1CC sucre)
   -  1CS eau
 - 🔥 cuire les nouilles à l'eau (stoper cuison à l'eau froide pour pas quelles collent)
-- 🔥 cuire la viande
+- 🔥 cuire la viande (tout à feu moyen-vif)
   - ajouter les legumes coupés finnements (⏲️ 3min)
   - ajouter les nouilles et la sauce de la marinade (⏲️ 2min)
 
