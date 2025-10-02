@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Seasonal vegetables</title>
+</head>
+<body>
+  <h1>Seasonal vegetables</h1>
+  <p>intégrer le markdown...</p>
+  
+  <div id="table-container"></div>
+
+  <script>
+    // === Configuration: list vegetables and their months (1 = Jan, 12 = Dec) ===
+    const vegetables = [
+      { name: "Aubergine", months: [4,5,6,7], icon: "🍆"},
+      { name: "Brocoli", months: [] },
+      { name: "Céleri branche", months: [7,8,9], icon: "https://cdn-icons-png.flaticon.com/512/1790/1790400.png"},
+      { name: "Céleri rave", months: [9,10,11,12], icon: "https://cdn-icons-png.flaticon.com/512/8886/8886093.png"},
+      { name: "Chou fleur", months: [] },
+      { name: "Concombre", months: [] },
+      { name: "Courgettes", months: [] },
+      { name: "Epinard", months: [] },
+      { name: "Fève", months: [] },
+      { name: "Haricot vert", months: [] },
+      { name: "Oignon", months: [] },
+      { name: "Petit pois", months: [] },
+      { name: "Tomate", months: [] },
+    ];
+
+    // Month names for the header (adjust language if you want)
+    const monthNames = ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", 
+                      "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"];
+
+    // current month number 1..12
+    const currentMonth = new Date().getMonth() + 1;
+
+    // === Generate table HTML ===
+    function generateTable() {
+      let html = "<table border='1' cellpadding='5' cellspacing='0'><thead><tr>";
+      html += "<th>Vegetable</th>";
+      monthNames.forEach((m, i) => {
+        // highlight current month with a background color (th are bold by default)
+        if (i + 1 === currentMonth) {
+          html += `<th style="background-color:#ffef90;font-weight:700">${m}</th>`;
+        } else {
+          html += `<th>${m}</th>`;
+        }
+      });
+      html += "</tr></thead><tbody>";
+
+      vegetables.forEach(veg => {
+        const inSeasonNow = veg.months.includes(currentMonth);
+        // bold the whole row if the vegetable is in season this month
+        html += `<tr${inSeasonNow ? ` style="font-weight:700"` : ""}>`;
+        html += `<td>${veg.icon ? (veg.icon.startsWith("http") ? `<img src="${veg.icon}" alt="" width="20">` : veg.icon) : ""} ${veg.name}</td>`;
+
+        for (let m = 1; m <= 12; m++) {
+          html += `<td>${veg.months.includes(m) ? "X" : ""}</td>`;
+        }
+        html += "</tr>";
+      });
+
+      html += "</tbody></table>";
+      document.getElementById("table-container").innerHTML = html;
+    }
+
+    generateTable();
+  </script>
+</body>
+</html>
