@@ -33,7 +33,7 @@
 - 🔁 mixer
   - poireau
   - jus citron 🥄🥄🥄
-  - crème 🥄🥄🥄🥄🥄 (ou lait ?)
+  - crème 🥄🥄🥄🥄🥄 (ou lait)
   - chèvre frais 🥄
   - oignon rouge (1/4)
   - huile parfumée
@@ -119,15 +119,30 @@
 - 🌐 <https://missclaudine.fr/recettes/comment-reussir-des-nouilles-sautees-maison-savoureuses-et-simples/>
 - 🌐 <https://www.papillesetpupilles.fr/2024/06/nouilles-sautees-sauce-soja-une-recette-chinoise-facile.html/>
 - 🌐 <https://ohmonbento.com/yakisoba-les-nouilles-grillees-a-la-japonaise/#Nouilles_sautees_Yakisoba/>
-- 👉 marinade de la viande (s'il y en a) :
-  -  2CS sauce soja
-  -  1CS mirin ou 1CS sauce huitre
+- 👉 marinade (pour viande ou légumes) :
+  -  4CS sauce soja
+  -  2CS mirin ou 2CS sauce huitre
   -  (1CC sucre)
-  -  1CS eau
+  -  2CS eau
 - 🔥 cuire les nouilles à l'eau (stoper cuison à l'eau froide pour pas quelles collent)
-- 🔥 cuire la viande (tout à feu moyen-vif)
+- 🔥 cuire la viande (feu moyen-vif)
   - ajouter les legumes coupés finnements (⏲️ 3min)
   - ajouter les nouilles et la sauce de la marinade (⏲️ 2min)
+
+</details>
+
+
+<details markdown="1">
+<summary>🐟 saumon papillote</summary>
+
+- 🌐 
+- 👉 poser pavé de saumon dans papier cuison (x2 pour bien isoler)
+  - crème légère
+  - oigons
+  - huile d'olive
+  - vinaigre balsamique
+  - sel, poivre, aneth
+- 🔥 ⏲️ 20min au four à 180/190 defrés
 
 </details>
 
