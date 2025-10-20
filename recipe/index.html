@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Seasonal vegetables</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
   <h1>Seasonal vegetables</h1>
-  <p>intégrer le markdown...</p>
   
   <div id="table-container"></div>
+  <div id="markdown-content">Chargement du contenu...</div>
 
   <script>
     // === Configuration: list vegetables and their months (1 = Jan, 12 = Dec) ===
@@ -66,6 +67,28 @@
     }
 
     generateTable();
+  </script>
+  
+  <script>
+    // URL of the markdown file
+    const markdownUrl = 'https://raw.githubusercontent.com/Iron-Wolf/Iron-Wolf.github.io/refs/heads/master/recipe/README.md';
+
+    fetch(markdownUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Loading error : ${response.status}`);
+        }
+        return response.text();
+      })
+      .then(md => {
+        // Convert to HTML
+        const html = marked.parse(md);
+        document.getElementById('markdown-content').innerHTML = html;
+      })
+      .catch(error => {
+        document.getElementById('markdown-content').innerHTML =
+          `<p style="color:red;">Rendering error : ${error.message}</p>`;
+      });
   </script>
 </body>
 </html>
