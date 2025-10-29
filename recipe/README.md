@@ -1,4 +1,5 @@
-[Repo Github](https://github.com/Iron-Wolf/Iron-Wolf.github.io/tree/master/recipe)
+[Repo Github](https://github.com/Iron-Wolf/Iron-Wolf.github.io/tree/master/recipe)  
+[Version Web](https://iron-wolf.github.io/recipe/)
 
 # 🍳 Let me cook
 <details markdown="1">
@@ -195,6 +196,10 @@
 
 </details>
 
+
+# Idées pas encore testées
+https://www.cuisinelolo.fr/2022/12/02/pizza-patate-douce/
+https://www.cuisinelolo.fr/2025/02/03/curry-de-carottes/
 
 # Outils
 Convertion : https://www.omnicalculator.com/food/ml-to-grams
