@@ -197,9 +197,10 @@
 </details>
 
 
-# Idées pas encore testées
-https://www.cuisinelolo.fr/2022/12/02/pizza-patate-douce/
-https://www.cuisinelolo.fr/2025/02/03/curry-de-carottes/
+# Idées à tester
+https://www.cuisinelolo.fr/2022/12/02/pizza-patate-douce/  
+https://www.cuisinelolo.fr/2025/02/03/curry-de-carottes/  
+
 
 # Outils
 Convertion : https://www.omnicalculator.com/food/ml-to-grams
