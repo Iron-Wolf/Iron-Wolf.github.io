@@ -202,6 +202,7 @@ https://www.cuisinelolo.fr/2022/12/02/pizza-patate-douce/
 https://www.cuisinelolo.fr/2025/02/03/curry-de-carottes/  
 https://www.cuisinelolo.fr/2023/10/26/boulettes-de-poulet-au-parmesan/  
 https://www.cuisinelolo.fr/2024/11/19/clafoutis-au-butternut-chorizo-feta/  
+https://www.cleacuisine.fr/autres-plats/cabbage-roll/  
 
 
 # Outils
