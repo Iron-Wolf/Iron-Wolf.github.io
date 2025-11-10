@@ -121,6 +121,8 @@
 - 🌐 <https://www.papillesetpupilles.fr/2024/06/nouilles-sautees-sauce-soja-une-recette-chinoise-facile.html/>
 - 🌐 <https://ohmonbento.com/yakisoba-les-nouilles-grillees-a-la-japonaise/#Nouilles_sautees_Yakisoba/>
 - 🌐 <https://www.cuisinelolo.fr/2023/05/16/nouilles-sautees-aux-legumes/>
+- udon :
+  - https://www.julievoyage.com/recette/nouilles-udon-faites-maison
 - 👉 marinade (pour viande ou légumes) :
   -  4CS sauce soja
   -  2CS mirin ou 2CS sauce huitre
