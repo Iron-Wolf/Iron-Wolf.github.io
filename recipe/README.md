@@ -6,22 +6,24 @@
 <summary>🥖 Terrine (sans hachoir)</summary>
 
 - 🌐 <https://philippe-etchebest.com/pate-maison/>
-- 🥣 tremper la mie de pain (sans croûte) dans du lait
+- 🥣 tremper mie de pain dans le lait
 - 🔪 émincer
   - échalotes (25g)
   - persil / estragon / ...
-  - poitrine de porc (200g)
-  - foie de porc
+  - poitrine de porc (130g)
+  - foie de porc (50g)
+- 🥣 mélanger avec
   - mie de pain
   - 1 oeuf
   - sel / poivre
-  - cognac / porto
+  - cognac | porto
 - 👉 pasteuriser les bocaux dans l'eau bouillante
 - 👉 remplir les bocaux (lorier, thym, terrine)
 - 🔥 cuison bain-marie ⏲️ 3h
-  - laisser refroidire
-  - sécher l'opercule (pour éviter la rouille)
-  - conservation 12 mois
+  - laisser refroidire 1h (selle le couvercle)
+  - sécher couvercle (évite la rouille)
+  - laisser maturer 3 semaines
+  - déguster dans l'année
 
 </details>
 
