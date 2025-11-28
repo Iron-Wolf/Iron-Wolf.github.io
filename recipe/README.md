@@ -10,13 +10,13 @@
 - 🔪 émincer
   - échalotes (25g)
   - persil / estragon / ...
-  - poitrine de porc (130g)
-  - foie de porc (50g)
+  - poitrine de porc (120g)
+  - foie de porc (30g)
 - 🥣 mélanger avec
   - mie de pain
   - 1 oeuf
   - sel / poivre
-  - cognac | porto
+  - cognac | porto 🥄🥄
 - 👉 pasteuriser les bocaux dans l'eau bouillante
 - 👉 remplir les bocaux (lorier, thym, terrine)
 - 🔥 cuison bain-marie ⏲️ 3h
