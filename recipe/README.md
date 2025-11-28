@@ -8,7 +8,7 @@
 - 🌐 <https://philippe-etchebest.com/pate-maison/>
 - 🥣 tremper mie de pain dans le lait
 - 🔪 émincer
-  - échalotes (25g)
+  - échalotes (30g)
   - persil / estragon / ...
   - poitrine de porc (120g)
   - foie de porc (30g)
@@ -16,10 +16,10 @@
   - mie de pain
   - 1 oeuf
   - sel / poivre
-  - cognac | porto 🥄🥄
+  - cognac | porto (1CS)
 - 👉 pasteuriser les bocaux dans l'eau bouillante
 - 👉 remplir les bocaux (lorier, thym, terrine)
-- 🔥 cuison bain-marie ⏲️ 3h
+- 🔥 cuison bain-marie ⏲️ 3h (feu moyen-vif)
   - laisser refroidire 1h (selle le couvercle)
   - sécher couvercle (évite la rouille)
   - laisser maturer 3 semaines
