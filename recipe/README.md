@@ -154,6 +154,18 @@
 
 
 <details markdown="1">
+<summary>🍫 Truffes (pour une dizaine)</summary>
+
+- 🔥 faire fondre au bain-marie
+  - Chocolat dessert 70% (200g)
+  - beurre (30g)
+- laisser refroidire (pas trop non plus, pour travailler correctement)
+- former les boules et rouler dans du cacao
+
+</details>
+
+
+<details markdown="1">
 <summary>🍫 Tarte choco</summary>
 
 - 🔥 cuire la pate (180° ⏲️ 15min)
