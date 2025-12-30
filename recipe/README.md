@@ -72,7 +72,7 @@
   - beurre (100g)
   - sel
   - 👉 mélanger
-  - 👉 ajouter eau (5cl) (boule non collante)
+  - 👉 ajouter eau (30cl) (boule non collante)
   - laisser reposer ⏲️ 30min (au frigo pour la travailler facilement)
   - puis, abaisser la patte (à congeler si besoin)
 - appareil
