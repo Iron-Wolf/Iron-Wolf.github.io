@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Cobblemon Server - Opening Soon!</title>
+
+<!-- =========================================================
+     CONFIGURATION GLOBALE
+     ========================================================= -->
+<script>
+const CONFIG = {
+    serverName: "Cobblemon Paradise",
+    serverAddress: "incoming (faut trouver une date...)",
+    pageTitle: "★ Ouverture du serveur Cobblemon ★",
+    headerGif: "https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif",
+
+    guideLinks: [
+        { name: "Installer Minecraft Java", url: "#" },
+        { name: "Utiliser un launcher (genre PrismLauncher)", url: "https://prismlauncher.org/" },
+        { name: "Installer le modpack", url: "https://www.curseforge.com/minecraft/modpacks/cobblemon-academy" },
+        { name: "Mod optionnel", url: "https://www.curseforge.com/minecraft/mc-mods/distant-horizons" }
+    ]
+};
+</script>
+<!-- ========================================================= -->
+
+<style>
+/* -------------------- Styles globaux -------------------- */
+body {
+    margin: 0;
+    min-height: 9000vh;
+    font-family: "Comic Sans MS", "Times New Roman", serif;
+    cursor: url("https://ani.cursors-4u.net/games/gam-16/gam1535.cur"), auto;
+
+    background: #00bd2f url('https://www.transparenttextures.com/patterns/light-wool.png') repeat fixed;
+    animation: scrollBackground 20s linear infinite;
+    position: relative; /* nécessaire pour overlay CRT */
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(to bottom, rgba(0,0,0,0.28) 0 1px, transparent 1px 3px);
+    pointer-events: none;
+    z-index: 9998;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(255,0,0,0.22), rgba(0,255,0,0.15), rgba(0,0,255,0.22)),
+                radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0.85) 5%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 9999;
+}
+@keyframes scrollBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 500px; }
+}
+
+
+/* -------------------- Conteneur des GIFs -------------------- */
+.gif-container {
+  display: flex;         /* met les GIFs en ligne */
+  gap: 10px;             /* espace entre les GIFs */
+  flex-wrap: wrap;       /* pour passer à la ligne si besoin */
+  align-items: center;   /* aligne verticalement au centre */
+}
+
+/* Style commun aux GIFs */
+.gif-container img {
+  height: 150px;         /* hauteur uniforme */
+  object-fit: contain;   /* garder les proportions de l'image */
+  border-radius: 5px;    /* petit style optionnel */
+}
+
+/* -------------------- Étoiles animées -------------------- */
+.stars {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-50px) translateX(0) rotate(0deg); }
+    100% { transform: translateY(100vh) translateX(var(--dx)) rotate(360deg); }
+}
+
+/* -------------------- Conteneurs -------------------- */
+.container {
+    width: 960px;
+    margin: 20px auto;
+    text-align: center;
+    border: 6px outset #ff99ff;
+    background: #ffe6ff;
+    padding: 16px;
+}
+
+h1 { color: yellow; text-shadow: 2px 2px red; }
+h2 { color: #660099; text-decoration: underline; }
+
+.server-box {
+    border: 4px inset #cc66ff;
+    padding: 12px;
+    margin: 20px;
+	text-align: left;
+    background: #ff00ff;
+    font-size: 18px;
+    color: #330066;
+}
+
+a {
+    color: #0000cc;
+    font-weight: bold;
+    cursor: url("https://ani.cursors-4u.net/games/gam-16/gam1535.cur"), auto;
+}
+a:hover { color: yellow; background: purple; }
+
+ul { list-style-type: square; text-align: left; margin-left: 180px; }
+
+.marquee { color: #ff3399; font-size: 18px; }
+.counter { font-size: 13px; color: #660066; margin-top: 16px; }
+
+/* -------------------- Traînée souris -------------------- */
+.trail {
+    position: fixed;
+    width: 706px; height: 604px;
+    pointer-events: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fadeOut 2s ease-in forwards;
+}
+@keyframes fadeOut { to { transform: scale(0.2); } }
+
+/* -------------------- Cadre CRT -------------------- */
+.crt-frame { width: 980px; 
+    margin: 30px auto; 
+    padding: 25px; 
+    background: #ffffcc; 
+    border: 8px ridge #ff00ff; 
+    position: relative; 
+    overflow: hidden; 
+    transform: perspective(900px) scale(1.05) rotateX(0.3deg) rotateY(-0.3deg); 
+    border-radius: 40px; }
+</style>
+</head>
+
+<body>
+    <!-- Étoiles animées -->
+    <div class="stars" id="stars"></div>
+	
+<div class="crt-frame">
+
+    <div class="container">
+        <img id="headerGif" alt="header gif"><br>
+        <h1 id="pageTitle"></h1>
+
+        <marquee class="marquee" scrollamount="6">
+            ✨ Bienvenue sur le serveur Cobblemon — Pokémon & Minecraft réunis ✨
+        </marquee>
+
+		<div id="gifs-pokemon" class="gif-container"></div>
+
+        <div class="server-box">
+            <strong>Adresse du serveur :</strong><span id="serverAddress"></span><br>
+			<strong>Version Minecraft :</strong><span> 1.21.1 </span><br/>
+			<strong>Version CobbleMon (modpack) :</strong><span> 1.4.1 </span>
+        </div>
+
+        <h2>Guide de configuration (en cours de rédaction)</h2>
+        <ul id="guideList"></ul>
+
+        <div id="gifs-minecraft" class="gif-container"></div>
+
+        <div class="counter">
+            <img src="https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif" width="20">
+            Nombre de visiteurs : <span id="visitCount">0</span>
+        </div>
+
+        <br>
+        <blink>
+            ★ Site recommandé en 800x600 — Netscape Navigator friendly ★
+        </blink>
+    </div>
+</div>
+
+<script>
+/* -------------------- Initialisation dynamique -------------------- */
+document.title = CONFIG.pageTitle;
+document.getElementById("pageTitle").innerText = CONFIG.pageTitle;
+document.getElementById("serverAddress").innerText = CONFIG.serverAddress;
+document.getElementById("headerGif").src = CONFIG.headerGif;
+
+// GIF POKEMON
+const gifsPokemon = [
+	"https://media.forgecdn.net/avatars/912/234/638367454910996010.gif",
+	"https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
+	"https://media1.giphy.com/media/iBANmdIlMNJVC/giphy.gif",
+	"https://media0.giphy.com/media/7T200DTPdx31e/giphy.gif"
+];
+
+const ctnPokemon = document.getElementById("gifs-pokemon");
+gifsPokemon.forEach(gifUrl => {
+  const img = document.createElement("img");
+  img.src = gifUrl;
+  img.alt = "GIF animé";
+  ctnPokemon.appendChild(img);
+});
+
+// GIF MINECRAFT
+const gifsMinecraft = [
+	"https://media0.giphy.com/media/Ug3xTe5cDXA1AlCAtX/giphy.gif",
+    "https://media4.giphy.com/media/Yh0qLwfpAogL9vVxhL/giphy.gif",
+	"https://media4.giphy.com/media/OUUnxL2NbwNuX16EfK/giphy.gif",
+	"https://media0.giphy.com/media/qhkR7mkPgnvQ4/giphy.gif",
+	"https://media0.giphy.com/media/Gak2WL4vEEmXLXKh8H/giphy.gif"
+];
+
+const ctnMinecraft = document.getElementById("gifs-minecraft");
+gifsMinecraft.forEach(gifUrl => {
+  const img = document.createElement("img");
+  img.src = gifUrl;
+  img.alt = "GIF animé";
+  ctnMinecraft.appendChild(img);
+});
+
+
+/* -------------------- étoiles -------------------- */
+const starsContainer = document.getElementById("stars");
+const numStars = 30; // Nombre d'étoiles
+const minSize = 15, maxSize = 45; // tailles en px
+const minDuration = 5, maxDuration = 10; // durée en secondes
+const minDX = -70, maxDX = 70; // déplacement horizontal en px
+const emojisStars = [..."⭐🌟✨"];
+
+
+for (let i = 0; i < numStars; i++) {
+    const star = document.createElement("div");
+    star.className = "star";
+
+    // position horizontale aléatoire
+    star.style.left = Math.floor(Math.random() * 100) + "%";
+
+    // taille et durée aléatoires
+    const size = Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize;
+    star.style.fontSize = size + "px";
+
+    const duration = (Math.random() * (maxDuration - minDuration) + minDuration).toFixed(1);
+    star.style.animationDuration = duration + "s";
+
+    // déplacement horizontal aléatoire
+    const dx = Math.floor(Math.random() * (maxDX - minDX + 1)) + minDX;
+    star.style.setProperty("--dx", dx + "px");
+
+    star.textContent = emojisStars[Math.floor(Math.random() * emojisStars.length)];;
+    starsContainer.appendChild(star);
+}
+
+/* -------------------- Liens TUTO -------------------- */
+const guideList = document.getElementById("guideList");
+CONFIG.guideLinks.forEach(link => {
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="${link.url}">${link.name}</a>`;
+    guideList.appendChild(li);
+});
+
+/* -------------------- Compteur visiteurs -------------------- */
+let visits = parseInt(localStorage.getItem("visitCount") || "0", 10);
+visits++;
+localStorage.setItem("visitCount", visits);
+document.getElementById("visitCount").innerText = visits;
+
+/* -------------------- Traînée de souris -------------------- */
+// Utiliser spread operator ou Array.from pour gérer correctement les emojis multi-caractères
+const emojis = [..."🍎🍏🍐🍊🍋🍌🍉🍇🍓🫐🍒🍑🥭🍍🥥🥝🍅🥑🍆🥔🥕🌽🥒🥬🫑🧄🧅🍞🥐🥖🥨🥯🧀🥚🍳🧈🥓🥩🍗🍖🌭🍔🍟🍕🥪🥙🌮🌯🫔🥗🍝🍜🍲🍛🍣🍱🍙🍚🍘🍥🥟🍤🦪🍢🍦🍨🍧🍩🍪🎂🍰🧁🥧🍫🍬🍭🍮🍯🥛☕🫖🍵🧃🥤🧋🍺🍻🍷🥂🍸🍹🧉"];
+
+document.addEventListener("mousemove", e => {
+    const trail = document.createElement("div");
+    trail.className = "trail";
+    trail.style.left = (e.clientX - 8) + "px";
+    trail.style.top = (e.clientY - 8) + "px";
+    trail.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    document.body.appendChild(trail);
+    setTimeout(() => trail.remove(), 9000);
+});
+</script>
+
+</body>
+</html>
