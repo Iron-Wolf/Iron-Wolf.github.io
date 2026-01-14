@@ -13,13 +13,6 @@ const CONFIG = {
     serverAddress: "incoming (faut trouver une date...)",
     pageTitle: "★ Ouverture du serveur Cobblemon ★",
     headerGif: "https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif",
-
-    guideLinks: [
-        { name: "Installer Minecraft Java", url: "#" },
-        { name: "Utiliser un launcher (genre PrismLauncher)", url: "https://prismlauncher.org/" },
-        { name: "Installer le modpack", url: "https://www.curseforge.com/minecraft/modpacks/cobblemon-academy" },
-        { name: "Mod optionnel", url: "https://www.curseforge.com/minecraft/mc-mods/distant-horizons" }
-    ]
 };
 </script>
 <!-- ========================================================= -->
@@ -176,7 +169,20 @@ ul { list-style-type: square; text-align: left; margin-left: 180px; }
         </div>
 
         <h2>Guide de configuration (en cours de rédaction)</h2>
-        <ul id="guideList"></ul>
+        <ul>
+			<li>Installer Minecraft Java (pas besoin de tuto...)</li>
+			<li>Installer un launcher :
+				<ul>
+					<li><a href="https://prismlauncher.org/">PrismLauncher</a></li>
+				</ul>
+			</li>
+			<li><a href="https://www.curseforge.com/minecraft/modpacks/cobblemon-academy">Installer le modpack</a></li>
+			<li>Mods supplménetaires (optionnel) :
+				<ul>
+					<li><a href="https://www.curseforge.com/minecraft/mc-mods/distant-horizons">distant-horizons</a></li>
+				</ul>
+			</li>
+		</ul>
 
         <div id="gifs-minecraft" class="gif-container"></div>
 
@@ -263,14 +269,6 @@ for (let i = 0; i < numStars; i++) {
     star.textContent = emojisStars[Math.floor(Math.random() * emojisStars.length)];;
     starsContainer.appendChild(star);
 }
-
-/* -------------------- Liens TUTO -------------------- */
-const guideList = document.getElementById("guideList");
-CONFIG.guideLinks.forEach(link => {
-    const li = document.createElement("li");
-    li.innerHTML = `<a href="${link.url}">${link.name}</a>`;
-    guideList.appendChild(li);
-});
 
 /* -------------------- Compteur visiteurs -------------------- */
 let visits = parseInt(localStorage.getItem("visitCount") || "0", 10);
