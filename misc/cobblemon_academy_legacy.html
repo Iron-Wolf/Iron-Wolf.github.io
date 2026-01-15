@@ -10,8 +10,8 @@
 <script>
 const CONFIG = {
     serverName: "Cobblemon Paradise",
-    serverAddress: "incoming (faut trouver une date...)",
-    pageTitle: "★ Ouverture du serveur Cobblemon ★",
+    serverAddress: "dispo le 27 Janvier 2026",
+    pageTitle: "★ Ouverture du serveur POKEMIKA ★",
     headerGif: "https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif",
 };
 </script>
@@ -29,7 +29,7 @@ body {
     animation: scrollBackground 20s linear infinite;
     position: relative; /* nécessaire pour overlay CRT */
 }
-body::before {
+body.crt-on::before {
     content: "";
     position: fixed;
     inset: 0;
@@ -38,7 +38,7 @@ body::before {
     z-index: 9998;
 }
 
-body::after {
+body.crt-on::after {
     content: "";
     position: fixed;
     inset: 0;
@@ -143,6 +143,19 @@ ul { list-style-type: square; text-align: left; }
     overflow: hidden; 
     transform: perspective(900px) scale(1.05) rotateX(0.3deg) rotateY(-0.3deg); 
     border-radius: 40px; }
+
+#toggleCRT {
+    margin: 10px;
+    padding: 6px 12px;
+    font-family: "Comic Sans MS";
+    font-size: 14px;
+    background: #ff99ff;
+    border: 3px outset #cc66ff;
+    cursor: pointer;
+}
+#toggleCRT:active {
+    border-style: inset;
+}
 </style>
 </head>
 
@@ -151,6 +164,10 @@ ul { list-style-type: square; text-align: left; }
     <div class="stars" id="stars"></div>
 	
 <div class="crt-frame">
+    <button id="toggleCRT">
+      🎛️ Activer / désactiver effet CRT
+    </button>
+
 
     <div class="container">
         <img id="headerGif" alt="header gif"><br>
@@ -161,40 +178,57 @@ ul { list-style-type: square; text-align: left; }
         </marquee>
 
 		<div id="gifs-pokemon" class="gif-container"></div>
-
         <div class="server-box">
-            <strong>Adresse du serveur :</strong><span id="serverAddress"></span><br>
-			<strong>Version Minecraft :</strong><span> 1.21.1 </span><br/>
-			<strong>Version CobbleMon (modpack) :</strong><span> 1.4.1 </span>
-        </div>
+        <strong>Adresse du serveur :</strong><span id="serverAddress"></span><br>
+			  <strong>Version Minecraft :</strong><span> 1.21.1 </span><br/>
+			  <strong>Version CobbleMon (modpack) :</strong><span> 1.4.1 </span>
+    </div>
 
-        <h2>Guide de configuration (en cours de rédaction)</h2>
-        <ul style="margin-left: 180px;">
-			<li>Installer Minecraft Java (pas besoin de tuto...)</li>
-			<li>Installer un launcher :
+    <h2>TLDR</h2>
+    <ul style="margin-left: 200px;">
+      <li><a href="https://www.curseforge.com/minecraft/modpacks/cobblemon-academy">
+      Cobblemon Academy (Legacy)</a> - 1.4.1</li>
+      <li><a href="https://www.curseforge.com/minecraft/mc-mods/distant-horizons">
+      distant-horizons</a> - 2.4.5-b</li>
+    </ul>
+    
+    <h2>Guide détaillé</h2>
+    <ul style="margin-left: 180px;">
+			<li>Acheter Minecraft et installer un launcher :
 				<ul>
-					<li><a href="https://prismlauncher.org/">PrismLauncher</a></li>
+					<li><a href="https://prismlauncher.org/">PrismLauncher (celui que j'utilise)</a></li>
+					<li>(y en a d'autres, mais je vous fait pas le listing)</a></li>
 				</ul>
 			</li>
-			<li><a href="https://www.curseforge.com/minecraft/modpacks/cobblemon-academy">Installer le modpack</a></li>
-			<li>Mods supplménetaires (optionnel) :
+			<li>Depuis votre launcher, initialiser une "instance" :
 				<ul>
-					<li><a href="https://www.curseforge.com/minecraft/mc-mods/distant-horizons">distant-horizons</a></li>
+					<li>Cliquer sur <strong>"Ajouter une instance"</strong> (en haut à gauche)</li>
+					<li>Allez dans l'onglet <strong>"CurseForge"</strong></li>
+					<li>Dans la barre de recherche : <strong>"Cobblemon Academy (Legacy)"</strong></li>
+					<li>Séléctionnez la version 1.4.1, et lancer le download</li>
+					<li>(si y a des PopUp, validez les toutes, c'est plutôt bien foutu)</li>
+					<li>attendez la fin du téléchargement...</li>
+				</ul>
+			</li>
+			<li>De retour dans la fenêtre principale, cliquez sur votre "instance" :
+				<ul>
+				  <li>à droite, cliquez sur <strong>"modifier"</strong></li>
+				  <li>dans la PopUp, allez dans l'onglet <strong>"Mods"</strong></li>
+				  <li>à droite, clisuez sur <strong>"Télécharger des mods"</strong></li>
+				  <li>dans la 2eme PopUp, allez dans l'onglet <strong>"CurseForge"</strong></li>
+				  <li>Dans la barre de recherche : <strong>"Distant Horizons: A Level of"</strong></li>
+				  <li>Séléctionnez la version 2.4.5-b, et lancer le download</li>
 				</ul>
 			</li>
 		</ul>
 
-        <div id="gifs-minecraft" class="gif-container"></div>
-
+    <div id="gifs-minecraft" class="gif-container"></div>
         <div class="counter">
             <img src="https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif" width="20">
             Nombre de visiteurs : <span id="visitCount">0</span>
         </div>
-
-        <br>
-        <blink>
-            ★ Site recommandé en 800x600 — Netscape Navigator friendly ★
-        </blink>
+        <br/>
+        <blink>★ Site recommandé en 800x600 — Netscape Navigator friendly ★</blink>
     </div>
 </div>
 
@@ -204,6 +238,13 @@ document.title = CONFIG.pageTitle;
 document.getElementById("pageTitle").innerText = CONFIG.pageTitle;
 document.getElementById("serverAddress").innerText = CONFIG.serverAddress;
 document.getElementById("headerGif").src = CONFIG.headerGif;
+
+const toggleCRTBtn = document.getElementById("toggleCRT");
+// état initial (au chargement)
+document.body.classList.add("crt-on");
+toggleCRTBtn.addEventListener("click", () => {
+    document.body.classList.toggle("crt-on");
+});
 
 // GIF POKEMON
 const gifsPokemon = [
