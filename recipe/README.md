@@ -212,8 +212,14 @@
 
 </details>
 
+# Menu de la semaine
+https://www.cuisinelolo.fr/menus-semaine/
+https://jow.fr/blog/categories/menu-de-la-semaine
+https://www.hellofresh.lu/menus
+
 
 # Idées à tester
+https://jow.fr/recipes/croquettes-carottes-quinoa-et-salade-94br12t5klc9j1yh0rly
 https://www.cuisinelolo.fr/2022/12/02/pizza-patate-douce/  
 https://www.cuisinelolo.fr/2025/02/03/curry-de-carottes/  
 https://www.cuisinelolo.fr/2023/10/26/boulettes-de-poulet-au-parmesan/  
