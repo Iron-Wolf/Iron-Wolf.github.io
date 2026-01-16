@@ -29,6 +29,22 @@
 
 
 <details markdown="1">
+<summary>🥩 Saucisson (sans boyaux)</summary>
+
+- 🌐
+- 👉 mélanger
+  - chaire à saucisse (400g)
+  - sel (12g)
+  - poivre (à déterminer)
+  - cognac (25ml)
+- 👉 rouler dans semoule (ou farine) de maïs
+- 4 semaine au frigo
+  - à retourner 1 fois pas jours
+
+</details>
+
+
+<details markdown="1">
 <summary>🥣 crème poireaux</summary>
 
 - 🌐 <https://fan2recettes.fr/creme-vert-de-poireau>
