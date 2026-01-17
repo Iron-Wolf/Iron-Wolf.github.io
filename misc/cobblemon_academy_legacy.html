@@ -18,7 +18,7 @@ const CONFIG = {
 /* ========= GLOBAL ========= */
 body {
     margin: 0;
-    min-height: 300vh;
+    min-height: 180vh;
     font-family: "Comic Sans MS", "Times New Roman", serif;
     cursor: url("https://ani.cursors-4u.net/games/gam-16/gam1535.cur"), auto;
     background: #00bd2f url("https://www.transparenttextures.com/patterns/light-wool.png") repeat fixed;
@@ -165,14 +165,42 @@ a:hover {
     cursor: pointer;
 }
 #toggleCRT:active { border-style: inset; }
+
+/* ========= MINECRAFT BLOCKS ========= */
+#mc-physics {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 2000;
+}
+
+.mc-block {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    cursor: grab;
+    pointer-events: auto;
+}
+
+.mc-block:active {
+    cursor: grabbing;
+}
+
+
 </style>
 </head>
+
+<div id="mc-physics"></div>
 
 <body class="crt-on">
 
 <div class="stars" id="stars"></div>
 
 <div class="crt-frame">
+    
     <button id="toggleCRT">🎛️ Activer / désactiver effet CRT</button>
 
     <div class="container">
@@ -325,6 +353,105 @@ function initMouseTrail() {
         setTimeout(() => t.remove(), 8000);
     });
 }
+
+
+/* ========= MINECRAFT PHYSICS ========= */
+initMinecraftPhysics();
+
+function initMinecraftPhysics() {
+    const container = document.getElementById("mc-physics");
+
+    const blockImages = [
+        "https://minecraft.wiki/images/Grass_Block_JE7_BE6.png",
+        "https://minecraft.wiki/images/Grass_Block_JE7_BE6.png",
+        "https://minecraft.wiki/images/Grass_Block_JE7_BE6.png",
+        "https://minecraft.wiki/images/Grass_Block_JE7_BE6.png",
+        "https://minecraft.wiki/images/Cobblestone_JE5_BE3.png",
+        "https://minecraft.wiki/images/Cobblestone_JE5_BE3.png",
+        "https://minecraft.wiki/images/Cobblestone_JE5_BE3.png",
+        "https://minecraft.wiki/images/Cobblestone_JE5_BE3.png",
+    ];
+
+    const blocks = [];
+    const gravity = 0.6;
+    const bounce = 0.7;
+    const friction = 0.98;
+
+    blockImages.forEach(src => {
+        const el = document.createElement("img");
+        el.src = src;
+        el.className = "mc-block";
+
+        const block = {
+            el,
+            x: Math.random() * (window.innerWidth - 64),
+            y: window.scrollY + Math.random() * 300,
+            vx: (Math.random() - 0.5) * 4,
+            vy: 0,
+            held: false,
+            offsetX: 0,
+            offsetY: 0
+        };
+
+        el.style.left = block.x + "px";
+        el.style.top = block.y + "px";
+
+        el.addEventListener("mousedown", e => {
+            block.held = true;
+            block.vx = block.vy = 0;
+
+            block.offsetX = e.pageX - block.x;
+            block.offsetY = e.pageY - block.y;
+        });
+
+        document.addEventListener("mouseup", () => {
+            block.held = false;
+        });
+
+        document.addEventListener("mousemove", e => {
+            if (block.held) {
+                block.x = e.pageX - block.offsetX;
+                block.y = e.pageY - block.offsetY;
+            }
+        });
+
+        container.appendChild(el);
+        blocks.push(block);
+    });
+
+    function update() {
+        const floor = document.body.scrollHeight - 64;
+
+        blocks.forEach(b => {
+            if (!b.held) {
+                b.vy += gravity;
+                b.x += b.vx;
+                b.y += b.vy;
+
+                // Sol de la page
+                if (b.y > floor) {
+                    b.y = floor;
+                    b.vy *= -bounce;
+                    b.vx *= friction;
+                }
+
+                // Murs
+                if (b.x < 0 || b.x > window.innerWidth - 64) {
+                    b.vx *= -bounce;
+                    b.x = Math.max(0, Math.min(b.x, window.innerWidth - 64));
+                }
+            }
+
+            b.el.style.left = b.x + "px";
+            b.el.style.top = b.y + "px";
+        });
+
+        requestAnimationFrame(update);
+    }
+
+    update();
+}
+
 </script>
 
 </body>
