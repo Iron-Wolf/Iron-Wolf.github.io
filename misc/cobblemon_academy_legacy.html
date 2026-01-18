@@ -90,7 +90,6 @@ h1 { color: yellow; text-shadow: 2px 2px red; }
 h2 { color: #660099; text-decoration: underline; }
 ul { list-style-type: square; text-align: left; }
 
-.marquee { color: #ff3399; font-size: 18px; }
 .counter { font-size: 13px; color: #660066; margin-top: 16px; }
 
 /* ========= LINKS ========= */
@@ -101,6 +100,26 @@ a {
 a:hover {
     color: yellow;
     background: purple;
+}
+
+/* ========= MARQUEE ========= */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    color: #ff3399;
+    font-size: 18px;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 
 /* ========= SERVER ========= */
@@ -207,9 +226,9 @@ a:hover {
         <img id="headerGif" alt="header gif">
         <h1 id="pageTitle"></h1>
 
-        <marquee class="marquee" scrollamount="6">
-            ✨ Bienvenue sur le serveur Cobblemon — Pokémon & Minecraft réunis ✨
-        </marquee>
+        <div class="marquee-container">
+          <div class="marquee-content">✨ Bienvenue sur le serveur Cobblemon — Pokémon & Minecraft réunis ✨</div> 
+        </div>
 
         <div id="gifs-pokemon" class="gif-container"></div>
 
