@@ -242,6 +242,8 @@ https://www.cuisinelolo.fr/2023/10/26/boulettes-de-poulet-au-parmesan/
 https://www.cuisinelolo.fr/2024/11/19/clafoutis-au-butternut-chorizo-feta/  
 https://www.cleacuisine.fr/autres-plats/cabbage-roll/  
 https://www.aux-fourneaux.fr/recettes-salees/legumes/  
+https://www.commeaujapon.fr/okonomiyaki/ / https://www.cuisine-japon.fr/recette-okonomiyaki/
+https://www.gastronomica.fr/2026/01/06/tiramisu-italien-authentique-la-recette-onctueuse-qui-fait-fondre-tout-le-monde/
 
 # Outils
 Convertion : https://www.omnicalculator.com/food/ml-to-grams
