@@ -1,7 +1,7 @@
 [Repo Github](https://github.com/Iron-Wolf/Iron-Wolf.github.io/tree/master/recipe)  
 [Version Web](https://iron-wolf.github.io/recipe/)
 
-# 🍳 Let me cook
+# 🍳 Plats
 <details markdown="1">
 <summary>🥖 Terrine (sans hachoir)</summary>
 
@@ -169,6 +169,8 @@
 </details>
 
 
+# 🍰 Desserts
+
 <details markdown="1">
 <summary>🍫 Truffes (pour une dizaine)</summary>
 
@@ -225,6 +227,17 @@
   - huile essentielle (10 gouttes lavande, 10 gouttes Tea Tree)
 - 🔥 bain-marie, jusqu'à agglomération
 - 👉 mettre dans un bocal pendant que c'est chaud
+
+</details>
+
+<details markdown="1">
+<summary>🧼 Nettoyer Inox</summary>
+
+- Immédiatement : eau à température ambiante (pas froide) dans la poêl encore chaude
+  - grater avec cuillère en bois (pas d'abrasif)
+- Pâte bicarbonate + eau : laisser reposer toute la nuit
+- Vinaigre blanc + eau > verser un peu de bicabonate (ça va mousser) > poêl sur feu moyen
+  - laisser bouillir 10 min, puis refroidire pour frotter
 
 </details>
 
