@@ -62,6 +62,16 @@
 
 
 <details markdown="1">
+<summary>🥣 Béchamel</summary>
+
+- 🔥 faire fondre beurre (50g)
+- mélanger avec la farine (50g)
+- verser progressivement le lait
+
+</details>
+
+
+<details markdown="1">
 <summary>🥪 Toast Coréen</summary>
 
 - 🌐 <https://www.maangchi.com/recipe/street-toast>
