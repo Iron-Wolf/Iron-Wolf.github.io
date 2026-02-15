@@ -198,10 +198,11 @@
 - 👉 préparer le café
 - 👉 séparer les blancs des jaunes (1/personne)
 - 🔁 mélanger les jaunes
-  - sucre (1CS/personne)
+  - sucre (1CS/personne) - garder 1CS pour les blancs (quand ils sont montés)
   - masscarponne (2CS/personne)
 - 🔁 mélanger les blancs
   - sel
+- incorporer les blancs délicatement
 - 👉 monter le tiramisu
   - biscuit cuillère (aller/retour dans le café)
   - crème
