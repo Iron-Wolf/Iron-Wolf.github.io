@@ -1,6 +1,33 @@
 [Repo Github](https://github.com/Iron-Wolf/Iron-Wolf.github.io/tree/master/recipe)  
 [Version Web](https://iron-wolf.github.io/recipe/)
 
+# 🥣 Sauces
+<details markdown="1">
+<summary>🥣 crème poireaux</summary>
+
+- 🌐 <https://fan2recettes.fr/creme-vert-de-poireau>
+- 🔥 cuire le vert ⏲️ 10min (eau bouillante)
+- 🔁 mixer
+  - poireau
+  - jus citron 🥄🥄🥄
+  - crème 🥄🥄🥄🥄🥄 (ou lait)
+  - chèvre frais 🥄
+  - oignon rouge (1/4)
+  - huile parfumée
+  - sel / épices
+
+</details>
+
+
+<details markdown="1">
+<summary>🥣 Béchamel</summary>
+
+- 🔥 faire fondre beurre (50g)
+- mélanger avec la farine (50g)
+- verser progressivement le lait
+
+</details>
+
 # 🍳 Plats
 <details markdown="1">
 <summary>🥖 Terrine (sans hachoir)</summary>
@@ -40,33 +67,6 @@
 - 👉 rouler dans semoule (ou farine) de maïs
 - 4 semaine au frigo
   - à retourner 1 fois pas jours
-
-</details>
-
-
-<details markdown="1">
-<summary>🥣 crème poireaux</summary>
-
-- 🌐 <https://fan2recettes.fr/creme-vert-de-poireau>
-- 🔥 cuire le vert ⏲️ 10min (eau bouillante)
-- 🔁 mixer
-  - poireau
-  - jus citron 🥄🥄🥄
-  - crème 🥄🥄🥄🥄🥄 (ou lait)
-  - chèvre frais 🥄
-  - oignon rouge (1/4)
-  - huile parfumée
-  - sel / épices
-
-</details>
-
-
-<details markdown="1">
-<summary>🥣 Béchamel</summary>
-
-- 🔥 faire fondre beurre (50g)
-- mélanger avec la farine (50g)
-- verser progressivement le lait
 
 </details>
 
@@ -180,7 +180,6 @@
 
 
 # 🍰 Desserts
-
 <details markdown="1">
 <summary>🍫 Truffes (pour une dizaine)</summary>
 
@@ -189,6 +188,23 @@
   - beurre (30g)
 - laisser refroidire (pas trop non plus, pour travailler correctement)
 - former les boules et rouler dans du cacao
+
+</details>
+
+
+<details markdown="1">
+<summary>☕️ Tiramisu</summary>
+
+- 👉 préparer le café
+- 👉 séparer les blancs des jaunes (1/personne)
+- 🔁 mélanger les jaunes
+  - sucre (1CS/personne)
+  - masscarponne (2CS/personne)
+- 🔁 mélanger les blancs
+  - sel
+- 👉 monter le tiramisu
+  - biscuit cuillère (aller/retour dans le café)
+  - crème
 
 </details>
 
