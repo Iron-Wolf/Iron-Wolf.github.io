@@ -224,6 +224,22 @@
 
 
 <details markdown="1">
+<summary>🍫 gateau chocolat (j'ai pas le nom)</summary>
+
+- 🌐 https://www.youtube.com/shorts/SgsV5Ud-Kg8
+- 🔥 fondre le chocolat (200g) + beurre (100g??)
+  - 🔁 y mélanger la farine (50g??) + cacao poudre (50g??)
+  - 🔁 y mélanger le jaune d'oeuf (4 oeufs) avec sucre (4CS??)
+- 🔁 blanc en neige (4 oeufs) avec sel + sucre à la fin
+- incorporer les blancs délicatement
+- 🔥 cuire 2/3 de la pâte au four (180° ⏲️ 25min)
+  - une fois refroidi, tartiner le reste de la pâte par dessus
+- 🔥 cuire le tout (180° ⏲️ 10min)
+
+</details>
+
+
+<details markdown="1">
 <summary>🍰 Pop Cake</summary>
 
 - 🌐 <https://chezlours-bayonne.fr/recette-de-pop-cake-quatre-quart-au-mascarpone/>
