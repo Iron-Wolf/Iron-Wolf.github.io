@@ -71,6 +71,23 @@
 </details>
 
 
+
+<details markdown="1">
+<summary>🥞 Okonomiyaki</summary>
+
+- 🌐 https://www.cuisine-japon.fr/recette-okonomiyaki/
+- 🔁 mélanger
+  - farine (100g)
+  - eau (10cl)
+  - oeuf (1)
+  - dashi
+  - garniture (chou, carotte, lardon, oignon, ...)
+- 🔥 cuire à la poêle ⏲️ 5min par face
+- servire avec sauce oko, mayo, bonite
+
+</details>
+
+
 <details markdown="1">
 <summary>🥪 Toast Coréen</summary>
 
