@@ -148,6 +148,18 @@
 
 
 <details markdown="1">
+<summary>🍲 rougail</summary>
+
+- 🌐 https://www.cuisinelolo.fr/2012/04/26/rougail-de-saucisses/
+- 🔥 cuire 2 ou 3 oignons
+- 🔥 ajouter les tomates (avec ail et thym) ⏲️ 5min
+- 🔥 ajouter les rondelles de saucisses, feu moyen à couvert
+- servir avec du bon riz
+
+</details>
+
+
+<details markdown="1">
 <summary>🍲 chili</summary>
 
 - 🌐 
