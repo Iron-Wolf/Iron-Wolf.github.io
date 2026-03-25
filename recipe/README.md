@@ -106,7 +106,7 @@
 
 
 <details markdown="1">
-<summary>🍕 Quiche poêle</summary>
+<summary>🍕 Quiche</summary>
 
 - 🌐 <https://lasaisonencuisine.com/recette-rapide-pate-brisee-maison/>
 - 🌐 <https://pizzaalmaestro.fr/quiche-a-la-poele-express/>
@@ -118,11 +118,10 @@
   - 👉 ajouter eau (30cl) (boule non collante)
   - laisser reposer ⏲️ 30min (au frigo pour la travailler facilement)
   - puis, abaisser la patte (à congeler si besoin)
-- appareil
-  - 4 oeufs
-  - lait ou crème fraiche (20/30cl)
-  - lardons, oignons, ...
-- 🔥 cuire patte à feu doux avec couvercle (3min)
+- appareils :
+  - 4 oeufs / lait ou crème fraiche (20/30cl) / lardons, oignons, poireaux, ...
+  - 500g purée potimaron / oignons / reblochon
+- 🔥 cuire patte à feu doux avec couvercle (3min) | ou ⏲️ 25min au four à 180° 
 - 👉 retourner la patte (pas obligatoire, surtout si la patte est rattée)
   - ajouter la garniture crue
   - verser l'appareil et laisser cuire avec couvercle
