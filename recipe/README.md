@@ -218,7 +218,7 @@
   - 30g graine moutarde
   - 2 oignons, 1 carotte, 3 gousse d'ail
   - thym, laurier
-- 🔥 marquer la viande sur toutes les faces
+- 🔥 marquer la rouelle/palette (1.500g) sur toutes les faces
 - 🔥 couvrir viande + marinade à hauteur (feu moyen) ⏲️ 4h
   - ou 130/150 au four ⏲️ 4h
 
