@@ -202,7 +202,25 @@
   - huile d'olive
   - vinaigre balsamique
   - sel, poivre, aneth
-- 🔥 ⏲️ 20min au four à 180/190 defrés
+- 🔥 ⏲️ 20min au four à 180/190 degrés
+
+</details>
+
+
+<details markdown="1">
+<summary>🍲 pouled pork</summary>
+
+- 🌐 https://casserolesdecarole.com/2017/04/porc-effiloche-pulled-pork/
+- 👉 marinade :
+  - 250g eau
+  - 250g ketchup
+  - 50g : soja, vinaigre balsamique, sirot d'érable
+  - 30g graine moutarde
+  - 2 oignons, 1 carotte, 3 gousse d'ail
+  - thym, laurier
+- 🔥 marquer la viande sur toutes les faces
+- 🔥 couvrir viande + marinade à hauteur (feu moyen) ⏲️ 4h
+  - ou 130/150 au four ⏲️ 4h
 
 </details>
 
