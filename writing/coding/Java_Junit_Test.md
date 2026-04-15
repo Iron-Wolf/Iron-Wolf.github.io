@@ -26,7 +26,7 @@ doCallRealMethod().when(myService)
 ```
 
 ## Injection par reflexivitée
-Dans le cas où on est pas dans un `@SpringBootTest`.  
+Dans le cas où on est PAS dans un `@SpringBootTest`.  
 Si on veut appeler réellement une méthode sur un `@Mock`, il faut lui injecter ses propriétées :  
 ```java
 ReflectionTestUtils.setField(myService, "myProperty", new MyProperty());
@@ -39,7 +39,7 @@ ResourceUtils.getFile("classpath:filename.json"));
 ```
 
 ## Imbrication de plusieurs objets
-Si on a un service qui contient des objet qu'on ne veut pas mocker, il faut le faire à la main.  
+Si on a une imbrication de service qu'on ne veut pas mocker, il faut faire l'injection à la main.  
 ```java
 @Mock
 MonRepository monRepository;
@@ -53,7 +53,7 @@ public void setUp() {
     monService = new MonService(monServiceSimple);
 }
 ```
-C'est partique si un service est sur-découpé avec des services très simples.
+C'est partique si un service est sur-découpé avec des services très simples.  
 On test 2 couches d'un coup (normalement, ça veut dire qu'il faut revoir la structure du code).
 
 ## Capturer les messages de log
