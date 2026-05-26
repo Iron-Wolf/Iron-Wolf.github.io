@@ -325,8 +325,6 @@
 - Immédiatement : eau à température ambiante (pas froide) dans la poêl encore chaude
   - grater avec cuillère en bois (pas d'abrasif)
 - Pâte bicarbonate + eau : laisser reposer toute la nuit
-- Vinaigre blanc + eau > verser un peu de bicabonate (ça va mousser) > poêl sur feu moyen
-  - laisser bouillir 10 min, puis refroidire pour frotter
 
 </details>
 
@@ -338,7 +336,7 @@ https://www.hellofresh.lu/menus
 
 # Idées à tester
 https://jow.fr/recipes/croquettes-carottes-quinoa-et-salade-94br12t5klc9j1yh0rly  
-https://www.cuisinelolo.fr/2022/12/02/pizza-patate-douce/  
+https://www.cuisinelolo.fr/2022/12/02/pizza-patate-douce/  (300g de patate douce ?)
 https://www.cuisinelolo.fr/2025/02/03/curry-de-carottes/  
 https://www.cuisinelolo.fr/2023/10/26/boulettes-de-poulet-au-parmesan/  
 https://www.cuisinelolo.fr/2024/11/19/clafoutis-au-butternut-chorizo-feta/  
