@@ -56,6 +56,18 @@
 
 
 <details markdown="1">
+<summary>pickles oignons</summary>
+
+- 🌐 https://ici.radio-canada.ca/mordu/recettes/6040/oignons-rouges-marines-faciles
+- eau (1/2)
+- vinaigre cidre (1/2)
+- sucre (1CS)
+- sel
+
+</details>
+
+
+<details markdown="1">
 <summary>🥩 Saucisson (sans boyaux)</summary>
 
 - 🌐
@@ -69,7 +81,6 @@
   - à retourner 1 fois pas jours
 
 </details>
-
 
 
 <details markdown="1">
@@ -335,6 +346,7 @@ https://www.hellofresh.lu/menus
 
 
 # Idées à tester
+https://lacuisinedegeraldine.fr/croissants-maison  
 https://jow.fr/recipes/croquettes-carottes-quinoa-et-salade-94br12t5klc9j1yh0rly  
 https://www.cuisinelolo.fr/2022/12/02/pizza-patate-douce/  (300g de patate douce ?)
 https://www.cuisinelolo.fr/2025/02/03/curry-de-carottes/  
@@ -344,6 +356,10 @@ https://www.cleacuisine.fr/autres-plats/cabbage-roll/
 https://www.aux-fourneaux.fr/recettes-salees/legumes/  
 https://www.commeaujapon.fr/okonomiyaki/ / https://www.cuisine-japon.fr/recette-okonomiyaki/  
 https://www.gastronomica.fr/2026/01/06/tiramisu-italien-authentique-la-recette-onctueuse-qui-fait-fondre-tout-le-monde/  
+
+## Pâtale
+https://deliacious.com/2018/12/pate-de-campagne-vegan-noisettes.html  
+https://cuisine-moi-un-fenouil.fr/2023/04/13/pate-vegetal-lentilles-champignons/  
 
 # Outils
 Convertion : https://www.omnicalculator.com/food/ml-to-grams
