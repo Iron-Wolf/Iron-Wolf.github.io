@@ -56,7 +56,7 @@
 
 
 <details markdown="1">
-<summary>pickles oignons</summary>
+<summary>🧅 pickles oignons</summary>
 
 - 🌐 https://ici.radio-canada.ca/mordu/recettes/6040/oignons-rouges-marines-faciles
 - eau (1/2)
@@ -256,7 +256,7 @@
 - 👉 séparer les blancs des jaunes (1/personne)
 - 🔁 mélanger les jaunes
   - sucre (1CS/personne) - garder 1CS pour les blancs (quand ils sont montés)
-  - masscarponne (2CS/personne)
+  - mascarpone (2CS/personne)
 - 🔁 mélanger les blancs
   - sel
 - incorporer les blancs délicatement
@@ -276,6 +276,17 @@
   - crème liquide (20g)
   - oeuf (entier)
 - 🔥 verser l'appareil et faire re-cuire (180° ⏲️ 15min)
+
+</details>
+
+
+<details markdown="1">
+<summary>🥐 Croissant</summary>
+
+- 👉 couper pâte en triangle et rouler depuis la base
+- 1 œuf pour lustrer
+- saupoudrer le sucre
+- 🔥 cuire au four (180° ⏲️ 20min)
 
 </details>
 
