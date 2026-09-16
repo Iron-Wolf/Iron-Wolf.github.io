@@ -172,11 +172,12 @@
 <details markdown="1">
 <summary>🍲 chili</summary>
 
-- 🌐 
-- 👉 faire tremper les haricot toute la nuit
-- 🔥 faire cuire les haricot à l'eau (1h)
-- 🔥 cuire le riz dans l'eau des haricots
-- 🔥 cuire les légumes à côté
+- 🔥 cuire légumes (oignons, ail, chorizo)
+- 👉 800g haricot rouge
+  - si sec : tremper la nuit, puis cuire à l'eau 1h
+- 👉 800g tomates
+- 🔥 riz (dans l'eau des haricots)
+- 👉 coriandre
 
 </details>
 
