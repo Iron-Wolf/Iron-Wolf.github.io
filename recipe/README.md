@@ -205,6 +205,21 @@
 
 
 <details markdown="1">
+<summary>🐟 Sushi/Donburi</summary>
+
+- 🌐 
+- 👉 égouter le riz (300g)
+  - faire 2 ou 3 rincages (premier très rapide)
+- 👉 tremper le riz dans l'eau (400G) ⏲️ 30min
+- 🔥 porter l'eau à ébulition
+  - puis cuire à feu doux (⏲️ 10min)
+- stoper la cuison et laisser couvert (⏲️ 15min)
+- mélanger pour aérer
+
+</details>
+
+
+<details markdown="1">
 <summary>🐟 saumon papillote</summary>
 
 - 🌐 
