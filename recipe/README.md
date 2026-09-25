@@ -209,7 +209,7 @@
 
 - 🌐 
 - 👉 égouter le riz (300g)
-  - faire 2 ou 3 rincages (premier très rapide)
+  - 1er rincage rapide, puis 2 ou 3 lent
 - 👉 tremper le riz dans l'eau (400G) ⏲️ 30min
 - 🔥 porter l'eau à ébulition
   - puis cuire à feu doux (⏲️ 10min)
