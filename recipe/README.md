@@ -161,10 +161,11 @@
 <summary>🍲 rougail</summary>
 
 - 🌐 https://www.cuisinelolo.fr/2012/04/26/rougail-de-saucisses/
-- 🔥 cuire 2 ou 3 oignons
-- 🔥 ajouter les tomates (avec ail et thym) ⏲️ 5min
-- 🔥 ajouter les rondelles de saucisses, feu moyen à couvert
-- servir avec du bon riz
+- 🔥 colorer 3 oignons
+- 👉 ajouter 800g tomates (⏲️ 5min)
+  - avec ail, épices, herbes aromatiques...
+- 👉 ajouter 2 saucisses, couvrir et cuire à feu doux (⏲️ 20min)
+- servir avec riz thaï
 
 </details>
 
@@ -173,11 +174,11 @@
 <summary>🍲 chili</summary>
 
 - 🔥 cuire légumes (oignons, ail, chorizo)
-- 👉 800g haricot rouge
-  - si sec : tremper la nuit, puis cuire à l'eau 1h
-- 👉 800g tomates
-- 🔥 riz (dans l'eau des haricots)
-- 👉 coriandre
+- 👉 ajouter 800g haricot rouge
+  - si sec : tremper la nuit, puis cuire à l'eau (⏲️ 1h)
+- 👉 ajouter 800g tomates
+- 🔥 cuire le riz (dans l'eau des haricots)
+- 👉 ajouter coriandre au service
 
 </details>
 
