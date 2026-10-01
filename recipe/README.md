@@ -285,6 +285,22 @@
 
 
 <details markdown="1">
+<summary>Gateau Breton</summary>
+
+- todo
+
+</details>
+
+
+<details markdown="1">
+<summary>Cigarette Russes / Macarons d'Amiens</summary>
+
+- todo (recette exclusivement au blanc d'oeuf)
+
+</details>
+
+
+<details markdown="1">
 <summary>🍫 Tarte choco</summary>
 
 - 🔥 cuire la pate (180° ⏲️ 15min)
