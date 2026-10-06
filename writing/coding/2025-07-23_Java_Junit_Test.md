@@ -1,33 +1,31 @@
 # @SpringBootTest
 - `@Autowired` :
-  - utilise le Bean réel, sans le modifier
-- `@MockBean` :
-  - Mock un objet et l'injecte dans le contexte
-  - remplace le bean réel par ce mock pour toute la durée du test
-- `@SpyBean` :
-  - injecte le Bean dans le contexte
-  - permet d'utiliser `verify`, `Captor`, `doReturn` ...
+  - injecte le bean du contexte Spring
+- `@MockitoBean` :
+  - crée un mock et l'injecte dans le contexte
+  - remplace le bean correspondant pour le test
+- `@MockitoSpyBean` :
+  - enveloppe un bean du contexte dans un spy, qui appelle les méthodes réelles par défaut
+  - permet d'utiliser `verify`, `ArgumentCaptor` ou `doReturn`
 
 # Tips & Tricks
-## Call real method
-Si on veut executer réellement une méthode d'un objet mocké, par exemple avec une classe qui prend un `Runnable` :  
+## Appeler une méthode réelle sur un mock
+Pour exécuter réellement une méthode d'un mock :
 ```java
 when(myService.myMethod(any(Runnable.class), anyString())) // possible aussi avec "doAnswer"
   .thenAnswer(invocation -> {
     Runnable r = invocation.getArgument(0);
-    String s = invocation.getArgument(1);
-    r.run(s); // Exécute la tâche directement
+    r.run(); // Exécute la tâche directement
     return null;
   });
 
 // ou bien comme ça :
 doCallRealMethod().when(myService)
-                  .myMethod(any(Runnable.class));
+                  .myMethod(any(Runnable.class), anyString());
 ```
 
-## Injection par reflexivitée
-Dans le cas où on est PAS dans un `@SpringBootTest`.  
-Si on veut appeler réellement une méthode sur un `@Mock`, il faut lui injecter ses propriétées :  
+## Injection par réflexion
+Dans un test unitaire sans contexte Spring, si une méthode réelle appelée sur un mock a besoin d'un champ, il faut l'injecter :
 ```java
 ReflectionTestUtils.setField(myService, "myProperty", new MyProperty());
 ```
@@ -39,7 +37,7 @@ ResourceUtils.getFile("classpath:filename.json"));
 ```
 
 ## Imbrication de plusieurs objets
-Si on a une imbrication de service qu'on ne veut pas mocker, il faut faire l'injection à la main.  
+Si on a une imbrication de services qu'on ne veut pas mocker, Mockito ne construit pas tout le graphe comme le ferait Spring : il faut le faire à la main.
 ```java
 @Mock
 MonRepository monRepository;
@@ -48,7 +46,7 @@ MonServiceSimple monServiceSimple; // service non mocké (contient une ref à Mo
 
 MonService monService; // Objet de base des tests (contient une ref à MonServiceSimple)
 @BeforeEach
-public void setUp() {
+void setUp() {
     // injection de dépendances multi-niveau à la main (pas gérée par Mockito)
     monService = new MonService(monServiceSimple);
 }

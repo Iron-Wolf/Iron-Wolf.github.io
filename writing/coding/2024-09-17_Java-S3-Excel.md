@@ -1,6 +1,6 @@
 # Contexte
 
-Optimisation de la lecture d'un fichier Excel (au format OOXML) en Java, depuis un repo S3.  
+Optimisation de la lecture d'un fichier Excel `.xlsx` (format OOXML) en Java, depuis un repo S3.  
 
 # Chargement depuis S3
 La récupération du fichier depuis S3 avec l'API pose des soucis de performance si le fichier est gros :
@@ -9,12 +9,13 @@ try (final InputStream inputStream = s3Service.getContentInputStream(s3Path.buck
   return OPCPackage.open(inputStream);
 }
 ```
-L'appel à `OPCPackage.open` fait que **le fichier complet est télécharger en mémoire** -> pas bon du tout  
+L'appel à `OPCPackage.open` fait que **le fichier complet est téléchargé en mémoire** -> pas bon du tout.   
 OPCPackage est un objet mis à dispo par Apache POI.
 
 Correction :
 ```java
 try (final InputStream inputStream = s3Service.getContentInputStream(s3Path.bucket(), s3Path.objectPath())) {
+  // copie en fichier temporaire
   Files.copy(inputStream, tempFileFromS3.toPath(), StandardCopyOption.REPLACE_EXISTING);
   return OPCPackage.open(tempFileFromS3, PackageAccess.READ);
 }
@@ -28,7 +29,7 @@ final GetObjectRequest objectRequest = new GetObjectRequest(s3Path.bucket(), s3P
 final TransferManager transferManager = TransferManagerBuilder.standard().withS3Client(s3Service.getAmazonS3()).build();
 final Download download = transferManager.download(objectRequest, tempFileFromS3);
 
-// pendant le chargement du fichier, on log tous les 10% d'avancement
+// pendant le chargement du fichier, on log tous les 10% d'avancement (code d'exemple)
 int progressValue;
 int loggedValue = 0;
 while (!download.isDone()) {
@@ -46,16 +47,44 @@ Charger la resource S3 dans un fichier temporaire évite le débordement de la m
 
 
 # Lecture du Excel via l'API Stream
-Principe : 
-  - XSSF génère des évènements XML
-  - SAX parse les données
-  - Un objet `ContentHandler` traite la donnée
+L'API événementielle de POI évite de construire un `XSSFWorkbook` complet :
+- `XSSFReader` ouvre les feuilles du fichier `.xlsx` une par une.
+- Un parseur SAX lit le XML de chaque feuille.
+- `XSSFSheetXMLHandler` transforme les événements en callbacks de ligne et de cellule.
 
-Process :
-  - XSSFReader.SheetIterator (pour boucler sur les feuilles)
-    - XMLReader (parseur SAX)
-      - ContentHandler (récupère les données du parser SAX et les envoi au `consumer`)
-        - `consumer` pour chaque ligne de la feuille
+Structure minimale du parcours :
+```java
+try (OPCPackage opcPackage = OPCPackage.open(tempFile.toFile(), PackageAccess.READ)) {
+  // on utilise XSSFReader pour récupérer les parties du fichier qui nous intéressent
+  final XSSFReader reader = new XSSFReader(opcPackage);
+  // table contenant toutes les chaînes de caractères du fichier (sans doublons)
+  final SharedStrings strings = new ReadOnlySharedStringsTable(opcPackage, true);
+  // table contenant tous les styles de la feuille (utile pour le format des données)
+  final StylesTable styles = reader.getStylesTable();
+  // Itérateur des feuilles du fichier
+  XSSFReader.SheetIterator sheets = (XSSFReader.SheetIterator) reader.getSheetsData();
+  // création du parser SAX
+  XMLReader parser = XMLHelper.newXMLReader();
+
+  while (sheets.hasNext()) {
+    try (InputStream sheet = sheets.next()) {
+      // handler des données XML remontées par le parseur SAX (qui sont ensuite gérées par le Consumer)
+      ContentHandler sheetHandler = new XSSFSheetXMLHandler(
+          styles, strings, rowHandler, new DataFormatter(), false);
+      // enregistre le handler auprès du parser
+      parser.setContentHandler(sheetHandler);
+      // lance le parsing du fichier
+      parser.parse(new InputSource(sheet));
+    }
+  }
+}
+```
+Les données sont effectivement traitées par le `rowHandler` qui contient les méthodes appelées par le callback.  
+
+Le mode Stream réduit surtout la mémoire pour les lignes. La SharedStringTable (qui contient toutes les chaînes dédupliquées) reste en mémoire.
+
+
+
 
 
 # Ressources
