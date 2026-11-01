@@ -325,6 +325,19 @@
 
 
 <details markdown="1">
+<summary>🫙 confiture tomate verte</summary>
+
+- 👉 couper tomate en quartier (1kg) (retirer jus et pépins ?)
+- 👉 couper le citron en fines rondelles
+- 🔁 mélanger le tout avec sucre gélifiant (1kg)
+- 🔥 porter à ébulition le mélange (⏲️ 10min)
+  - maintenir feu vif et remuer
+- mettre en pot directement (les retourner 1min)
+
+</details>
+
+
+<details markdown="1">
 <summary>🍫 gateau chocolat (j'ai pas le nom)</summary>
 
 - 🌐 https://www.youtube.com/shorts/SgsV5Ud-Kg8
