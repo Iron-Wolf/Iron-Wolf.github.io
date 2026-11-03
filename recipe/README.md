@@ -328,9 +328,10 @@
 <summary>🫙 confiture tomate verte</summary>
 
 - 👉 couper tomate en quartier (1kg)
+  - laisser les tomates mûrir quelques jours
 - 👉 couper le citron en fines rondelles
 - 🔁 mélanger le tout avec sucre gélifiant (800g)
-- 🔥 chauffer jusqu'à démarrage de l'ébulition
+- 🔥 chauffer jusqu'à ébullition
   - maintenir feu moyen et remuer (⏲️ 40min)
 - mettre en pot directement (les retourner 1min)
 
