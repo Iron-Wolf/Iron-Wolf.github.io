@@ -331,8 +331,9 @@
   - laisser les tomates mûrir quelques jours
 - 👉 couper le citron en fines rondelles
 - 🔁 mélanger le tout avec sucre gélifiant (800g)
+  - faire mariner jusqu'à disolution du sucre
 - 🔥 chauffer jusqu'à ébullition
-  - maintenir feu moyen et remuer (⏲️ 40min)
+  - feu moyen et remuer (⏲️ 40min)
 - mettre en pot directement (les retourner 1min)
 
 </details>
@@ -391,9 +392,9 @@
 <details markdown="1">
 <summary>🧼 Nettoyer Inox</summary>
 
-- Immédiatement : eau à température ambiante (pas froide) dans la poêl encore chaude
+- eau à température ambiante (pas froide) dans la poêl encore chaude
   - grater avec cuillère en bois (pas d'abrasif)
-- Pâte bicarbonate + eau : laisser reposer toute la nuit
+- bicarbonate + eau : faire bouillir
 
 </details>
 
